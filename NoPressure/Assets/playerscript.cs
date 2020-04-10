@@ -31,7 +31,5 @@ public class playerscript : MonoBehaviour
 
         jumpAs.Play();
 
-
-
     }
 }

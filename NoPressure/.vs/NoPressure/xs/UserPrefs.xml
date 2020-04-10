@@ -1,16 +1,15 @@
 ﻿<Properties StartupConfiguration="{4966E953-CEC3-F2FD-F0E1-285FD284ACAD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/playerscript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/clonescript.cs">
     <Files>
-      <File FileName="Assets/playerscript.cs" Line="6" Column="14" />
+      <File FileName="Assets/playerscript.cs" Line="56" Column="1" />
+      <File FileName="Assets/clonescript.cs" Line="18" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f29b3c89-c2fe-49d8-b26b-ed38926b2e49" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/maggiefleck/Documents/GitHub/NoPressure/NoPressure/Assets/playerscript.cs" relfile="Assets/playerscript.cs" line="1" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

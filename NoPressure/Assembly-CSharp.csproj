@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\clonegeneratorscript.cs" />
     <Compile Include="Assets\clonescript.cs" />
     <Compile Include="Assets\playerscript.cs" />
     <Compile Include="Assets\Test.cs" />

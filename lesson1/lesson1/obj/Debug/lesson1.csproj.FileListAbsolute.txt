@@ -1,0 +1,6 @@
+/Users/maggiefleck/Documents/GitHub/lesson1/lesson1/bin/Debug/lesson1.exe
+/Users/maggiefleck/Documents/GitHub/lesson1/lesson1/bin/Debug/lesson1.pdb
+/Users/maggiefleck/Documents/GitHub/lesson1/lesson1/obj/Debug/lesson1.csprojAssemblyReference.cache
+/Users/maggiefleck/Documents/GitHub/lesson1/lesson1/obj/Debug/lesson1.csproj.CoreCompileInputs.cache
+/Users/maggiefleck/Documents/GitHub/lesson1/lesson1/obj/Debug/lesson1.exe
+/Users/maggiefleck/Documents/GitHub/lesson1/lesson1/obj/Debug/lesson1.pdb

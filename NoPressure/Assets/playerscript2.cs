@@ -33,7 +33,14 @@ public class playerscript2 : MonoBehaviour
             tf.position = new Vector3((float)(tf.position.x - 0.2), tf.position.y, tf.position.z);
         }
    
-   
+        if (Input.GetKey(KeyCode.W))
+        {
+            tf.position = new Vector3((float)(tf.position.z + 0.2), tf.position.y, tf.position.z);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            tf.position = new Vector3((float)(tf.position.z - 0.2), tf.position.y, tf.position.z);
+        }
    
    
     }

@@ -1,6 +1,13 @@
-C:\Users\user\Documents\Projects\NoPressure Repo\lesson1 practice\lesson1 practice\bin\Debug\lesson1 practice.exe.config
-C:\Users\user\Documents\Projects\NoPressure Repo\lesson1 practice\lesson1 practice\bin\Debug\lesson1 practice.exe
-C:\Users\user\Documents\Projects\NoPressure Repo\lesson1 practice\lesson1 practice\bin\Debug\lesson1 practice.pdb
-C:\Users\user\Documents\Projects\NoPressure Repo\lesson1 practice\lesson1 practice\obj\Debug\lesson1 practice.csprojResolveAssemblyReference.cache
-C:\Users\user\Documents\Projects\NoPressure Repo\lesson1 practice\lesson1 practice\obj\Debug\lesson1 practice.exe
-C:\Users\user\Documents\Projects\NoPressure Repo\lesson1 practice\lesson1 practice\obj\Debug\lesson1 practice.pdb
+C:/Users/user/Documents/Projects/NoPressure Repo/lesson1 practice/lesson1 practice/bin/Debug/lesson1 practice.exe.config
+C:/Users/user/Documents/Projects/NoPressure Repo/lesson1 practice/lesson1 practice/bin/Debug/lesson1 practice.exe
+C:/Users/user/Documents/Projects/NoPressure Repo/lesson1 practice/lesson1 practice/bin/Debug/lesson1 practice.pdb
+C:/Users/user/Documents/Projects/NoPressure Repo/lesson1 practice/lesson1 practice/obj/Debug/lesson1 practice.csprojResolveAssemblyReference.cache
+C:/Users/user/Documents/Projects/NoPressure Repo/lesson1 practice/lesson1 practice/obj/Debug/lesson1 practice.exe
+C:/Users/user/Documents/Projects/NoPressure Repo/lesson1 practice/lesson1 practice/obj/Debug/lesson1 practice.pdb
+/Users/maggiefleck/Documents/GitHub/NoPressure/lesson1 practice/lesson1 practice/bin/Debug/lesson1 practice.exe.config
+/Users/maggiefleck/Documents/GitHub/NoPressure/lesson1 practice/lesson1 practice/bin/Debug/lesson1 practice.exe
+/Users/maggiefleck/Documents/GitHub/NoPressure/lesson1 practice/lesson1 practice/bin/Debug/lesson1 practice.pdb
+/Users/maggiefleck/Documents/GitHub/NoPressure/lesson1 practice/lesson1 practice/obj/Debug/lesson1 practice.csprojAssemblyReference.cache
+/Users/maggiefleck/Documents/GitHub/NoPressure/lesson1 practice/lesson1 practice/obj/Debug/lesson1 practice.csproj.CoreCompileInputs.cache
+/Users/maggiefleck/Documents/GitHub/NoPressure/lesson1 practice/lesson1 practice/obj/Debug/lesson1 practice.exe
+/Users/maggiefleck/Documents/GitHub/NoPressure/lesson1 practice/lesson1 practice/obj/Debug/lesson1 practice.pdb

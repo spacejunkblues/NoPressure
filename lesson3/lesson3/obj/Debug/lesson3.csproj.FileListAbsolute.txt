@@ -4,3 +4,15 @@
 /Users/maggiefleck/Documents/GitHub/lesson3/lesson3/obj/Debug/lesson3.csproj.CoreCompileInputs.cache
 /Users/maggiefleck/Documents/GitHub/lesson3/lesson3/obj/Debug/lesson3.exe
 /Users/maggiefleck/Documents/GitHub/lesson3/lesson3/obj/Debug/lesson3.pdb
+/Users/maggiefleck/Documents/GitHub/NoPressure/lesson3/lesson3/bin/Debug/lesson3.exe
+/Users/maggiefleck/Documents/GitHub/NoPressure/lesson3/lesson3/bin/Debug/lesson3.pdb
+/Users/maggiefleck/Documents/GitHub/NoPressure/lesson3/lesson3/obj/Debug/lesson3.csprojAssemblyReference.cache
+/Users/maggiefleck/Documents/GitHub/NoPressure/lesson3/lesson3/obj/Debug/lesson3.csproj.CoreCompileInputs.cache
+/Users/maggiefleck/Documents/GitHub/NoPressure/lesson3/lesson3/obj/Debug/lesson3.exe
+/Users/maggiefleck/Documents/GitHub/NoPressure/lesson3/lesson3/obj/Debug/lesson3.pdb
+/Users/maggiefleck/Desktop/GitHub/NoPressure/lesson3/lesson3/bin/Debug/lesson3.exe
+/Users/maggiefleck/Desktop/GitHub/NoPressure/lesson3/lesson3/bin/Debug/lesson3.pdb
+/Users/maggiefleck/Desktop/GitHub/NoPressure/lesson3/lesson3/obj/Debug/lesson3.csprojAssemblyReference.cache
+/Users/maggiefleck/Desktop/GitHub/NoPressure/lesson3/lesson3/obj/Debug/lesson3.csproj.CoreCompileInputs.cache
+/Users/maggiefleck/Desktop/GitHub/NoPressure/lesson3/lesson3/obj/Debug/lesson3.exe
+/Users/maggiefleck/Desktop/GitHub/NoPressure/lesson3/lesson3/obj/Debug/lesson3.pdb

@@ -35,13 +35,18 @@ public class playerscript2 : MonoBehaviour
    
         if (Input.GetKey(KeyCode.W))
         {
-            tf.position = new Vector3((float)(tf.position.z + 0.2), tf.position.y, tf.position.z);
+            tf.position = new Vector3((tf.position.x), tf.position.y,(float) (tf.position.z + .2));
         }
         if (Input.GetKey(KeyCode.S))
         {
-            tf.position = new Vector3((float)(tf.position.z - 0.2), tf.position.y, tf.position.z);
+            tf.position = new Vector3((tf.position.x), tf.position.y, (float)(tf.position.z - .2));
         }
    
-   
+        if (Input.GetKey(KeyCode.P))
+        {
+            Instantiate(template);
+
+        }
+        
     }
 }

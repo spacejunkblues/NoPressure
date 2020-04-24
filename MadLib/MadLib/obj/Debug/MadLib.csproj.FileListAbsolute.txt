@@ -1,0 +1,6 @@
+/Users/maggiefleck/Documents/GitHub/NoPressure/MadLib/MadLib/bin/Debug/MadLib.exe
+/Users/maggiefleck/Documents/GitHub/NoPressure/MadLib/MadLib/bin/Debug/MadLib.pdb
+/Users/maggiefleck/Documents/GitHub/NoPressure/MadLib/MadLib/obj/Debug/MadLib.csprojAssemblyReference.cache
+/Users/maggiefleck/Documents/GitHub/NoPressure/MadLib/MadLib/obj/Debug/MadLib.csproj.CoreCompileInputs.cache
+/Users/maggiefleck/Documents/GitHub/NoPressure/MadLib/MadLib/obj/Debug/MadLib.exe
+/Users/maggiefleck/Documents/GitHub/NoPressure/MadLib/MadLib/obj/Debug/MadLib.pdb

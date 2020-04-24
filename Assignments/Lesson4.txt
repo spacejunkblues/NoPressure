@@ -1,0 +1,1 @@
+Calculator. Have the calcutor ask the user for 2 numbers. Must be able to enter 2 digit numbers. You have to use Console.Read() to get the numbers. The calculator will then show the results for those two numbers added, multiplied, subtracted, and divided. The results must be mathmatically accurate.

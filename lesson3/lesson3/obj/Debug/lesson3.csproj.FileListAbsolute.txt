@@ -16,3 +16,9 @@
 /Users/maggiefleck/Desktop/GitHub/NoPressure/lesson3/lesson3/obj/Debug/lesson3.csproj.CoreCompileInputs.cache
 /Users/maggiefleck/Desktop/GitHub/NoPressure/lesson3/lesson3/obj/Debug/lesson3.exe
 /Users/maggiefleck/Desktop/GitHub/NoPressure/lesson3/lesson3/obj/Debug/lesson3.pdb
+C:\Users\User\Documents\GitHub\NoPressure\lesson3\lesson3\bin\Debug\lesson3.exe
+C:\Users\User\Documents\GitHub\NoPressure\lesson3\lesson3\bin\Debug\lesson3.pdb
+C:\Users\User\Documents\GitHub\NoPressure\lesson3\lesson3\obj\Debug\lesson3.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\lesson3\lesson3\obj\Debug\lesson3.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\lesson3\lesson3\obj\Debug\lesson3.exe
+C:\Users\User\Documents\GitHub\NoPressure\lesson3\lesson3\obj\Debug\lesson3.pdb

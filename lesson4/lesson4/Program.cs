@@ -25,13 +25,16 @@ namespace lesson4
             Console.WriteLine("this a culculator. 2 digits, then enter:");
             userinput1 = Console.Read();
             userinput2 = Console.Read();
-
+            Console.Read();
+            Console.Read();
             Console.WriteLine(" ");
 
             Console.WriteLine("again: ");
             userinput3 = Console.Read();
             userinput4 = Console.Read();
-             Console.WriteLine(" ");
+            Console.Read();
+            Console.Read();
+            Console.WriteLine(" ");
 
             mathanswer1 = ((char)userinput2 + ((char)userinput1 * 10));
             mathanswer2 = ((char)userinput4 + ((char)userinput3 * 10));

@@ -32,6 +32,26 @@ namespace practicecode
             int userinput18;
             int userinput19;
             int userinput20;
+            int userinput21;
+            int userinput22;
+            int userinput23;
+            int userinput24;
+            int userinput25;
+            int userinput26;
+            int userinput27;
+            int userinput28;
+            int userinput29;
+            int userinput30;
+            int userinput31;
+            int userinput32;
+            int userinput33;
+            int userinput34;
+            int userinput35;
+            int userinput36;
+            int userinput37;
+            int userinput38;
+            int userinput39;
+            int userinput40;
 
 
 
@@ -57,9 +77,54 @@ namespace practicecode
             userinput18 = Console.Read();
             userinput19 = Console.Read();
             userinput20 = Console.Read();
+            userinput21 = Console.Read();
+            userinput22 = Console.Read();
+            userinput23 = Console.Read();
+            userinput24 = Console.Read();
+            userinput25 = Console.Read();
+            userinput26 = Console.Read();
+            userinput27 = Console.Read();
+            userinput28 = Console.Read();
+            userinput29 = Console.Read();
+            userinput30 = Console.Read();
+            userinput31 = Console.Read();
+            userinput32 = Console.Read();
+            userinput33 = Console.Read();
+            userinput34 = Console.Read();
+            userinput35 = Console.Read();
+            userinput36 = Console.Read();
+            userinput37 = Console.Read();
+            userinput38 = Console.Read();
+            userinput39 = Console.Read();
+            userinput40 = Console.Read();
+
+
+
+
 
 
             Console.WriteLine(" ");
+
+            Console.Write((char)userinput40);
+            Console.Write((char)userinput39);
+            Console.Write((char)userinput38);
+            Console.Write((char)userinput37);
+            Console.Write((char)userinput36);
+            Console.Write((char)userinput35);
+            Console.Write((char)userinput34);
+            Console.Write((char)userinput33);
+            Console.Write((char)userinput32);
+            Console.Write((char)userinput31);
+            Console.Write((char)userinput30);
+            Console.Write((char)userinput29);
+            Console.Write((char)userinput28);
+            Console.Write((char)userinput27);
+            Console.Write((char)userinput26);
+            Console.Write((char)userinput25);
+            Console.Write((char)userinput24);
+            Console.Write((char)userinput23);
+            Console.Write((char)userinput22);
+            Console.Write((char)userinput21);
 
             Console.Write((char)userinput20);
             Console.Write((char)userinput19);

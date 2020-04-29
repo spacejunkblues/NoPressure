@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MadLib", "MadLib\MadLib.csproj", "{2FBCDB20-4052-47C2-BE71-353CE36D6F62}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson4", "lesson4\lesson4.csproj", "{9F142CC6-21A2-4067-ADFA-3BE9802554F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,15 +10,15 @@ Global
 		Release|anycpu = Release|anycpu
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2FBCDB20-4052-47C2-BE71-353CE36D6F62}.Debug|anycpu.ActiveCfg = Debug|Any CPU
-		{2FBCDB20-4052-47C2-BE71-353CE36D6F62}.Debug|anycpu.Build.0 = Debug|Any CPU
-		{2FBCDB20-4052-47C2-BE71-353CE36D6F62}.Release|anycpu.ActiveCfg = Release|Any CPU
-		{2FBCDB20-4052-47C2-BE71-353CE36D6F62}.Release|anycpu.Build.0 = Release|Any CPU
+		{9F142CC6-21A2-4067-ADFA-3BE9802554F7}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{9F142CC6-21A2-4067-ADFA-3BE9802554F7}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{9F142CC6-21A2-4067-ADFA-3BE9802554F7}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{9F142CC6-21A2-4067-ADFA-3BE9802554F7}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C7B28B3C-9654-45BC-A7DF-4DD029E10209}
+		SolutionGuid = {547C0AC7-100B-4894-85DD-05FDA497E7A4}
 	EndGlobalSection
 EndGlobal

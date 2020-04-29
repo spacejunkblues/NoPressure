@@ -4,3 +4,9 @@
 /Users/maggiefleck/Documents/GitHub/NoPressure/practicecode/practicecode/obj/Debug/practicecode.csproj.CoreCompileInputs.cache
 /Users/maggiefleck/Documents/GitHub/NoPressure/practicecode/practicecode/obj/Debug/practicecode.exe
 /Users/maggiefleck/Documents/GitHub/NoPressure/practicecode/practicecode/obj/Debug/practicecode.pdb
+C:\Users\User\Documents\GitHub\NoPressure\practicecode\practicecode\bin\Debug\practicecode.exe
+C:\Users\User\Documents\GitHub\NoPressure\practicecode\practicecode\bin\Debug\practicecode.pdb
+C:\Users\User\Documents\GitHub\NoPressure\practicecode\practicecode\obj\Debug\practicecode.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\practicecode\practicecode\obj\Debug\practicecode.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\practicecode\practicecode\obj\Debug\practicecode.exe
+C:\Users\User\Documents\GitHub\NoPressure\practicecode\practicecode\obj\Debug\practicecode.pdb

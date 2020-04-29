@@ -1,0 +1,7 @@
+
+exercise: Make a Madlib using ReadLine() and the string datatype. 
+Madlib must have at least: 	3 nouns. 
+				2 adjectives
+				3 verbs
+
+The program must prompt the user for words then display the story.

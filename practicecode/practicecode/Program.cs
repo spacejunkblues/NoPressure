@@ -57,7 +57,8 @@ namespace practicecode
             userinput18 = Console.Read();
             userinput19 = Console.Read();
             userinput20 = Console.Read();
-
+            Console.Read();
+            Console.Read();
 
             Console.WriteLine(" ");
 
@@ -83,7 +84,7 @@ namespace practicecode
             Console.Write((char)userinput1);
 
 
-
+            
 
         }
     }

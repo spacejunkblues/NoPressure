@@ -10,41 +10,51 @@ namespace lesson4
     {
          static void Main(string[] args)
         {
-
+            //declare varaibles
             int mathanswer1;
             int mathanswer2;
             int additionmathfinalanswer;
             int multiplicationmathfinalanswer;
             int subtractionmathfinalanswer;
-            int devisionmathfinalanswer;
+            float devisionmathfinalanswer;
             int userinput1;
             int userinput2;
             int userinput3;
             int userinput4;
 
+            //init variables
+
+           
+            //Getting the first number
             Console.WriteLine("this a culculator. 2 digits, then enter:");
             userinput1 = Console.Read();
             userinput2 = Console.Read();
-
+            Console.Read();
+            Console.Read();
             Console.WriteLine(" ");
 
+            //Get the second number
             Console.WriteLine("again: ");
             userinput3 = Console.Read();
             userinput4 = Console.Read();
-             Console.WriteLine(" ");
+            Console.Read();
+            Console.Read();
+            Console.WriteLine(" ");
 
-            mathanswer1 = ((char)userinput2 + ((char)userinput1 * 10));
-            mathanswer2 = ((char)userinput4 + ((char)userinput3 * 10));
-            Console.Read();
-            Console.Read();
+            //combine the digits to get the actual numbers
+
+            
+            mathanswer1 = (userinput2 - 48) + ((userinput1 - 48) * 10);
+            mathanswer2 = (userinput4 - 48) + ((userinput3 - 48) * 10);
             Console.Write(" ");
              
-
-            devisionmathfinalanswer = (mathanswer1 / mathanswer2);        
-            multiplicationmathfinalanswer = (mathanswer1 * mathanswer2);
-            subtractionmathfinalanswer = (mathanswer1 - mathanswer2);
-            additionmathfinalanswer = (mathanswer1 + mathanswer2);
+            //actually do the math
+            devisionmathfinalanswer = ((float)mathanswer1 / mathanswer2);        
+            multiplicationmathfinalanswer = mathanswer1 * mathanswer2;
+            subtractionmathfinalanswer = mathanswer1 - mathanswer2;
+            additionmathfinalanswer = mathanswer1 + mathanswer2;
             
+            //output the math to the user
             Console.Write("addition:");
             Console.WriteLine(additionmathfinalanswer);
             Console.Write("subtraction:");

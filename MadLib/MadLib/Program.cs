@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Marshal Fleck
+//fleckm210@gmail.com
+//this is an assignment for a Calculator
+using System;
 
 namespace MadLib
 {
@@ -6,130 +9,77 @@ namespace MadLib
     {
         public static void Main(string[] args)
         {
-            int userinput1;
-            int userinput2;
-            int userinput3;
-            int userinput4;
-            int userinput5;
-            int userinput6;
-            int userinput7;
-            int userinput8;
-            int userinput9;
-            int userinput10;
-            int userinput11;
-            int userinput12;
-            int userinput13;
-            int userinput14;
-            int userinput15;
-            int userinput16;
-            int userinput17;
-            int userinput18;
-            int userinput19;
-            int userinput20;
-            int userinput21;
-            int userinput22;
-            int userinput23;
-            int userinput24;
-            int userinput25;
-            int userinput26;
-            int userinput27;
-            int userinput28;
-            int userinput29;
-            int userinput30;
-            int userinput31;
-            int userinput32;
-            int userinput33;
-            int userinput34;
-            int userinput35;
-            int userinput36;
-            int userinput37;
-            int userinput38;
-            int userinput39;
-            int userinput40;
-            int userinput41;
-            int userinput42;
-            int userinput43;
-            int userinput44;
-            int userinput45;
-            int userinput46;
-            int userinput47;
-            int userinput48;
+            //writing all the variables using the string datatype
+            // 3 verbs, 3 nouns, and 2 adjectives
+            string verb1;
+            string verb2;
+            string verb3;
+            string noun1;
+            string noun2;
+            string noun3;
+            string adjective1;
+            string adjective2;
+            string adjective3;
+            string verb4;
+            string adverb;
 
+            // starting intros
+            Console.WriteLine("This a MadLib. I am going to ask for 3 nouns, 2 adjectives, and 3 verbs.");
+            Console.WriteLine("Type the word when I ask for it, then press Enter: ");
 
-            Console.WriteLine("noun:");
-            userinput1 = Console.Read();
-            userinput2 = Console.Read();
-            userinput3 = Console.Read();
-            userinput4 = Console.Read();
-            userinput5 = Console.Read();
-            userinput6 = Console.Read();
-            userinput7 = Console.Read();
-            userinput8 = Console.Read();
-            userinput9 = Console.Read();
-            userinput10 = Console.Read();
-            Console.WriteLine(" ");
-            Console.WriteLine("verb:");
-            userinput21 = Console.Read();
-            userinput22 = Console.Read();
-            userinput23 = Console.Read();
-            userinput24 = Console.Read();
-            userinput25 = Console.Read();
-            userinput26 = Console.Read();
-            userinput27 = Console.Read();
-            userinput28 = Console.Read();
-            userinput29 = Console.Read();
-            userinput30 = Console.Read();
+            // asking for verbs
+            Console.Write("singular verb:");
+            verb1 = Console.ReadLine();
+            Console.Write("singular verb:");
+            verb2 = Console.ReadLine();
+            Console.Write("singular verb:");
+            verb3 = Console.ReadLine();
+            Console.Write("singular verb:");
+            verb4 = Console.ReadLine();
 
-            Console.WriteLine(" ");
-            Console.WriteLine("verb:");
-            userinput11 = Console.Read();
-            userinput12 = Console.Read();
-            userinput13 = Console.Read();
-            userinput14 = Console.Read();
-            userinput15 = Console.Read();
-            userinput16 = Console.Read();
-            userinput17 = Console.Read();
-            userinput18 = Console.Read();
-            userinput19 = Console.Read();
-            userinput20 = Console.Read();
-            Console.WriteLine(" ");
+            // asking for nouns
+            Console.Write(" subject noun:");
+            noun1 = Console.ReadLine();
+            Console.Write(" place noun:");
+            noun2 = Console.ReadLine();
+            Console.Write("noun:");
+            noun3 = Console.ReadLine();
 
-            Console.Write((char)userinput1);
-            Console.Write((char)userinput2);
-            Console.Write((char)userinput3);
-            Console.Write((char)userinput4);
-            Console.Write((char)userinput5);
-            Console.Write((char)userinput6);
-            Console.Write((char)userinput7);
-            Console.Write((char)userinput8);
-            Console.Write((char)userinput9);
-            Console.Write((char)userinput10);
-            Console.Write("was ");
+            // asking for adjectives and an adverb
+            Console.Write("adjective:");
+            adjective1 = Console.ReadLine();
+            Console.Write("adjective:");
+            adjective2 = Console.ReadLine();
+            Console.Write("adjective:");
+            adjective3 = Console.ReadLine();
+            Console.Write("adverb:");
+            adverb = Console.ReadLine();
 
-            Console.Write((char)userinput21);
-            Console.Write((char)userinput22);
-            Console.Write((char)userinput23);
-            Console.Write((char)userinput24);
-            Console.Write((char)userinput25);
-            Console.Write((char)userinput26);
-            Console.Write((char)userinput27);
-            Console.Write((char)userinput28);
-            Console.Write((char)userinput29);
-            Console.Write((char)userinput30);
-
-            Console.Write("when he ");
-            Console.Write((char)userinput11);
-            Console.Write((char)userinput12);
-            Console.Write((char)userinput13);
-            Console.Write((char)userinput14);
-            Console.Write((char)userinput15);
-            Console.Write((char)userinput16);
-            Console.Write((char)userinput17);
-            Console.Write((char)userinput18);
-            Console.Write((char)userinput19);
-            Console.Write((char)userinput10);
-
-
+            // writing to the screen
+            Console.Write(noun1);
+            Console.Write(" was ");
+            Console.Write(verb1);
+            Console.Write("ing down the ");
+            Console.Write(noun2);
+            Console.Write(" when he very ");
+            Console.Write(adverb);
+            Console.Write(" ");
+            Console.Write(verb2);
+            Console.Write(" across a ");
+            Console.Write(noun3);
+            Console.Write(".");
+            Console.Write(" then he very ");
+            Console.Write(adjective1);
+            Console.Write("ly ");
+            Console.Write(verb3);
+            Console.Write(" for ");
+            Console.Write(verb4);
+            Console.Write(". this was ");
+            Console.Write(adjective2);
+            Console.Write(" becuase ");
+            Console.Write(noun1);
+            Console.Write(" was ");
+            Console.Write(adjective3);
 
         }
     }

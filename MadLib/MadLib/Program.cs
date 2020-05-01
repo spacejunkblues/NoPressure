@@ -1,6 +1,6 @@
 ﻿//Marshal Fleck
 //fleckm210@gmail.com
-//this is an assignment for a Calculator
+//this is an assignment for a MadLib
 using System;
 
 namespace MadLib
@@ -47,7 +47,7 @@ namespace MadLib
 
             // asking for adjectives and an adverb
             Console.Write("adjective:");
-            adjective1 = Console.ReadLine();
+            adjective1 = Console.ReadLine();         
             Console.Write("adjective:");
             adjective2 = Console.ReadLine();
             Console.Write("adjective:");
@@ -56,6 +56,7 @@ namespace MadLib
             adverb = Console.ReadLine();
 
             // writing to the screen
+            Console.WriteLine("\nStory:");
             Console.Write(noun1);
             Console.Write(" was ");
             Console.Write(verb1);
@@ -81,6 +82,7 @@ namespace MadLib
             Console.Write(" was ");
             Console.Write(adjective3);
 
+        
         }
     }
 }

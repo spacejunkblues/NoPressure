@@ -1,0 +1,13 @@
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson6\InClassLesson6\bin\Debug\netcoreapp3.1\InClassLesson6.exe
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson6\InClassLesson6\bin\Debug\netcoreapp3.1\InClassLesson6.deps.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson6\InClassLesson6\bin\Debug\netcoreapp3.1\InClassLesson6.runtimeconfig.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson6\InClassLesson6\bin\Debug\netcoreapp3.1\InClassLesson6.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson6\InClassLesson6\bin\Debug\netcoreapp3.1\InClassLesson6.dll
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson6\InClassLesson6\bin\Debug\netcoreapp3.1\InClassLesson6.pdb
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson6\InClassLesson6\obj\Debug\netcoreapp3.1\InClassLesson6.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson6\InClassLesson6\obj\Debug\netcoreapp3.1\InClassLesson6.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson6\InClassLesson6\obj\Debug\netcoreapp3.1\InClassLesson6.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson6\InClassLesson6\obj\Debug\netcoreapp3.1\InClassLesson6.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson6\InClassLesson6\obj\Debug\netcoreapp3.1\InClassLesson6.dll
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson6\InClassLesson6\obj\Debug\netcoreapp3.1\InClassLesson6.pdb
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson6\InClassLesson6\obj\Debug\netcoreapp3.1\InClassLesson6.genruntimeconfig.cache

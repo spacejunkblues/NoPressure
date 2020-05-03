@@ -8,6 +8,7 @@ namespace InClassLesson7_Loops
         {
             //declare varaibles for scope example
             int i;
+            int[] numbers = { 0,0,0};
 
             i = 0;
 
@@ -16,7 +17,8 @@ namespace InClassLesson7_Loops
                 int x;
                 x = 4;
                 i = 1;
-            } 
+            }
+
 
             Console.WriteLine("i: " +i);
         }

@@ -16,7 +16,7 @@ namespace lesson5
             char q4;
             char q5;
             int gradescore;
-            
+
 
             //Init variables
             q1 = ('a');
@@ -46,9 +46,9 @@ namespace lesson5
             {
                 gradescore = gradescore + 1;
             }
-            else 
+            else
             {
-              gradescore += 2;
+                gradescore += 2;
             }
 
             //Setting up for the second question
@@ -69,9 +69,9 @@ namespace lesson5
             {
                 gradescore += 1;
             }
-            else 
+            else
             {
-              gradescore += 2;
+                gradescore += 2;
             }
 
             //Setting up for the third question
@@ -93,11 +93,11 @@ namespace lesson5
             {
                 gradescore += 1;
             }
-            else 
+            else
             {
-              gradescore += 2;
+                gradescore += 2;
             }
-           
+
             //Setting up for the fourth question
             Console.WriteLine(" ");
             Console.WriteLine("Press enter to continue:");
@@ -114,11 +114,11 @@ namespace lesson5
             //Defining the end score
             if (q4 == (char)141)
             {
-                gradescore  += 1;
+                gradescore += 1;
             }
-            else 
+            else
             {
-              gradescore += 2;
+                gradescore += 2;
             }
 
             //Setting up for the fith question
@@ -140,11 +140,11 @@ namespace lesson5
             //Defining the end score
             if (q5 == (char)142)
             {
-                gradescore  += 1;
+                gradescore += 1;
             }
-            else 
+            else
             {
-              gradescore += 2;
+                gradescore += 2;
             }
 
             if (gradescore == 5)

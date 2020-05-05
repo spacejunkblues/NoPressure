@@ -1,6 +1,0 @@
-/Users/maggiefleck/Documents/GitHub/NoPressure/lesson5/lesson5/obj/Debug/lesson5.csprojAssemblyReference.cache
-/Users/maggiefleck/Documents/GitHub/NoPressure/lesson5/lesson5/obj/Debug/lesson5.csproj.CoreCompileInputs.cache
-/Users/maggiefleck/Documents/GitHub/NoPressure/lesson5/lesson5/bin/Debug/lesson5.exe
-/Users/maggiefleck/Documents/GitHub/NoPressure/lesson5/lesson5/bin/Debug/lesson5.pdb
-/Users/maggiefleck/Documents/GitHub/NoPressure/lesson5/lesson5/obj/Debug/lesson5.exe
-/Users/maggiefleck/Documents/GitHub/NoPressure/lesson5/lesson5/obj/Debug/lesson5.pdb

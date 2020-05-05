@@ -16,7 +16,7 @@ namespace lesson5
             char q4;
             char q5;
             int gradescore;
-
+            string ifwanttoseeanswers; 
 
             //Init variables
             q1 = ('a');
@@ -40,6 +40,8 @@ namespace lesson5
             Console.WriteLine("C. Mickey Mouse");
             Console.Write("Your answer:");
             q1 = (Char)Console.Read();
+            Console.Read(); 
+            Console.Read();  
 
             //Defining the end score
             if (q1 == (char)142)
@@ -63,6 +65,8 @@ namespace lesson5
             Console.WriteLine("C. Deleware");
             Console.Write("Your answer:");
             q2 = (Char)Console.Read();
+            Console.Read(); 
+            Console.Read(); 
 
             //Defining the end score
             if (q2 == (char)143)
@@ -87,6 +91,8 @@ namespace lesson5
             Console.WriteLine("C. Death");
             Console.Write("Your answer:");
             q3 = (Char)Console.Read();
+            Console.Read(); 
+            Console.Read(); 
 
             //Defining the end score
             if (q3 == (char)143)
@@ -110,6 +116,8 @@ namespace lesson5
             Console.WriteLine("C. King George");
             Console.Write("Your answer:");
             q4 = (Char)Console.Read();
+            Console.Read(); 
+            Console.Read(); 
 
             //Defining the end score
             if (q4 == (char)141)
@@ -133,6 +141,8 @@ namespace lesson5
             Console.WriteLine("C. 50");
             Console.Write("Your answer:");
             q5 = (Char)Console.Read();
+            Console.Read(); 
+            Console.Read(); 
 
             //Clearing the buffer
             Console.WriteLine(" ");
@@ -150,23 +160,86 @@ namespace lesson5
             if (gradescore == 5)
             {
                 Console.WriteLine("Congratulations!! You got an A!!");
+                Console.WriteLine("You got 100% correct!!");
             }
-            else if (gradescore == 80)
+            else if (gradescore == 6)
             {
                 Console.WriteLine("Not bad you got a B.");
-            }
-            else if (gradescore == 60)
+                Console.WriteLine("You got 80% correct. Not bad.");
+            }           
+            else if (gradescore == 7)
             {
                 Console.WriteLine("Better luck next time. You got a c.");
+                Console.WriteLine("You got 60% correct. Hey, it's better than an F. ");
             }
-            else if (gradescore <= 40)
+            else if (gradescore <= 8)
             {
                 Console.WriteLine("Sorry, you got an F.");
+                xConsole.WriteLine("You got lower than 60% correct. Better luck next time.");
             }
+          
+            //Asking the user if they want the answers to the test
+            Console.WriteLine("Would you like to see the answers? (lower case yes or no, then enter):"); 
+            ifwanttoseeanswers = Console.Readline();
+            if(ifwanttoseeanswers = yes)
+            {
+             
+             //Showing the answers         
+             Console.WriteLine("How many planets are in our solar system:");
+             Console.WriteLine("NO A. 0");
+             Console.WriteLine("YES B. 8");
+             Console.WriteLine("NO C. 50");
+             Console.Write("Your answer:");
+             Console.WriteLine(q5);
 
+             Console.WriteLine(" ");
+             Console.WriteLine("Press enter to continue:");
+             Console.ReadKey();
 
-            Console.WriteLine(" ");
-            Console.Write("");
+             Console.WriteLine("Who wrote the Declaration of Independance: ");
+             Console.WriteLine("YES A. Thomas Jefferson");
+             Console.WriteLine("NO B. Anders Hejlsberg");
+             Console.WriteLine("NO C. King George");
+             Console.Write("Your answer was: ");
+             Console.WriteLine(q4);
+
+             Console.WriteLine(" ");
+             Console.WriteLine("Press enter to continue:");
+             Console.ReadKey();
+
+             Console.WriteLine("Finish the statement: ");
+             Console.WriteLine("'Give me Liberty of give me ");
+             Console.WriteLine("NO A. Chick Fil A");
+             Console.WriteLine("NO B. A Hamberger");
+             Console.WriteLine("YES C. Death");
+             Console.Write("Your answer:");
+             Console.WriteLine(q3);
+
+             Console.WriteLine(" ");
+             Console.WriteLine("Press enter to continue:");
+             Console.ReadKey();
+
+             Console.WriteLine("Which state was the first state in the United states:");
+             Console.WriteLine("NO A. Maine");
+             Console.WriteLine("NO B. Virginia");
+             Console.WriteLine("YES C. Deleware");
+             Console.Write("Your answer:");
+             Console.WriteLine(q2);
+
+             Console.WriteLine(" ");
+             Console.WriteLine("Press enter to continue:");
+             Console.ReadKey();
+
+             Console.WriteLine("The first President of the United States was:");
+             Console.WriteLine("A. Herbert Hoover");
+             Console.WriteLine("B. George Wahington");
+             Console.WriteLine("C. Mickey Mouse");
+             Console.Write("Your answer:");
+             Console.WriteLine(q1);
+
+            }
+        
+        
         }
     }
 }

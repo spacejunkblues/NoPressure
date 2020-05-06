@@ -18,6 +18,7 @@ MonoBehaviour:
     y: 43
     width: 1920
     height: 997
+
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 7}
@@ -45,6 +46,7 @@ MonoBehaviour:
     height: 553
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
+
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}

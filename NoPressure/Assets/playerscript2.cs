@@ -18,7 +18,8 @@ public class playerscript2 : MonoBehaviour
     void Update()
     {   clonetf = template.GetComponent<Transform>();
             clonetf.position = tf.position;
-        if (Input.GetKeyDown(KeyCode.C))
+        clonetf.position = new Vector3((tf.position.x), tf.position.y, (float)(tf.position.z + .5));
+        if (Input.GetKey(KeyCode.C))
         {
             Instantiate(template);
 

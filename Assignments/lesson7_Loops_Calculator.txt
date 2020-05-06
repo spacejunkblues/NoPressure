@@ -1,0 +1,1 @@
+exercise: Make a calculator. This calculator will ask the user for how many number they would like to enter. Then the program will get the input of each number. The program will show the result of them added and multiplied together. The program will then ask if the user wants to try again.

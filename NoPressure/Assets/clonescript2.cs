@@ -1,29 +1,33 @@
-﻿using System.Collections;
+﻿//
+//
+//
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class clonegeneratorscript2 : MonoBehaviour
+public class clonescript2 : MonoBehaviour
 {
-    public float radius = 5.0F;
-    public float power = 10.0F;
-
+    public GameObject clone;
+    public Rigidbody rb;
+    public Transform tf;
     // Start is called before the first frame update
-    void Start()
+    void Update()
     {
-        
-     Vector3 explosionPos = transform.position;
-        Collider[] colliders = Physics.OverlapSphere(explosionPos, radius);
-        foreach (Collider hit in colliders)
-        {
-            Rigidbody rb = hit.GetComponent<Rigidbody>();
 
-            if (rb != null)
-            {
-                rb.AddExplosionForce(power, explosionPos, radius, 3.0F);
-    
-            }
-   
-   
+        if (tf.position.x >= 66) 
+        {
+            Destroy(clone);
+        }
+        if (tf.position.x <= 0)
+        {
+            Destroy(clone);
+        }
+
+        //out of range on the Z axis
+        if (tf.position.z >= 90 || tf.position.z <= 30)
+        {
+            Destroy(clone);
+        }
     }
 
     

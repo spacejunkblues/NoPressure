@@ -63,24 +63,37 @@ namespace InClassLesson7_Loops
 
             }
 
-
+            //looping example
             bool keepLooping = true;
 
             while(keepLooping)
             {
-                Console.WriteLine("Just entered the loop again");
+                //declare varable
                 int input;
+
+                //Let user know what's happening
+                Console.WriteLine("Just entered the loop again");
+
+                //Get user input
                 input = Console.Read();
                 Console.Read();
                 Console.Read();
 
+                //Test to see if we should stop
                 if (input == 104)
                 {
                     keepLooping = false;
                 }
 
+            }//End while
+
+            int input2 =1;
+
+            if (input2 == 0)
+            {
+
             }
 
-        }
+        }//End main
     }
 }

@@ -10,13 +10,17 @@ namespace lesson5
         public static void Main(string[] args)
         {
             //Declaring char (character) variables for quiz
-            char q1;
+            char q1;    //answer to question1
+            char correctAnswer1;
             char q2;
             char q3;
             char q4;
             char q5;
             int gradescore;
-            string ifwanttoseeanswers; 
+            string ifwanttoseeanswers; // "yes" or "no"....   ifWantToSeeAnswers
+            bool ifSeeAnswers;
+            bool ifCorrect1; // true if they get the first answer correct
+            
 
             //Init variables
             q1 = ('a');
@@ -25,28 +29,32 @@ namespace lesson5
             q4 = ('a');
             q4 = ('a');
             gradescore = 0;
+            correctAnswer1 = 'A';
+            ifCorrect1 = false;
 
             // introdution to the user
             Console.WriteLine("This is a quiz on American history. I will ask you a question, then you will");
             Console.WriteLine(" write the letter associated with the answer. Hit enter wen you are done.");
             Console.WriteLine("Make sure you answer in capital letters.");
-            Console.WriteLine("(hit enter when you are ready:)");
+            Console.WriteLine("(hit enter when you are ready:)\n");
             Console.ReadKey();
 
             // Asking the first question
-            Console.WriteLine("The first President of the United States was:");
+            Console.WriteLine("\nThe first President of the United States was:");
             Console.WriteLine("A. Herbert Hoover");
             Console.WriteLine("B. George Wahington");
             Console.WriteLine("C. Mickey Mouse");
-            Console.Write("Your answer:");
+            Console.Write("\nYour answer:");
             q1 = (Char)Console.Read();
             Console.Read(); 
             Console.Read();  
 
             //Defining the end score
-            if (q1 == (char)142)
+            if( q1 == 'B')
+            //if (q1 == (char)142) //142 on the ASCII table is 'B'
             {
                 gradescore = gradescore + 1;
+                ifCorrect1 = true;
             }
             else
             {
@@ -157,6 +165,7 @@ namespace lesson5
                 gradescore += 2;
             }
 
+            //displaying final score
             if (gradescore == 5)
             {
                 Console.WriteLine("Congratulations!! You got an A!!");
@@ -172,74 +181,78 @@ namespace lesson5
                 Console.WriteLine("Better luck next time. You got a c.");
                 Console.WriteLine("You got 60% correct. Hey, it's better than an F. ");
             }
-            else if (gradescore <= 8)
+            else if (gradescore >= 8)
             {
                 Console.WriteLine("Sorry, you got an F.");
-                xConsole.WriteLine("You got lower than 60% correct. Better luck next time.");
+                Console.WriteLine("You got lower than 60% correct. Better luck next time.");
+            }
+            else
+            {
+                Console.WriteLine("No Score");
             }
           
             //Asking the user if they want the answers to the test
             Console.WriteLine("Would you like to see the answers? (lower case yes or no, then enter):"); 
-            ifwanttoseeanswers = Console.Readline();
-            if(ifwanttoseeanswers = yes)
+            ifwanttoseeanswers = Console.ReadLine();
+            if(ifwanttoseeanswers == "yes")
             {
              
-             //Showing the answers         
-             Console.WriteLine("How many planets are in our solar system:");
-             Console.WriteLine("NO A. 0");
-             Console.WriteLine("YES B. 8");
-             Console.WriteLine("NO C. 50");
-             Console.Write("Your answer:");
-             Console.WriteLine(q5);
+                 //Showing the answers         
+                 Console.WriteLine("How many planets are in our solar system:");
+                 Console.WriteLine("NO A. 0");
+                 Console.WriteLine("YES B. 8");
+                 Console.WriteLine("NO C. 50");
+                 Console.Write("Your answer:");
+                 Console.WriteLine(q5);
 
-             Console.WriteLine(" ");
-             Console.WriteLine("Press enter to continue:");
-             Console.ReadKey();
+                 Console.WriteLine(" ");
+                 Console.WriteLine("Press enter to continue:");
+                 Console.ReadKey();
 
-             Console.WriteLine("Who wrote the Declaration of Independance: ");
-             Console.WriteLine("YES A. Thomas Jefferson");
-             Console.WriteLine("NO B. Anders Hejlsberg");
-             Console.WriteLine("NO C. King George");
-             Console.Write("Your answer was: ");
-             Console.WriteLine(q4);
+                 Console.WriteLine("Who wrote the Declaration of Independance: ");
+                 Console.WriteLine("YES A. Thomas Jefferson");
+                 Console.WriteLine("NO B. Anders Hejlsberg");
+                 Console.WriteLine("NO C. King George");
+                 Console.Write("Your answer was: ");
+                 Console.WriteLine(q4);
 
-             Console.WriteLine(" ");
-             Console.WriteLine("Press enter to continue:");
-             Console.ReadKey();
+                 Console.WriteLine(" ");
+                 Console.WriteLine("Press enter to continue:");
+                 Console.ReadKey();
 
-             Console.WriteLine("Finish the statement: ");
-             Console.WriteLine("'Give me Liberty of give me ");
-             Console.WriteLine("NO A. Chick Fil A");
-             Console.WriteLine("NO B. A Hamberger");
-             Console.WriteLine("YES C. Death");
-             Console.Write("Your answer:");
-             Console.WriteLine(q3);
+                 Console.WriteLine("Finish the statement: ");
+                 Console.WriteLine("'Give me Liberty of give me ");
+                 Console.WriteLine("NO A. Chick Fil A");
+                 Console.WriteLine("NO B. A Hamberger");
+                 Console.WriteLine("YES C. Death");
+                 Console.Write("Your answer:");
+                 Console.WriteLine(q3);
 
-             Console.WriteLine(" ");
-             Console.WriteLine("Press enter to continue:");
-             Console.ReadKey();
+                 Console.WriteLine(" ");
+                 Console.WriteLine("Press enter to continue:");
+                 Console.ReadKey();
 
-             Console.WriteLine("Which state was the first state in the United states:");
-             Console.WriteLine("NO A. Maine");
-             Console.WriteLine("NO B. Virginia");
-             Console.WriteLine("YES C. Deleware");
-             Console.Write("Your answer:");
-             Console.WriteLine(q2);
+                 Console.WriteLine("Which state was the first state in the United states:");
+                 Console.WriteLine("NO A. Maine");
+                 Console.WriteLine("NO B. Virginia");
+                 Console.WriteLine("YES C. Deleware");
+                 Console.Write("Your answer:");
+                 Console.WriteLine(q2);
 
-             Console.WriteLine(" ");
-             Console.WriteLine("Press enter to continue:");
-             Console.ReadKey();
+                 Console.WriteLine(" ");
+                 Console.WriteLine("Press enter to continue:");
+                 Console.ReadKey();
 
-             Console.WriteLine("The first President of the United States was:");
-             Console.WriteLine("A. Herbert Hoover");
-             Console.WriteLine("B. George Wahington");
-             Console.WriteLine("C. Mickey Mouse");
-             Console.Write("Your answer:");
-             Console.WriteLine(q1);
+                 Console.WriteLine("The first President of the United States was:");
+                 Console.WriteLine("A. Herbert Hoover");
+                 Console.WriteLine("B. George Wahington");
+                 Console.WriteLine("C. Mickey Mouse");
+                 Console.Write("Your answer:");
+                 Console.WriteLine(q1);
 
-            }
-        
-        
-        }
+            }// end of     if(ifwanttoseeanswers == "yes")
+
+
+        }// End of main
     }
 }

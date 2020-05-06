@@ -24,7 +24,6 @@ public class playerscript2 : MonoBehaviour
             Instantiate(template);
 
         }
-        
         if (Input.GetKey(KeyCode.D))
         {
             tf.position = new Vector3((float)(tf.position.x + 0.2), tf.position.y, tf.position.z);
@@ -43,11 +42,5 @@ public class playerscript2 : MonoBehaviour
             tf.position = new Vector3((tf.position.x), tf.position.y, (float)(tf.position.z - .2));
         }
    
-        if (Input.GetKey(KeyCode.P))
-        {
-            Instantiate(template);
-
-        }
-        
     }
 }

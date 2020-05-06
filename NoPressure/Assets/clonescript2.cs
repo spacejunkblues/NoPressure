@@ -28,6 +28,8 @@ public class clonescript2 : MonoBehaviour
         {
             Destroy(clone);
         }
+        rb.AddForce(10, 0, 0);
+    
     }
 
     

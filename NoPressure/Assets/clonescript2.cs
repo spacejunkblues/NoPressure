@@ -7,78 +7,79 @@ using UnityEngine;
 
 public class clonescript2 : MonoBehaviour
 {
-    
-    public material[] playershade;
-    bool bl;
-    private Vector3 v3;
-    int counter;
-    public GameObject clone;
-    public Rigidbody rb;
+    //Declaring variables and references
     public Transform tf;
+    public Rigidbody rb;
+    public GameObject clone;
+    public Material[] material;
+    public int i;
+    Renderer rend;
+    int counter = 0;
+    
+    //Init variables
+    
+
     // Start is called before the first frame update
-    void FixedUpdate()
+    void Update()
     {
-
-        counter += 1;
-        if (tf.position.x >= 66) 
-        {
-            Destroy(clone);
-        }
-        if (tf.position.x <= 0)
-        {
-            Destroy(clone);
-        }
-
-        //out of range on the Z axis
-        if (tf.position.z >= 80 || tf.position.z <= 30)
-        {
-            Destroy(clone);
-        }
-        rb.AddForce(0, 0, 0);
-        
+     
+     rend.sharedMaterial = material[i]; 
+     if(Input.GetKey(KeyCode.O))
+     {      
+       Instantiate(clone);      
+       nextcolor();
        
+       
+     }
+     if (Input.GetKey(KeyCode.H))
+     {
+       Destroy((GameObject)clone);
+       Destroy(this);
+     }
+     if(Input.GetKey(KeyCode.P))
+     {
+       rb.AddForce(14, 13, 0);
+     } 
+
+    }
+    void Start()
+    {
+        rend = clone.GetComponent<Renderer>();
+        rend.enabled = true;
+        rend.sharedMaterial = material[i];
         
-        if(Input.GetKey(KeyCode.O))
-        {
-          Instantiate(clone);
-           
-        }
-        if(counter == 700)
-        {
-          Destroy(clone);
-        }
-        if(counter == 700)
-        {
-          Destroy(clone);
-        }
-        if(counter == 700)
-        {
-          Destroy(clone);
-        }
-        if(counter == 700)
-        {
-          Destroy(clone);
-        }
-        if(Input.GetKey(KeyCode.H))
-        {
-          Destroy(clone);
-          
-        }
-        if(Input.GetKey(KeyCode.P))
-        {
-          bl = true;
-        }
-        if(bl == true)
-        {
-           tf.position = new Vector3(v3.x + tf.position.x, v3.y + tf.position.y, v3.z + tf.position.z );
-           bl = false;
-        } 
+        tf.position =  new Vector3(tf.position.x, tf.position.y, tf.position.z + (float) 2.0);
         
     
     }
-     void Start()
-     {
-         v3 =  Random.insideUnitCircle * 1;
-     }
-    
+    public void nextcolor()
+    {
+      
+      if(i<2)
+      {
+
+       i++;
+      }
+      else
+      {
+        i += 1;
+      }
+
+    }
+    void FixedUpdate()
+    {
+      counter += 1;
+
+      if(counter == 300)
+      {
+        Destroy(clone);
+      }
+      if(counter == 50)
+      {
+        nextcolor();
+      } 
+
+
+    }
+
 }

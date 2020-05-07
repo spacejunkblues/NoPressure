@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{F3C263AE-FB9F-4A3D-A175-C0ED96E26D55}|Default">
+  <MonoDevelop.Ide.ItemProperties.lesson6hw PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="lesson6hw/Program.cs">
+    <Files>
+      <File FileName="lesson6hw/Program.cs" Line="43" Column="65" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="lesson6hw" expanded="True">
+            <Node name="lesson6hw" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>IntHowManyNumbers2</Value>
+          <Value>IntHowManyNumbers1</Value>
+          <Value>MathAdditionAnswer</Value>
+          <Value>MathMultiplicationAnswer</Value>
+          <Value>mathnumber1</Value>
+          <Value>mathnumber2</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

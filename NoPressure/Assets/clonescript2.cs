@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class clonescript2 : MonoBehaviour
 {
+    //Declaring variables and references
     public Transform tf;
     public Rigidbody rb;
     public GameObject clone;
     public Material[] material;
     public int i;
     Renderer rend;
+    int counter = 0;
+    
+    //Init variables
+    
+
     // Start is called before the first frame update
     void Update()
     {
+     
      rend.sharedMaterial = material[i]; 
      if(Input.GetKey(KeyCode.O))
      {      
@@ -23,11 +30,12 @@ public class clonescript2 : MonoBehaviour
      }
      if (Input.GetKey(KeyCode.H))
      {
-       Destroy(clone);
+       Destroy((GameObject)clone);
+       Destroy(this);
      }
      if(Input.GetKey(KeyCode.P))
      {
-       rb.AddForce(14, 10, 0);
+       rb.AddForce(14, 13, 0);
      } 
 
     }
@@ -37,8 +45,8 @@ public class clonescript2 : MonoBehaviour
         rend.enabled = true;
         rend.sharedMaterial = material[i];
         
-        tf.position =  new Vector3(tf.position.x , tf.position.y, tf.position.z + (float)0.2);
-    
+        tf.position =  new Vector3(tf.position.x, tf.position.y, tf.position.z + (float) 2.0);
+        
     
     }
     public void nextcolor()
@@ -55,5 +63,21 @@ public class clonescript2 : MonoBehaviour
       }
 
     }
-    
+    void FixedUpdate()
+    {
+      counter += 1;
+
+      if(counter == 300)
+      {
+        Destroy(clone);
+      }
+      if(counter == 50)
+      {
+        nextcolor();
+      } 
+
+
+    }
+
+
 }

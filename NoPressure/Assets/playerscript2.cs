@@ -5,26 +5,36 @@ using UnityEngine;
 public class playerscript2 : MonoBehaviour
 {   
     public Transform tf;
+    private Rigidbody clonerb;
     private Transform clonetf;
     public GameObject template;
     public Rigidbody rb;
+    private Material[] mat;
+    Renderer rend;
+    int o = 0;
+
     // Start is called before the first frame update
 
     private void Start()
     {
-        
+        rend = template.GetComponent<Renderer>();
+        rend.enabled = true;
+        rend.sharedMaterial = mat[o];
     }
 
     void Update()
-    {   clonetf = template.GetComponent<Transform>();
+    {  
+            clonerb = template.GetComponent<Rigidbody>();
+            clonetf = template.GetComponent<Transform>();
             clonetf.position = tf.position;
         if (Input.GetKey(KeyCode.C))
         {
+            
+            
             Instantiate(template);
             Instantiate(template);
-            Instantiate(template);
-            Instantiate(template);
-            clonetf.position =  new Vector3(tf.position.x , tf.position.y, tf.position.z + (float)0.2);
+            clonetf.position =  new Vector3(tf.position.x , tf.position.y, tf.position.z + (float)12.0);
+            nextcolor();
         }
         
         if (Input.GetKey(KeyCode.D))
@@ -47,5 +57,19 @@ public class playerscript2 : MonoBehaviour
    
         
         
+    }
+     public void nextcolor()
+    {
+      
+      if(o<2)
+      {
+
+       o += 1;
+      }
+      else
+      {
+        o += 1;
+      }
+
     }
 }

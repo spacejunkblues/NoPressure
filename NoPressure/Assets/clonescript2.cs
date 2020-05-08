@@ -15,14 +15,22 @@ public class clonescript2 : MonoBehaviour
     public int i;
     Renderer rend;
     int counter = 0;
-    
-    //Init variables
-    
+    int countercounterpart = 0;
+    public GameObject player;
+    private Rigidbody playerrb;
+    private Transform playertf;
 
     // Start is called before the first frame update
     void Update()
     {
-     
+      playerrb = player.GetComponent<Rigidbody>();
+      playertf = player.GetComponent<Transform>();
+      if(Input.GetKey(KeyCode.T))
+      {
+        tf.position =  new Vector3(playertf.position.x , playertf.position.y, playertf.position.z);
+      
+      }
+
      rend.sharedMaterial = material[i]; 
      if(Input.GetKey(KeyCode.O))
      {      
@@ -34,7 +42,7 @@ public class clonescript2 : MonoBehaviour
      if (Input.GetKey(KeyCode.H))
      {
        Destroy((GameObject)clone);
-       Destroy(this);
+       
      }
      if(Input.GetKey(KeyCode.P))
      {
@@ -44,11 +52,12 @@ public class clonescript2 : MonoBehaviour
     }
     void Start()
     {
+        tf.position = new Vector3(tf.position.x, tf.position.y, tf.position.z + (float) 1.0);
         rend = clone.GetComponent<Renderer>();
         rend.enabled = true;
         rend.sharedMaterial = material[i];
-        
-        tf.position =  new Vector3(tf.position.x, tf.position.y, tf.position.z + (float) 2.0);
+        rb.AddForce(0, 0, 50);
+        tf.position =  new Vector3(tf.position.x, tf.position.y, tf.position.z + (float) 1.0);
         
     
     }
@@ -68,15 +77,53 @@ public class clonescript2 : MonoBehaviour
     }
     void FixedUpdate()
     {
+          if(tf.position.y < 20)
+          {
+            rb.AddForce(0, 10, 0);
+          } 
+          if(tf.position.y > 40)
+          {
+            rb.AddForce(0, -10, 0);
+          }
+          if(tf.position.x > 60)
+          {
+            rb.AddForce(-30, 0, 0);
+          }
+          if(tf.position.z < 20)
+          {
+            rb.AddForce(-30, 0, 0);
+          }
+      
+      
+          if(tf.position.x < 10)
+          {
+            rb.AddForce(30, 0, 0);
+          }
+      
+      
+      if (counter <= 5)
+      {
+          rb.AddForce(0, 0, 500);
+      }
+      
+      void OnCollisionEnter(Collision CollisionInfo)
+    {
+
+      Destroy(clone);
+
+        
+
+    }
       counter += 1;
 
-      if(counter == 300)
+      if(counter == 2000)
       {
         Destroy(clone);
       }
-      if(counter == 50)
+      if(counter >= countercounterpart)
       {
         nextcolor();
+        countercounterpart += 100;
       } 
 
 

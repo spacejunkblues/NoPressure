@@ -7,7 +7,6 @@ public class playerscript2 : MonoBehaviour
     
     
     private Vector3 v3;
-    private Rigidbody clonerb;
     public Transform tf;
     private Rigidbody clonerb;
     private Transform clonetf;
@@ -31,6 +30,7 @@ public class playerscript2 : MonoBehaviour
             clonerb = template.GetComponent<Rigidbody>();
             clonetf = template.GetComponent<Transform>();
             clonetf.position = tf.position;
+        
         if (Input.GetKey(KeyCode.C))
         {
             
@@ -38,6 +38,7 @@ public class playerscript2 : MonoBehaviour
             Instantiate(template);
             Instantiate(template);
             clonetf.position =  new Vector3(tf.position.x , tf.position.y, tf.position.z + (float)12.0);
+            clonetf.position = new Vector3(tf.position.x , tf.position.y, tf.position.z + (float)48.0);
             nextcolor();
         }
         if (Input.GetKey(KeyCode.D))

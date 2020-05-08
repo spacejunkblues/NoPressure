@@ -9,7 +9,6 @@ public class playerscript2 : MonoBehaviour
     private Vector3 v3;
     private Rigidbody clonerb;
     public Transform tf;
-    private Rigidbody clonerb;
     private Transform clonetf;
     public GameObject template;
     public Rigidbody rb;

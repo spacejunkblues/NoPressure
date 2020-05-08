@@ -1,0 +1,12 @@
+/Users/maggiefleck/Documents/GitHub/NoPressure/lesson6hw/lesson6hw/bin/Debug/lesson6hw.exe
+/Users/maggiefleck/Documents/GitHub/NoPressure/lesson6hw/lesson6hw/bin/Debug/lesson6hw.pdb
+/Users/maggiefleck/Documents/GitHub/NoPressure/lesson6hw/lesson6hw/obj/Debug/lesson6hw.csprojAssemblyReference.cache
+/Users/maggiefleck/Documents/GitHub/NoPressure/lesson6hw/lesson6hw/obj/Debug/lesson6hw.csproj.CoreCompileInputs.cache
+/Users/maggiefleck/Documents/GitHub/NoPressure/lesson6hw/lesson6hw/obj/Debug/lesson6hw.exe
+/Users/maggiefleck/Documents/GitHub/NoPressure/lesson6hw/lesson6hw/obj/Debug/lesson6hw.pdb
+C:\Users\User\Documents\GitHub\NoPressure\lesson6hw\lesson6hw\bin\Debug\lesson6hw.exe
+C:\Users\User\Documents\GitHub\NoPressure\lesson6hw\lesson6hw\bin\Debug\lesson6hw.pdb
+C:\Users\User\Documents\GitHub\NoPressure\lesson6hw\lesson6hw\obj\Debug\lesson6hw.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\lesson6hw\lesson6hw\obj\Debug\lesson6hw.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\lesson6hw\lesson6hw\obj\Debug\lesson6hw.exe
+C:\Users\User\Documents\GitHub\NoPressure\lesson6hw\lesson6hw\obj\Debug\lesson6hw.pdb

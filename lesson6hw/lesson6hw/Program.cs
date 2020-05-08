@@ -43,15 +43,17 @@ namespace lesson6hw
                 Console.WriteLine("0 before it. :) Thank you!! :");
 
                 //Collecting the amount of numbers that are going to be calculated
-                IntHowManyNumbers1 = (char)Console.Read();
-                IntHowManyNumbers2 = (char)Console.Read();
+                IntHowManyNumbers1 = Console.Read();
+                IntHowManyNumbers2 = Console.Read();
+                Console.Read();
+                Console.Read();
 
                 //Compiling input data
                 IntHowManyNumbers2  = (IntHowManyNumbers2 - 48) + (IntHowManyNumbers1 - 48) * 10;
                 LoopNumber2 = IntHowManyNumbers2;
 
                 //Calculating loop
-                while (LoopFlag != LoopNumber2)
+                /*while (LoopFlag != LoopNumber2)
                 {
                     //Getting the first number
                     Console.WriteLine(" ");
@@ -59,7 +61,10 @@ namespace lesson6hw
                     Console.WriteLine("First number, then enter. do the first number, then enter.");
                     Console.WriteLine("And so on and so forth. :");
                     mathnumber1 = (mathnumber1 * 10) + Console.Read();
+                    Console.Read();
+                    Console.Read();
                     mathnumber1 = mathnumber1 - 48;
+                    
 
                     //Getting the second number
                     Console.WriteLine(" ");
@@ -67,18 +72,58 @@ namespace lesson6hw
                     Console.WriteLine("First number, then enter. do the first number, then enter.");
                     Console.WriteLine("And so on and so forth. :");
                     mathnumber2 = (mathnumber2 * 10) + Console.Read();
+                    Console.Read();
+                    Console.Read();
                     mathnumber2 = mathnumber2 - 48;
 
                     LoopFlag = LoopFlag + 1;
+                }*/
+
+
+                LoopFlag = 0;
+                MathAdditionAnswer = 0;
+                MathMultiplicationAnswer = 1;
+                //Calculating loop
+                while (LoopFlag != LoopNumber2)
+                {
+                    int digit1;
+                    int digit2;
+
+                    //Getting the first number
+                    Console.WriteLine(" ");
+                    Console.WriteLine(" ");
+                    Console.Write(LoopFlag + 1);
+                    Console.WriteLine(": number, then enter. do the first number, then enter.");
+                    Console.WriteLine("And so on and so forth. :");
+
+                    digit1 =  Console.Read();   //get first digit so, the digit 1 in "10"
+                    digit2 = Console.Read();    //so, the digit 0 in "10"
+                    Console.Read();
+                    Console.Read();
+
+                    mathnumber1 = ((digit1 -48) * 10) + (digit2 -48); //take the 1, times ten add it to zero
+
+                    //mathnumber1 is now the first number to add
+
+
+                    //take the math number and add it to our total
+                    MathAdditionAnswer += mathnumber1;
+
+
+                    //take the math number and add it to our total
+                    MathMultiplicationAnswer *= mathnumber1;
+
+                    LoopFlag += 1;
                 }
+
 
                 //Clearing the buffer
                 Console.WriteLine(" ");
                 Console.WriteLine(" ");
 
                 //Calculating the numbers
-                MathAdditionAnswer = mathnumber1 + mathnumber2;
-                MathMultiplicationAnswer = mathnumber1 * mathnumber2;
+               // MathAdditionAnswer = mathnumber1 + mathnumber2;
+                //MathMultiplicationAnswer = mathnumber1 * mathnumber2;
 
                 //Giving the calculated numbers
                 Console.WriteLine("Multiplication answer:");

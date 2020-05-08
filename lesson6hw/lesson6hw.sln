@@ -1,6 +1,7 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson6hw", "lesson6hw\lesson6hw.csproj", "{F3C263AE-FB9F-4A3D-A175-C0ED96E26D55}"
 EndProject
 Global
@@ -9,9 +10,15 @@ Global
 		Release|anycpu = Release|anycpu
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F3C263AE-FB9F-4A3D-A175-C0ED96E26D55}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{F3C263AE-FB9F-4A3D-A175-C0ED96E26D55}.Debug|anycpu.Build.0 = Debug|anycpu
-		{F3C263AE-FB9F-4A3D-A175-C0ED96E26D55}.Release|anycpu.ActiveCfg = Release|anycpu
-		{F3C263AE-FB9F-4A3D-A175-C0ED96E26D55}.Release|anycpu.Build.0 = Release|anycpu
+		{F3C263AE-FB9F-4A3D-A175-C0ED96E26D55}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{F3C263AE-FB9F-4A3D-A175-C0ED96E26D55}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{F3C263AE-FB9F-4A3D-A175-C0ED96E26D55}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{F3C263AE-FB9F-4A3D-A175-C0ED96E26D55}.Release|anycpu.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8BEE998-FC20-49AF-826C-3F88E8626885}
 	EndGlobalSection
 EndGlobal

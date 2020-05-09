@@ -19,6 +19,7 @@ public class clonescript2 : MonoBehaviour
     public GameObject player;
     private Rigidbody playerrb;
     private Transform playertf;
+    int velocity = 0;
 
     // Start is called before the first frame update
     void Update()
@@ -41,7 +42,7 @@ public class clonescript2 : MonoBehaviour
      }
      if (Input.GetKey(KeyCode.H))
      {
-       Destroy((GameObject)clone);
+       Destroy(clone);
        
      }
      if(Input.GetKey(KeyCode.P))
@@ -79,25 +80,30 @@ public class clonescript2 : MonoBehaviour
     {
           if(tf.position.y < 20)
           {
-            rb.AddForce(0, 10, 0);
+            rb.AddForce(0, 10 * velocity, 0);
+            velocity += 1;
           } 
           if(tf.position.y > 40)
           {
-            rb.AddForce(0, -10, 0);
+            rb.AddForce(0, -10 * velocity, 0);
+            velocity += 1; 
           }
           if(tf.position.x > 60)
           {
-            rb.AddForce(-30, 0, 0);
+            rb.AddForce(-30 * velocity, 0, 0);
+            velocity += 1;
           }
           if(tf.position.z < 20)
           {
-            rb.AddForce(-30, 0, 0);
+            rb.AddForce(-30 * velocity, 0, 0);
+            velocity += 1;
           }
       
       
           if(tf.position.x < 10)
           {
-            rb.AddForce(30, 0, 0);
+            rb.AddForce(30 * velocity, 0, 0);
+            velocity += 1;
           }
       
       
@@ -106,17 +112,10 @@ public class clonescript2 : MonoBehaviour
           rb.AddForce(0, 0, 500);
       }
       
-      void OnCollisionEnter(Collision CollisionInfo)
-    {
-
-      Destroy(clone);
-
-        
-
-    }
+      
       counter += 1;
 
-      if(counter == 2000)
+      if(counter == 1000)
       {
         Destroy(clone);
       }

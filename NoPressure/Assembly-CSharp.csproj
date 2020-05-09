@@ -55,15 +55,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BulletScript.cs" />
      <Compile Include="Assets\clonegeneratorscript.cs" />
      <Compile Include="Assets\clonescript.cs" />
      <Compile Include="Assets\clonescript2.cs" />
-     <Compile Include="Assets\player3script.cs" />
      <Compile Include="Assets\playerscript.cs" />
      <Compile Include="Assets\playerscript2.cs" />
      <Compile Include="Assets\screen.cs" />
      <Compile Include="Assets\textscript.cs" />
+     <Compile Include="Assets\wheel1script.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/maggiefleck/Documents/GitHub/NoPressure/NoPressure/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

@@ -39,6 +39,7 @@ public class playerscript2 : MonoBehaviour
             Instantiate(template);
             clonetf.position =  new Vector3(tf.position.x , tf.position.y, tf.position.z + (float)12.0);
             clonetf.position = new Vector3(tf.position.x , tf.position.y, tf.position.z + (float)48.0);
+            clonerb.AddForce(0, 0, 4);
             nextcolor();
         }
         if (Input.GetKey(KeyCode.D))

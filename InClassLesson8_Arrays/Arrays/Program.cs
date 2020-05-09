@@ -12,7 +12,12 @@ namespace Arrays
             Console.WriteLine(numbers[0]);
             Console.WriteLine(numbers[1]);
             Console.WriteLine(numbers[2]);
-
+            Console.Write("I'm going to add more for the second branch");
+            Console.Write("I'm going to add more for the second branch");
+            Console.Write("I'm going to add more for the second branch");
+            Console.Write("I'm going to add more for the second branch");
+            Console.Write("I'm going to add more for the second branch");
+            Console.Write("I'm going to add more for the second branch");
 
 
             Console.WriteLine(numbers[1]);

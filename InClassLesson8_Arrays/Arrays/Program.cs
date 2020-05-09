@@ -16,6 +16,7 @@ namespace Arrays
 
 
             Console.WriteLine(numbers[1]);
+            Console.Write("This is for branch1");
 
 
             //can be used for any datatype

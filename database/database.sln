@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "database", "database\database.csproj", "{285E20B6-E240-4EA0-AE0A-30D9F7CB3B0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{285E20B6-E240-4EA0-AE0A-30D9F7CB3B0F}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{285E20B6-E240-4EA0-AE0A-30D9F7CB3B0F}.Debug|anycpu.Build.0 = Debug|anycpu
+		{285E20B6-E240-4EA0-AE0A-30D9F7CB3B0F}.Release|anycpu.ActiveCfg = Release|anycpu
+		{285E20B6-E240-4EA0-AE0A-30D9F7CB3B0F}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+EndGlobal

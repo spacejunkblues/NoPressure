@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{285E20B6-E240-4EA0-AE0A-30D9F7CB3B0F}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="database/Program.cs">
     <Files>
-      <File FileName="database/Program.cs" Line="23" Column="71" />
+      <File FileName="database/Program.cs" Line="156" Column="30" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,18 +14,11 @@
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>IntHowManyNumbers2</Value>
-          <Value>IntHowManyNumbers1</Value>
-          <Value>MathAdditionAnswer</Value>
-          <Value>MathMultiplicationAnswer</Value>
-          <Value>mathnumber1</Value>
-          <Value>mathnumber2</Value>
-        </State>
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.database FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.database PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

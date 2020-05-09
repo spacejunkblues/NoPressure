@@ -4,7 +4,6 @@ C:\Users\User\Documents\GitHub\NoPressure\InClassLesson9_Pointers\InClassLesson9
 C:\Users\User\Documents\GitHub\NoPressure\InClassLesson9_Pointers\InClassLesson9\bin\Debug\netcoreapp3.1\InClassLesson9.runtimeconfig.dev.json
 C:\Users\User\Documents\GitHub\NoPressure\InClassLesson9_Pointers\InClassLesson9\bin\Debug\netcoreapp3.1\InClassLesson9.dll
 C:\Users\User\Documents\GitHub\NoPressure\InClassLesson9_Pointers\InClassLesson9\bin\Debug\netcoreapp3.1\InClassLesson9.pdb
-C:\Users\User\Documents\GitHub\NoPressure\InClassLesson9_Pointers\InClassLesson9\obj\Debug\netcoreapp3.1\InClassLesson9.csprojAssemblyReference.cache
 C:\Users\User\Documents\GitHub\NoPressure\InClassLesson9_Pointers\InClassLesson9\obj\Debug\netcoreapp3.1\InClassLesson9.csproj.CoreCompileInputs.cache
 C:\Users\User\Documents\GitHub\NoPressure\InClassLesson9_Pointers\InClassLesson9\obj\Debug\netcoreapp3.1\InClassLesson9.AssemblyInfoInputs.cache
 C:\Users\User\Documents\GitHub\NoPressure\InClassLesson9_Pointers\InClassLesson9\obj\Debug\netcoreapp3.1\InClassLesson9.AssemblyInfo.cs

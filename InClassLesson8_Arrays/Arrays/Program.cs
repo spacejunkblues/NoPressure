@@ -12,6 +12,10 @@ namespace Arrays
             Console.WriteLine(numbers[0]);
             Console.WriteLine(numbers[1]);
             Console.WriteLine(numbers[2]);
+            Console.Write("This is for branch1");
+            Console.Write("This is for branch1");
+            Console.Write("This is for branch1");
+            Console.Write("This is for branch1");
 
 
 

@@ -55,9 +55,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BulletScript.cs" />
      <Compile Include="Assets\clonegeneratorscript.cs" />
      <Compile Include="Assets\clonescript.cs" />
      <Compile Include="Assets\clonescript2.cs" />
+     <Compile Include="Assets\player3script.cs" />
      <Compile Include="Assets\playerscript.cs" />
      <Compile Include="Assets\playerscript2.cs" />
      <Compile Include="Assets\screen.cs" />

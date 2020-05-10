@@ -39,14 +39,16 @@ namespace database
                 Console.WriteLine("Would you like to (all Lower case)'add' a person, ");
                 Console.WriteLine("'view' everyone, 'who' is the oldest, ");
                 Console.WriteLine("or 'quit'? Keep in mind that 'quit' will end ");
-                Console.WriteLine("the program. :");
+                Console.Write("the program. :");
                 WhatTheUserWantsToDo = Console.ReadLine();
+                Console.WriteLine();
+                Console.WriteLine();
 
                 IfReenteredTheDatabaseMainFrame = true;
 
                 if (WhatTheUserWantsToDo == "add")
                 {
-
+                    //Asking for person's Information
                     Console.WriteLine("Okay, what is the person's name?");
                     Console.WriteLine("(Keep in mind that you kan do first and last");
                     Console.WriteLine("name, or just first name) :");
@@ -69,6 +71,7 @@ namespace database
                     AgeArray[i] += Console.Read();
                     AgeArray[i] -= 48;
 
+                    //If the user enters "0"
                     if (AgeArray[i] < 00)
                     {
                         Console.WriteLine("Sorry, a person's age cannot be 0.");
@@ -77,6 +80,8 @@ namespace database
                         AgeArray[i] -= 48;
                         AgeArray[i] *= 10;
                         AgeArray[i] = Console.Read();
+                        Console.Read();
+                        Console.Read();
                         AgeArray[i] -= 48;
                     }
 
@@ -152,7 +157,7 @@ namespace database
                     {
                         if (LoopIndex < 10)
                         {
-                            if (AgeArray[LoopIndex] < AgeArray[LoopIndex])
+                            if (AgeArray[LoopIndex] < AgeArray[LoopIndex + 1])
                             {
                                 WhosTheOldest = LoopIndex;
                             }
@@ -164,6 +169,16 @@ namespace database
                     Console.WriteLine(" ");
                     Console.WriteLine(" ");
                 }
+
+                if (WhatTheUserWantsToDo == "quit")
+                {
+                    LoopActivated = false;
+                }
+
+
+
+
+
 
                 //Clearing for next section
                 Console.WriteLine(" ");

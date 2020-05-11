@@ -17,7 +17,6 @@ namespace database
             bool IfReenteredTheDatabaseMainFrame = false;
             int i = 0;
             int WhosTheOldest = 0;
-            int LoopIndex = 0;
 
             //introduction to the user;
             Console.WriteLine("Hello, this is a database that can store");
@@ -39,7 +38,7 @@ namespace database
                 Console.WriteLine("Would you like to (all Lower case)'add' a person, ");
                 Console.WriteLine("'view' everyone, 'who' is the oldest, ");
                 Console.WriteLine("or 'quit'? Keep in mind that 'quit' will end ");
-                Console.Write("the program. :");
+                Console.Write("the program. (Press enter when you are done) :");
                 WhatTheUserWantsToDo = Console.ReadLine();
                 Console.WriteLine();
                 Console.WriteLine();
@@ -54,17 +53,19 @@ namespace database
                     Console.WriteLine("name, or just first name) :");
                     NameArray[i] = Console.ReadLine();
                     if (NameArray[i] == "0")
-                    {
-                        
-                        
+                    {                      
                             Console.WriteLine("Sorry, your input is not recognized.");
                             Console.WriteLine("Try again:");
                             NameArray[i] = Console.ReadLine();
-                         
                     }
                     Console.WriteLine(" ");
 
-                    Console.WriteLine("Okay, what is the person's age? (2 digits. if it is singular, make sure you put a 0 before it):");
+                    Console.WriteLine("Okay, what is the person's age?");
+                    Console.WriteLine("2 digits. if it is singular, make sure you put a 0 before it.");
+                    Console.WriteLine("Remember, it only takes 2 digits, so once it sees 2 digits, it will be over. :");
+                    Console.WriteLine("Press any key when you're ready:");
+                    Console.ReadKey();
+
                     AgeArray[i] = Console.Read();
                     AgeArray[i] -= 48; 
                     AgeArray[i] *= 10;
@@ -93,10 +94,23 @@ namespace database
                     Console.Write(AgeArray[i]);
                     Console.WriteLine(", has added to the database.");
 
+                    if (i != 0)
+                    {
+
+                        if (AgeArray[i] > AgeArray[i - 1])
+                        {
+                            WhosTheOldest = i;
+                        }
+
+                    }
+
                     i += 1;
 
                     Console.WriteLine("Press any key to continue");
                     Console.ReadKey();
+
+
+                    
 
                     //Clearing the buffer
                     Console.WriteLine(" ");
@@ -109,39 +123,47 @@ namespace database
                     Console.Write(", Age ");
                     Console.WriteLine(AgeArray[0]);
 
-
+                    Console.WriteLine(" ");
                     Console.Write(NameArray[1]);
                     Console.Write(", Age ");
                     Console.WriteLine(AgeArray[1]);
 
+                    Console.WriteLine(" ");
                     Console.Write(NameArray[2]);
                     Console.Write(", Age ");
                     Console.WriteLine(AgeArray[2]);
 
+                    Console.WriteLine(" ");
                     Console.Write(NameArray[3]);
                     Console.Write(", Age ");
                     Console.WriteLine(AgeArray[3]);
 
+                    Console.WriteLine(" ");
                     Console.Write(NameArray[4]);
                     Console.Write(", Age ");
                     Console.WriteLine(AgeArray[4]);
 
+                    Console.WriteLine(" ");
                     Console.Write(NameArray[5]);
                     Console.Write(", Age ");
                     Console.WriteLine(AgeArray[5]);
 
+                    Console.WriteLine(" ");
                     Console.Write(NameArray[6]);
                     Console.Write(", Age ");
                     Console.WriteLine(AgeArray[6]);
 
+                    Console.WriteLine(" ");
                     Console.Write(NameArray[7]);
                     Console.Write(", Age ");
                     Console.WriteLine(AgeArray[7]);
 
+                    Console.WriteLine(" ");
                     Console.Write(NameArray[8]);
                     Console.Write(", Age ");
                     Console.WriteLine(AgeArray[8]);
 
+                    Console.WriteLine(" ");
                     Console.Write(NameArray[9]);
                     Console.Write(", Age ");
                     Console.WriteLine(AgeArray[9]);
@@ -154,8 +176,19 @@ namespace database
                 if (WhatTheUserWantsToDo == "who")
                 {
 
-                    
-                        
+                    Console.Write(NameArray[WhosTheOldest]);
+                    Console.Write(", age ");
+                    Console.Write(AgeArray[WhosTheOldest]);
+                    Console.WriteLine(", is the oldest.");
+
+                    //Clearing the buffer
+                    Console.Write(" ");
+                    Console.Write(" ");
+
+                    Console.WriteLine("Press any key to continue:");
+                    Console.ReadKey();
+
+
                 }
 
                 if (WhatTheUserWantsToDo == "quit")

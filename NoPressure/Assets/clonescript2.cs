@@ -78,58 +78,19 @@ public class clonescript2 : MonoBehaviour
     }
     void FixedUpdate()
     {
-          if(tf.position.y < 20)
-          {
-            rb.AddForce(0, 10 * velocity, 0);
-            velocity += 1;
-          } 
-         
           
-          
-          
-          if(tf.position.y > 40)
-          {
-            rb.AddForce(0, -10 * velocity, 0);
-            velocity += 1; 
-          }
-          
-          
-          if(tf.position.x > 60)
-          {
-            rb.AddForce(-30 * velocity, 0, 0);
-            velocity += 1;
-          }
-          
-          if(tf.position.z < 10)
-          {
-            rb.AddForce( 0, 0, 30 * velocity);
-          }
-          
-          
-          if(tf.position.z < 20)
-          {
-            rb.AddForce( 0, 0, -30 * velocity);
-            velocity += 1;
-          }
-          
-      
-          if(tf.position.x < 10)
-          {
-            rb.AddForce(30 * velocity, 0, 0);
-            velocity += 1;
-          }
           
 
       
-      if (counter <= 5)
+      if (counter <= 10)
       {
-          rb.AddForce(0, 0, 500);
+          rb.AddForce(0, 0, 300);
       }
       
       
       counter += 1;
 
-      if(counter == 1000)
+      if(counter == 500)
       {
         Destroy(clone);
       }

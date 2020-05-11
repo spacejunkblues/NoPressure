@@ -20,6 +20,7 @@ public class playerscript2 : MonoBehaviour
 
     private void Start()
     {
+       
         rend = template.GetComponent<Renderer>();
         rend.enabled = true;
         rend.sharedMaterial = mat[o];

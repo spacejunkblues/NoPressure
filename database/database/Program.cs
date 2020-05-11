@@ -153,21 +153,9 @@ namespace database
 
                 if (WhatTheUserWantsToDo == "who")
                 {
-                    for (LoopIndex = 0; LoopIndex < 10; LoopIndex += 1)
-                    {
-                        if (LoopIndex < 10)
-                        {
-                            if (AgeArray[LoopIndex] < AgeArray[LoopIndex + 1])
-                            {
-                                WhosTheOldest = LoopIndex;
-                            }
-                        }
-                    }
 
-                    Console.WriteLine("Press any key to continue");
-                    Console.ReadKey();
-                    Console.WriteLine(" ");
-                    Console.WriteLine(" ");
+                    
+                        
                 }
 
                 if (WhatTheUserWantsToDo == "quit")

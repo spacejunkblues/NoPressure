@@ -83,29 +83,43 @@ public class clonescript2 : MonoBehaviour
             rb.AddForce(0, 10 * velocity, 0);
             velocity += 1;
           } 
+         
+          
+          
+          
           if(tf.position.y > 40)
           {
             rb.AddForce(0, -10 * velocity, 0);
             velocity += 1; 
           }
+          
+          
           if(tf.position.x > 60)
           {
             rb.AddForce(-30 * velocity, 0, 0);
             velocity += 1;
           }
+          
+          if(tf.position.z < 10)
+          {
+            rb.AddForce( 0, 0, 30 * velocity);
+          }
+          
+          
           if(tf.position.z < 20)
           {
-            rb.AddForce(-30 * velocity, 0, 0);
+            rb.AddForce( 0, 0, -30 * velocity);
             velocity += 1;
           }
-      
+          
       
           if(tf.position.x < 10)
           {
             rb.AddForce(30 * velocity, 0, 0);
             velocity += 1;
           }
-      
+          
+
       
       if (counter <= 5)
       {

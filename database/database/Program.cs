@@ -15,8 +15,10 @@ namespace database
             string WhatTheUserWantsToDo = "0";
             bool LoopActivated = true;
             bool IfReenteredTheDatabaseMainFrame = false;
-            int i = 0;
-            int WhosTheOldest = 0;
+            bool IfEquals = false;int i = 0;
+            int IntWhosTheOldest = 0;
+            int WhoTheHeckIsEquals1 = 0;
+            int WhoTheHeckIsEquals2 = 0;
 
             //introduction to the user;
             Console.WriteLine("Hello, this is a database that can store");
@@ -66,6 +68,9 @@ namespace database
                     Console.WriteLine("Press any key when you're ready:");
                     Console.ReadKey();
 
+                    Console.WriteLine(" ");
+                    Console.WriteLine("Okay, what is the're Age:");
+
                     AgeArray[i] = Console.Read();
                     AgeArray[i] -= 48; 
                     AgeArray[i] *= 10;
@@ -94,18 +99,28 @@ namespace database
                     Console.Write(AgeArray[i]);
                     Console.WriteLine(", has added to the database.");
 
+                    //This is to make sure who is the oldest. see line 192 for exact for further Code on this topic
                     if (i != 0)
                     {
 
                         if (AgeArray[i] > AgeArray[i - 1])
                         {
-                            WhosTheOldest = i;
+                            IntWhosTheOldest = i;
+                            IfEquals = false;
+                        }
+                        else if (AgeArray[i -1] == AgeArray[i])
+                        {
+                            IfEquals = true;
+                            WhoTheHeckIsEquals1 = i;
+                            WhoTheHeckIsEquals2 = i - 1;
                         }
 
                     }
 
+                    //This makes sure the program doesn't Overwrite other Information
                     i += 1;
 
+                    //This will stop the program from moving on immediately. see line 184 for same code
                     Console.WriteLine("Press any key to continue");
                     Console.ReadKey();
 
@@ -117,80 +132,166 @@ namespace database
                     Console.WriteLine(" ");
 
                 }
+
+                //This will run if the user typed the word 'view'
                 if (WhatTheUserWantsToDo == "view")
                 {
-                    Console.Write(NameArray[0]);
-                    Console.Write(", Age ");
-                    Console.WriteLine(AgeArray[0]);
+                    //This makes sure there is Information in the Database
+                    if (AgeArray[0] != 0)
+                    {
+                        //The rest is the same, exept individualy
+                        Console.Write(NameArray[0]);
+                        Console.Write(", Age ");
+                        Console.WriteLine(AgeArray[0]);
 
-                    Console.WriteLine(" ");
-                    Console.Write(NameArray[1]);
-                    Console.Write(", Age ");
-                    Console.WriteLine(AgeArray[1]);
+                        if (AgeArray[1] != 0)
+                        {
+                            Console.WriteLine(" ");
+                            Console.Write(NameArray[1]);
+                            Console.Write(", Age ");
+                            Console.WriteLine(AgeArray[1]);
+                        }
 
-                    Console.WriteLine(" ");
-                    Console.Write(NameArray[2]);
-                    Console.Write(", Age ");
-                    Console.WriteLine(AgeArray[2]);
+                        if (AgeArray[2] != 0)
+                        {
+                            Console.WriteLine(" ");
+                            Console.Write(NameArray[2]);
+                            Console.Write(", Age ");
+                            Console.WriteLine(AgeArray[2]);
+                        }
 
-                    Console.WriteLine(" ");
-                    Console.Write(NameArray[3]);
-                    Console.Write(", Age ");
-                    Console.WriteLine(AgeArray[3]);
+                        if (AgeArray[3] != 0)
+                        {
+                            Console.WriteLine(" ");
+                            Console.Write(NameArray[3]);
+                            Console.Write(", Age ");
+                            Console.WriteLine(AgeArray[3]);
+                        }
 
-                    Console.WriteLine(" ");
-                    Console.Write(NameArray[4]);
-                    Console.Write(", Age ");
-                    Console.WriteLine(AgeArray[4]);
+                        if (AgeArray[4] != 0)
+                        {
+                            Console.WriteLine(" ");
+                            Console.Write(NameArray[4]);
+                            Console.Write(", Age ");
+                            Console.WriteLine(AgeArray[4]);
+                        }
 
-                    Console.WriteLine(" ");
-                    Console.Write(NameArray[5]);
-                    Console.Write(", Age ");
-                    Console.WriteLine(AgeArray[5]);
+                        if (AgeArray[5] != 0)
+                        {
+                            Console.WriteLine(" ");
+                            Console.Write(NameArray[5]);
+                            Console.Write(", Age ");
+                            Console.WriteLine(AgeArray[5]);
+                        }
 
-                    Console.WriteLine(" ");
-                    Console.Write(NameArray[6]);
-                    Console.Write(", Age ");
-                    Console.WriteLine(AgeArray[6]);
+                        if (AgeArray[6] != 0)
+                        {
+                            Console.WriteLine(" ");
+                            Console.Write(NameArray[6]);
+                            Console.Write(", Age ");
+                            Console.WriteLine(AgeArray[6]);
+                        }
 
-                    Console.WriteLine(" ");
-                    Console.Write(NameArray[7]);
-                    Console.Write(", Age ");
-                    Console.WriteLine(AgeArray[7]);
+                        if (AgeArray[7] != 0)
+                        {
+                            Console.WriteLine(" ");
+                            Console.Write(NameArray[7]);
+                            Console.Write(", Age ");
+                            Console.WriteLine(AgeArray[7]);
+                        }
 
-                    Console.WriteLine(" ");
-                    Console.Write(NameArray[8]);
-                    Console.Write(", Age ");
-                    Console.WriteLine(AgeArray[8]);
+                        if (AgeArray[8] != 0)
+                        {
+                            Console.WriteLine(" ");
+                            Console.Write(NameArray[8]);
+                            Console.Write(", Age ");
+                            Console.WriteLine(AgeArray[8]);
+                        }
 
-                    Console.WriteLine(" ");
-                    Console.Write(NameArray[9]);
-                    Console.Write(", Age ");
-                    Console.WriteLine(AgeArray[9]);
+                        if (AgeArray[9] != 0)
+                        {
+                            Console.WriteLine(" ");
+                            Console.Write(NameArray[9]);
+                            Console.Write(", Age ");
+                            Console.WriteLine(AgeArray[9]);
+                        }
 
-                    Console.WriteLine("Press any key to continue:");
-                    Console.ReadKey();
+                        //This is so that the program will not move on immediately
+                        Console.WriteLine("Press any key to continue:");
+                        Console.ReadKey();
+                    }
+                    //This will run if there is no Information inthe Database
+                    else
+                    {
+                        //This prints to the screen that there is no Information in the Database
+                        Console.WriteLine("Sorry, there is no Information in the Database.");
+                        Console.WriteLine(" ");
+
+                        Console.WriteLine("Press any key to continue:");
+                        Console.ReadKey();
+                    }
 
                 }
 
+                //This will run if the user typed in the word 'who'
                 if (WhatTheUserWantsToDo == "who")
                 {
+                    if (AgeArray[0] != 0 || AgeArray[1] != 0)
+                    {
+                        //This will run if the oldest person is equal to another person
+                        if (IfEquals == true)
+                        {
 
-                    Console.Write(NameArray[WhosTheOldest]);
-                    Console.Write(", age ");
-                    Console.Write(AgeArray[WhosTheOldest]);
-                    Console.WriteLine(", is the oldest.");
+                            //This printing to the screen the oldest person
+                            Console.Write(NameArray[WhoTheHeckIsEquals1]);
+                            Console.Write(", age ");
+                            Console.Write(AgeArray[WhoTheHeckIsEquals1]);
+                            Console.Write(", and ");
+                            Console.Write(NameArray[WhoTheHeckIsEquals2]);
+                            Console.Write(", age ");
+                            Console.Write(AgeArray[WhoTheHeckIsEquals2]);
+                            Console.WriteLine(", are both the oldest.");
 
-                    //Clearing the buffer
-                    Console.Write(" ");
-                    Console.Write(" ");
+                            //This is so that the program wont move on Immediately
+                            Console.WriteLine("Press any key to continue:");
+                            Console.ReadKey();
 
-                    Console.WriteLine("Press any key to continue:");
-                    Console.ReadKey();
+                        }
 
+
+                        //This will run if there is someone older than anyone else
+                        if (IfEquals == false)
+                        {
+                            //Printing to the screen who is the oldest
+                            Console.Write(NameArray[IntWhosTheOldest]);
+                            Console.Write(", age ");
+                            Console.Write(AgeArray[IntWhosTheOldest]);
+                            Console.WriteLine(", is the oldest.");
+
+                            //Clearing the buffer
+                            Console.Write(" ");
+                            Console.Write(" ");
+
+                            //This is so that the program wont move on Immediately
+                            Console.WriteLine("Press any key to continue:");
+                            Console.ReadKey();
+                        }
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Sorry, there is no Information in the Database.");
+                        Console.WriteLine(" ");
+
+                        Console.WriteLine("Press any key to continue: ");
+                        Console.ReadKey();
+
+                    }
 
                 }
 
+                //This will run if the user typed in the word'quit'
+                //This will end the program
                 if (WhatTheUserWantsToDo == "quit")
                 {
                     LoopActivated = false;

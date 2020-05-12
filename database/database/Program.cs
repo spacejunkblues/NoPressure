@@ -19,6 +19,7 @@ namespace database
             int IntWhosTheOldest = 0;
             int WhoTheHeckIsEquals1 = 0;
             int WhoTheHeckIsEquals2 = 0;
+            string WhoTheUserWantsToDelete = "0";
 
             //introduction to the user;
             Console.WriteLine("Hello, this is a database that can store");
@@ -38,9 +39,12 @@ namespace database
 
                 //Asking the user what they want to do
                 Console.WriteLine("Would you like to (all Lower case)'add' a person, ");
-                Console.WriteLine("'view' everyone, 'who' is the oldest, ");
+                Console.WriteLine("'delete a person,'");
+                Console.WriteLine("'view' everyone, see 'who' is the oldest, ");
                 Console.WriteLine("or 'quit'? Keep in mind that 'quit' will end ");
-                Console.Write("the program. (Press enter when you are done) :");
+                Console.Write("the program.  ");
+                Console.WriteLine("Make sure you type the words that are marked with the ");
+                Console.WriteLine("'' symbols. (Press enter when you are done) :");
                 WhatTheUserWantsToDo = Console.ReadLine();
                 Console.WriteLine();
                 Console.WriteLine();
@@ -50,8 +54,9 @@ namespace database
                 if (WhatTheUserWantsToDo == "add")
                 {
                     //Asking for person's Information
+                    Console.WriteLine("Disclaimer: Read Instructions CAREFULLY:");
                     Console.WriteLine("Okay, what is the person's name?");
-                    Console.WriteLine("(Keep in mind that you kan do first and last");
+                    Console.WriteLine("(Keep in mind that you can do first and last");
                     Console.WriteLine("name, or just first name) :");
                     NameArray[i] = Console.ReadLine();
                     if (NameArray[i] == "0")
@@ -64,9 +69,7 @@ namespace database
 
                     Console.WriteLine("Okay, what is the person's age?");
                     Console.WriteLine("2 digits. if it is singular, make sure you put a 0 before it.");
-                    Console.WriteLine("Remember, it only takes 2 digits, so once it sees 2 digits, it will be over. :");
-                    Console.WriteLine("Press any key when you're ready:");
-                    Console.ReadKey();
+                    Console.WriteLine("Remember, it only takes 2 digits, so once it sees 2 digits, it will be over.");
 
                     Console.WriteLine(" ");
                     Console.WriteLine("Okay, what is the're Age:");
@@ -287,6 +290,158 @@ namespace database
                         Console.ReadKey();
 
                     }
+
+                }
+
+                if (WhatTheUserWantsToDo == "delete")
+                {
+                    //This makes sure there is Information in the Database
+                    if (AgeArray[0] != 0)
+                    {
+                        //The rest is the same, exept individualy
+                        Console.Write(NameArray[0]);
+                        Console.Write(", Age ");
+                        Console.WriteLine(AgeArray[0]);
+
+                        if (AgeArray[1] != 0)
+                        {
+
+                            Console.WriteLine(" ");
+                            Console.Write(NameArray[1]);
+                            Console.Write(", Age ");
+                            Console.WriteLine(AgeArray[1]);
+                        }
+
+                        if (AgeArray[2] != 0)
+                        {
+                            Console.WriteLine(" ");
+                            Console.Write(NameArray[2]);
+                            Console.Write(", Age ");
+                            Console.WriteLine(AgeArray[2]);
+                        }
+
+                        if (AgeArray[3] != 0)
+                        {
+                            Console.WriteLine(" ");
+                            Console.Write(NameArray[3]);
+                            Console.Write(", Age ");
+                            Console.WriteLine(AgeArray[3]);
+                        }
+
+                        if (AgeArray[4] != 0)
+                        {
+                            Console.WriteLine(" ");
+                            Console.Write(NameArray[4]);
+                            Console.Write(", Age ");
+                            Console.WriteLine(AgeArray[4]);
+                        }
+
+                        if (AgeArray[5] != 0)
+                        {
+                            Console.WriteLine(" ");
+                            Console.Write(NameArray[5]);
+                            Console.Write(", Age ");
+                            Console.WriteLine(AgeArray[5]);
+                        }
+
+                        if (AgeArray[6] != 0)
+                        {
+                            Console.WriteLine(" ");
+                            Console.Write(NameArray[6]);
+                            Console.Write(", Age ");
+                            Console.WriteLine(AgeArray[6]);
+                        }
+
+                        if (AgeArray[7] != 0)
+                        {
+                            Console.WriteLine(" ");
+                            Console.Write(NameArray[7]);
+                            Console.Write(", Age ");
+                            Console.WriteLine(AgeArray[7]);
+                        }
+
+                        if (AgeArray[8] != 0)
+                        {
+                            Console.WriteLine(" ");
+                            Console.Write(NameArray[8]);
+                            Console.Write(", Age ");
+                            Console.WriteLine(AgeArray[8]);
+                        }
+
+                        if (AgeArray[9] != 0)
+                        {
+                            Console.WriteLine(" ");
+                            Console.Write(NameArray[9]);
+                            Console.Write(", Age ");
+                            Console.WriteLine(AgeArray[9]);
+                        }
+                        Console.WriteLine(" ");
+                        Console.WriteLine(" ");
+
+                        Console.WriteLine("Of these, who would you like to delete?");
+                        Console.WriteLine("Make sure you type the're");
+                        Console.WriteLine("Entire name. Fell free to copy and paste:");
+
+                        WhoTheUserWantsToDelete = Console.ReadLine();
+                        if (WhoTheUserWantsToDelete == NameArray[0])
+                        {
+                            AgeArray[0] = 0;
+                        }
+                        if (WhoTheUserWantsToDelete == NameArray[1])
+                        {
+                            AgeArray[1] = 0;
+                        }
+                        if (WhoTheUserWantsToDelete == NameArray[2])
+                        {
+                            AgeArray[2] = 0;
+                        }
+                        if (WhoTheUserWantsToDelete == NameArray[3])
+                        {
+                            AgeArray[3] = 0;
+                        }
+                        if (WhoTheUserWantsToDelete == NameArray[4])
+                        {
+                            AgeArray[4] = 0;
+                        }
+                        if (WhoTheUserWantsToDelete == NameArray[5])
+                        {
+                            AgeArray[5] = 0;
+                        }
+                        if (WhoTheUserWantsToDelete == NameArray[6])
+                        {
+                            AgeArray[6] = 0;
+                        }
+                        if (WhoTheUserWantsToDelete == NameArray[7])
+                        {
+                            AgeArray[7] = 0;
+                        }
+                        if (WhoTheUserWantsToDelete == NameArray[8])
+                        {
+                            AgeArray[8] = 0;
+                        }
+                        if (WhoTheUserWantsToDelete == NameArray[9])
+                        {
+                            AgeArray[9] = 0;
+                        }
+
+
+
+                        //This is so that the program will not move on immediately
+                        Console.WriteLine("Press any key to continue:");
+                        Console.ReadKey();
+                    }
+                    //This will run if there is no Information inthe Database
+                    else
+                    {
+                        //This prints to the screen that there is no Information in the Database
+                        Console.WriteLine("Sorry, there is no Information in the Database.");
+                        Console.WriteLine(" ");
+
+                        Console.WriteLine("Press any key to continue:");
+                        Console.ReadKey();
+                    }
+
+
 
                 }
 

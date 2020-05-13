@@ -10,3 +10,9 @@
 /Users/maggiefleck/Desktop/NoPressure/database/database/obj/Debug/database.csproj.CoreCompileInputs.cache
 /Users/maggiefleck/Desktop/NoPressure/database/database/obj/Debug/database.exe
 /Users/maggiefleck/Desktop/NoPressure/database/database/obj/Debug/database.pdb
+C:\Users\User\Documents\GitHub\NoPressure\database\database\bin\Debug\database.exe
+C:\Users\User\Documents\GitHub\NoPressure\database\database\bin\Debug\database.pdb
+C:\Users\User\Documents\GitHub\NoPressure\database\database\obj\Debug\database.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\database\database\obj\Debug\database.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\database\database\obj\Debug\database.exe
+C:\Users\User\Documents\GitHub\NoPressure\database\database\obj\Debug\database.pdb

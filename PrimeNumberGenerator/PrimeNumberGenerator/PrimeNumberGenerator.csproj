@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">anycpu</Platform>
-    <ProjectGuid>{D143EE1E-C812-4F57-99FF-BC4CC910ABAA}</ProjectGuid>
+    <ProjectGuid>{BC66229A-C009-486C-BC3C-A2A3AD0C3579}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>PrimeNumberGenerator</RootNamespace>
     <AssemblyName>PrimeNumberGenerator</AssemblyName>

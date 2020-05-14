@@ -1,8 +1,8 @@
-﻿<Properties StartupConfiguration="{D143EE1E-C812-4F57-99FF-BC4CC910ABAA}|Default">
-  <MonoDevelop.Ide.ItemProperties.PrimeNumberGenerator PreferredExecutionTarget="MonoDevelop.Default" />
+﻿<Properties StartupConfiguration="{BC66229A-C009-486C-BC3C-A2A3AD0C3579}|Default">
+  <MonoDevelop.Ide.ItemProperties.PrimeNumberGenerator FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="PrimeNumberGenerator/Program.cs">
     <Files>
-      <File FileName="PrimeNumberGenerator/Program.cs" Line="46" Column="58" />
+      <File FileName="PrimeNumberGenerator/Program.cs" Line="62" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -26,9 +26,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/maggiefleck/Desktop/NoPressure/PrimeNumberGenerator/PrimeNumberGenerator/Program.cs" relfile="PrimeNumberGenerator/Program.cs" line="23" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

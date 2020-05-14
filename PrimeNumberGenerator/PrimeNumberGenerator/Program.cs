@@ -49,7 +49,7 @@ namespace PrimeNuberGenerator
                     PrimeNumbers[loopindex] = i;
                     whichprimenumber = i;
                     Console.WriteLine(i);
-   
+
                 }
 
 

@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumberGenerator", "PrimeNumberGenerator\PrimeNumberGenerator.csproj", "{D143EE1E-C812-4F57-99FF-BC4CC910ABAA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumberGenerator", "PrimeNumberGenerator\PrimeNumberGenerator.csproj", "{BC66229A-C009-486C-BC3C-A2A3AD0C3579}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +9,9 @@ Global
 		Release|anycpu = Release|anycpu
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D143EE1E-C812-4F57-99FF-BC4CC910ABAA}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{D143EE1E-C812-4F57-99FF-BC4CC910ABAA}.Debug|anycpu.Build.0 = Debug|anycpu
-		{D143EE1E-C812-4F57-99FF-BC4CC910ABAA}.Release|anycpu.ActiveCfg = Release|anycpu
-		{D143EE1E-C812-4F57-99FF-BC4CC910ABAA}.Release|anycpu.Build.0 = Release|anycpu
+		{BC66229A-C009-486C-BC3C-A2A3AD0C3579}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{BC66229A-C009-486C-BC3C-A2A3AD0C3579}.Debug|anycpu.Build.0 = Debug|anycpu
+		{BC66229A-C009-486C-BC3C-A2A3AD0C3579}.Release|anycpu.ActiveCfg = Release|anycpu
+		{BC66229A-C009-486C-BC3C-A2A3AD0C3579}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

@@ -9,51 +9,33 @@ namespace PrimeNuberGenerator
     {
         static void Main(string[] args)
         {
-            int i = 4;
-            int pnc2 = 3;
-            int pnc2assist = 24;
-            int[] PrimeNumbers = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-            int loopindex = 0;
-            int loopindexassist = 10;
-            int thirdcondition = 3;
-            int whichprimenumber = 0;
-
-            Console.WriteLine("2");
-            Console.WriteLine("3");
+            int i = 0;
+            int[] PrimeNumbers = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+ 
             while (i < 100)
             {
-                if (i == pnc2assist)
-                {
-                    if (i < 32)
-                    {
-                        pnc2 = 2;
-                        pnc2assist += 10;
-                    }
-                    else if (i < 35)
-                    {
-                        pnc2 = 3;
-                    }
 
-                    if (loopindex > loopindexassist)
-                    {
-                        thirdcondition = PrimeNumbers[whichprimenumber];
-
-                        loopindexassist += 10;
-                    }
-                }
-
-
-                if (!((i % 2) == 0 || ((i % pnc2) == 0 && (i % thirdcondition) == 0)))
+                if (i > 10)
                 {
 
-                    PrimeNumbers[loopindex] = i;
-                    whichprimenumber = i;
-                    Console.WriteLine(i);
+                    if ((i % 2) != 0 && (i % 3) != 0 && (i % 10) != 0 && (i % 5) != 0 && (i % 7) != 0)
+                    {
+
+                        Console.WriteLine(i);
+
+                    }
+                    else if ()
+                    {
+
+                    }
+
+
 
                 }
+                
 
 
-                loopindex++;
+               
                 i++;
             }
 

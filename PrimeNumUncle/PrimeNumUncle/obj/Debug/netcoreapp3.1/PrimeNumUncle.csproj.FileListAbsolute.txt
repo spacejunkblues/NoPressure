@@ -1,0 +1,13 @@
+C:\Users\User\Documents\GitHub\NoPressure\PrimeNumUncle\PrimeNumUncle\bin\Debug\netcoreapp3.1\PrimeNumUncle.exe
+C:\Users\User\Documents\GitHub\NoPressure\PrimeNumUncle\PrimeNumUncle\bin\Debug\netcoreapp3.1\PrimeNumUncle.deps.json
+C:\Users\User\Documents\GitHub\NoPressure\PrimeNumUncle\PrimeNumUncle\bin\Debug\netcoreapp3.1\PrimeNumUncle.runtimeconfig.json
+C:\Users\User\Documents\GitHub\NoPressure\PrimeNumUncle\PrimeNumUncle\bin\Debug\netcoreapp3.1\PrimeNumUncle.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\NoPressure\PrimeNumUncle\PrimeNumUncle\bin\Debug\netcoreapp3.1\PrimeNumUncle.dll
+C:\Users\User\Documents\GitHub\NoPressure\PrimeNumUncle\PrimeNumUncle\bin\Debug\netcoreapp3.1\PrimeNumUncle.pdb
+C:\Users\User\Documents\GitHub\NoPressure\PrimeNumUncle\PrimeNumUncle\obj\Debug\netcoreapp3.1\PrimeNumUncle.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\PrimeNumUncle\PrimeNumUncle\obj\Debug\netcoreapp3.1\PrimeNumUncle.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\PrimeNumUncle\PrimeNumUncle\obj\Debug\netcoreapp3.1\PrimeNumUncle.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\PrimeNumUncle\PrimeNumUncle\obj\Debug\netcoreapp3.1\PrimeNumUncle.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\NoPressure\PrimeNumUncle\PrimeNumUncle\obj\Debug\netcoreapp3.1\PrimeNumUncle.dll
+C:\Users\User\Documents\GitHub\NoPressure\PrimeNumUncle\PrimeNumUncle\obj\Debug\netcoreapp3.1\PrimeNumUncle.pdb
+C:\Users\User\Documents\GitHub\NoPressure\PrimeNumUncle\PrimeNumUncle\obj\Debug\netcoreapp3.1\PrimeNumUncle.genruntimeconfig.cache

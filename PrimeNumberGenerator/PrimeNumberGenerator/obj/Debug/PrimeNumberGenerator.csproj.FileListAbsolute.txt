@@ -1,0 +1,12 @@
+/Users/maggiefleck/Desktop/NoPressure/PrimeNumberGenerator/PrimeNumberGenerator/bin/Debug/PrimeNumberGenerator.exe
+/Users/maggiefleck/Desktop/NoPressure/PrimeNumberGenerator/PrimeNumberGenerator/bin/Debug/PrimeNumberGenerator.pdb
+/Users/maggiefleck/Desktop/NoPressure/PrimeNumberGenerator/PrimeNumberGenerator/obj/Debug/PrimeNumberGenerator.csprojAssemblyReference.cache
+/Users/maggiefleck/Desktop/NoPressure/PrimeNumberGenerator/PrimeNumberGenerator/obj/Debug/PrimeNumberGenerator.csproj.CoreCompileInputs.cache
+/Users/maggiefleck/Desktop/NoPressure/PrimeNumberGenerator/PrimeNumberGenerator/obj/Debug/PrimeNumberGenerator.exe
+/Users/maggiefleck/Desktop/NoPressure/PrimeNumberGenerator/PrimeNumberGenerator/obj/Debug/PrimeNumberGenerator.pdb
+C:\Users\User\Documents\GitHub\NoPressure\PrimeNumberGenerator\PrimeNumberGenerator\bin\Debug\PrimeNumberGenerator.exe
+C:\Users\User\Documents\GitHub\NoPressure\PrimeNumberGenerator\PrimeNumberGenerator\bin\Debug\PrimeNumberGenerator.pdb
+C:\Users\User\Documents\GitHub\NoPressure\PrimeNumberGenerator\PrimeNumberGenerator\obj\Debug\PrimeNumberGenerator.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\PrimeNumberGenerator\PrimeNumberGenerator\obj\Debug\PrimeNumberGenerator.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\PrimeNumberGenerator\PrimeNumberGenerator\obj\Debug\PrimeNumberGenerator.exe
+C:\Users\User\Documents\GitHub\NoPressure\PrimeNumberGenerator\PrimeNumberGenerator\obj\Debug\PrimeNumberGenerator.pdb

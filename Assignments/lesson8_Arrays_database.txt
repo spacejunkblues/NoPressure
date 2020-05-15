@@ -1,1 +1,7 @@
-exercise: create a database. It should be able to support up to 10 people. Make 2 different varaibles. Name and Age. Make a main menu with these options: "add a person", "view everyone", "Who's the oldest", and "quit". Add a person should allow the user to enter a new person into the database. View everyone should print to the screen everyone in the database along with their age. Who's the oldest should simply print the oldest person. After each of these options, the should return to the main menu. "quit" will quit the program.
+exercise: create a database. 
+It should be able to support up to 10 people. 
+Make 2 different variables. Name and Age. 
+Make a main menu with these options: "add a person", "view everyone", "Who's the oldest", and "quit". 
+Add a person should allow the user to enter a new person into the database. 
+View everyone should print to the screen everyone in the database along with their age. Who's the oldest should simply print the oldest person. 
+After each of these options, the should return to the main menu. "quit" will quit the program.

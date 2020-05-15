@@ -1,6 +1,7 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumberGenerator", "PrimeNumberGenerator\PrimeNumberGenerator.csproj", "{BC66229A-C009-486C-BC3C-A2A3AD0C3579}"
 EndProject
 Global
@@ -9,9 +10,15 @@ Global
 		Release|anycpu = Release|anycpu
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BC66229A-C009-486C-BC3C-A2A3AD0C3579}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{BC66229A-C009-486C-BC3C-A2A3AD0C3579}.Debug|anycpu.Build.0 = Debug|anycpu
-		{BC66229A-C009-486C-BC3C-A2A3AD0C3579}.Release|anycpu.ActiveCfg = Release|anycpu
-		{BC66229A-C009-486C-BC3C-A2A3AD0C3579}.Release|anycpu.Build.0 = Release|anycpu
+		{BC66229A-C009-486C-BC3C-A2A3AD0C3579}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{BC66229A-C009-486C-BC3C-A2A3AD0C3579}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{BC66229A-C009-486C-BC3C-A2A3AD0C3579}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{BC66229A-C009-486C-BC3C-A2A3AD0C3579}.Release|anycpu.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BDAF62F-6882-4474-8E5A-1CDD4659369B}
 	EndGlobalSection
 EndGlobal

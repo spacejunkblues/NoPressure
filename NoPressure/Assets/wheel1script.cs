@@ -37,5 +37,6 @@ public class wheel1script : MonoBehaviour
        {
            rb.AddForce(4, 0, 0);
        }
+        tran.Rotate(0, 0, 0);
     }
 }

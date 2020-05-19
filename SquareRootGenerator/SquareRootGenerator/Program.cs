@@ -12,8 +12,8 @@ namespace SquareRootGenerator
             //Declaring variables
             int UserNumber;
             bool MainLoopActivated;
-            int i;
-            int SquareRoot;
+            double i;
+            double SquareRoot;
 
             //Init variables
             UserNumber = 0;
@@ -27,7 +27,7 @@ namespace SquareRootGenerator
                 //Introduction to user
                 Console.WriteLine("Hello! this is a Square Root Generator.");
                 Console.WriteLine("When i ask, type the number you want to see");
-                Console.WriteLine("As a Square Root, then hit enter. :");
+                Console.WriteLine("Ask for a Square Root, then hit enter. :");
 
                 //Getting the Information
                 UserNumber = Convert.ToInt32(Console.ReadLine());//This converts an int to a ReadLine function
@@ -35,7 +35,7 @@ namespace SquareRootGenerator
 
 
 
-                for (i = 0; i < UserNumber; i += 1)
+                for (i = 0; i < UserNumber; i += 0.000000000001)
                 {
 
                     if (i * i == UserNumber)
@@ -43,7 +43,7 @@ namespace SquareRootGenerator
 
                         //Found Square Root!
                         SquareRoot = i;
-                        continue;
+                        break;
 
 
                     }

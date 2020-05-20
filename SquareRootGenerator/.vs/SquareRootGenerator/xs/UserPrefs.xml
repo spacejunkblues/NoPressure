@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{519C8DB6-B2F5-48EE-BFF8-0F8D01EBE28E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SquareRootGenerator/Program.cs">
+    <Files>
+      <File FileName="SquareRootGenerator/Program.cs" Line="52" Column="40" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SquareRootGenerator" expanded="True">
+            <Node name="SquareRootGenerator" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>i</Value>
+          <Value>DoubleUserNumber</Value>
+          <Value>i * i == DoubleUserNumber</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.SquareRootGenerator PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

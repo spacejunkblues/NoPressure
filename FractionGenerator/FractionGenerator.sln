@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FractionGenerator", "FractionGenerator\FractionGenerator.csproj", "{63CA5E4B-DCB8-4DC5-A4D7-C3DAE7996277}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63CA5E4B-DCB8-4DC5-A4D7-C3DAE7996277}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{63CA5E4B-DCB8-4DC5-A4D7-C3DAE7996277}.Debug|anycpu.Build.0 = Debug|anycpu
+		{63CA5E4B-DCB8-4DC5-A4D7-C3DAE7996277}.Release|anycpu.ActiveCfg = Release|anycpu
+		{63CA5E4B-DCB8-4DC5-A4D7-C3DAE7996277}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+EndGlobal

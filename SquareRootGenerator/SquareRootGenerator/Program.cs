@@ -12,17 +12,28 @@ namespace SquareRootGenerator
             //Declaring variables
             int UserNumber;
             bool MainLoopActivated;
-            double i;
-            double SquareRoot;
+            decimal i;
+            decimal SquareRoot;
+            decimal SRN;
+            decimal SRPA;
 
             //Init variables
             UserNumber = 0;
             MainLoopActivated = true;
             i = 0;
             SquareRoot = 0;
+            SRN = 0;
+            SRPA = 0;
 
             while (MainLoopActivated)
             {
+                //Reset variables
+                UserNumber = 0;
+                MainLoopActivated = true;
+                i = 0;
+                SquareRoot = 0;
+                SRN = 0;
+                SRPA = 0;
 
                 //Introduction to user
                 Console.WriteLine("Hello! this is a Square Root Generator.");
@@ -35,25 +46,47 @@ namespace SquareRootGenerator
 
 
 
-                for (i = 0; i < UserNumber; i += 0.000000000001)
+                for (i = 0; i <= UserNumber; i += (decimal)0.0001)
                 {
-
-                    if (i * i == UserNumber)
+                    //Console.WriteLine(i);
+                   
+                    if (i == (decimal)1.4140) 
                     {
-
-                        //Found Square Root!
+                       //Console.WriteLine("Ready.");
+                        
+                    }
+                     
+                    if (i * i == UserNumber) 
+                    {
                         SquareRoot = i;
                         break;
+                    }
 
+                    
 
+                    if ((i * i) < UserNumber) 
+                    {
+                        SRPA = i * i;
+
+                        SquareRoot = i;
+                    }
+                    else 
+                    {
+                        break;
                     }
 
                 }
 
-                Console.Write(SquareRoot);
+                Console.Write("Ready.");
+                Console.WriteLine(" ");
+                Console.WriteLine(" ");
+                Console.Write((double)SquareRoot);
                 Console.Write(" is the Square root of ");
                 Console.Write(UserNumber);
                 Console.WriteLine(".");
+
+                Console.WriteLine("Press any key to continue:");
+                Console.ReadKey();
 
             }
 

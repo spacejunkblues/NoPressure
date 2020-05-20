@@ -1,13 +1,14 @@
-﻿<Properties StartupConfiguration="{63CA5E4B-DCB8-4DC5-A4D7-C3DAE7996277}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FractionGenerator/Program.cs">
+﻿<Properties StartupConfiguration="{D8C5DDDD-8004-4115-B831-4F57DFDBC0AF}|Default">
+  <MonoDevelop.Ide.ItemProperties.Satisfying__Code PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Satisfying_Code/Program.cs">
     <Files>
-      <File FileName="FractionGenerator/Program.cs" Line="34" Column="60" />
+      <File FileName="Satisfying_Code/Program.cs" Line="16" Column="82" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="FractionGenerator" expanded="True">
-            <Node name="FractionGenerator" expanded="True">
+          <Node name="Satisfying_Code" expanded="True">
+            <Node name="Satisfying_Code" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
@@ -30,5 +31,4 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.FractionGenerator PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

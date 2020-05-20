@@ -31,15 +31,10 @@ namespace FractionGenerator
                 Console.WriteLine(" ");
                 Numerator = UserNumber;
 
-                if (Denominator > UserNumber)
-                {
-                    Numerator = UserNumber + (Denominator - UserNumber);
-                    Denominator = Denominator / (Denominator -(Denominator - UserNumber));
-                    
-                    Console.WriteLine(Numerator);
-                    Console.WriteLine("-");
-                    Console.WriteLine(Denominator);
-                }
+                Denominator = (Denominator - UserNumber) * 4;
+                Console.WriteLine(Denominator);
+                
+                 
 
                 
 

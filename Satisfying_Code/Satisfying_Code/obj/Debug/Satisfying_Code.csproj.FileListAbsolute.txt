@@ -1,0 +1,6 @@
+/Users/maggiefleck/Desktop/NoPressure/Satisfying_Code/Satisfying_Code/bin/Debug/Satisfying_Code.exe
+/Users/maggiefleck/Desktop/NoPressure/Satisfying_Code/Satisfying_Code/bin/Debug/Satisfying_Code.pdb
+/Users/maggiefleck/Desktop/NoPressure/Satisfying_Code/Satisfying_Code/obj/Debug/Satisfying_Code.csprojAssemblyReference.cache
+/Users/maggiefleck/Desktop/NoPressure/Satisfying_Code/Satisfying_Code/obj/Debug/Satisfying_Code.csproj.CoreCompileInputs.cache
+/Users/maggiefleck/Desktop/NoPressure/Satisfying_Code/Satisfying_Code/obj/Debug/Satisfying_Code.exe
+/Users/maggiefleck/Desktop/NoPressure/Satisfying_Code/Satisfying_Code/obj/Debug/Satisfying_Code.pdb

@@ -1,0 +1,13 @@
+C:\Users\User\Documents\GitHub\NoPressure\SquareRootGenerator\SquareRootGenerator\bin\Debug\netcoreapp3.1\SquareRootGenerator.exe
+C:\Users\User\Documents\GitHub\NoPressure\SquareRootGenerator\SquareRootGenerator\bin\Debug\netcoreapp3.1\SquareRootGenerator.deps.json
+C:\Users\User\Documents\GitHub\NoPressure\SquareRootGenerator\SquareRootGenerator\bin\Debug\netcoreapp3.1\SquareRootGenerator.runtimeconfig.json
+C:\Users\User\Documents\GitHub\NoPressure\SquareRootGenerator\SquareRootGenerator\bin\Debug\netcoreapp3.1\SquareRootGenerator.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\NoPressure\SquareRootGenerator\SquareRootGenerator\bin\Debug\netcoreapp3.1\SquareRootGenerator.dll
+C:\Users\User\Documents\GitHub\NoPressure\SquareRootGenerator\SquareRootGenerator\bin\Debug\netcoreapp3.1\SquareRootGenerator.pdb
+C:\Users\User\Documents\GitHub\NoPressure\SquareRootGenerator\SquareRootGenerator\obj\Debug\netcoreapp3.1\SquareRootGenerator.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\SquareRootGenerator\SquareRootGenerator\obj\Debug\netcoreapp3.1\SquareRootGenerator.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\SquareRootGenerator\SquareRootGenerator\obj\Debug\netcoreapp3.1\SquareRootGenerator.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\SquareRootGenerator\SquareRootGenerator\obj\Debug\netcoreapp3.1\SquareRootGenerator.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\NoPressure\SquareRootGenerator\SquareRootGenerator\obj\Debug\netcoreapp3.1\SquareRootGenerator.dll
+C:\Users\User\Documents\GitHub\NoPressure\SquareRootGenerator\SquareRootGenerator\obj\Debug\netcoreapp3.1\SquareRootGenerator.pdb
+C:\Users\User\Documents\GitHub\NoPressure\SquareRootGenerator\SquareRootGenerator\obj\Debug\netcoreapp3.1\SquareRootGenerator.genruntimeconfig.cache

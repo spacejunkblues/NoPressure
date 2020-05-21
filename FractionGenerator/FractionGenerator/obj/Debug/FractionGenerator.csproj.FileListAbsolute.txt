@@ -1,0 +1,6 @@
+/Users/maggiefleck/Desktop/NoPressure/FractionGenerator/FractionGenerator/bin/Debug/FractionGenerator.exe
+/Users/maggiefleck/Desktop/NoPressure/FractionGenerator/FractionGenerator/bin/Debug/FractionGenerator.pdb
+/Users/maggiefleck/Desktop/NoPressure/FractionGenerator/FractionGenerator/obj/Debug/FractionGenerator.csprojAssemblyReference.cache
+/Users/maggiefleck/Desktop/NoPressure/FractionGenerator/FractionGenerator/obj/Debug/FractionGenerator.csproj.CoreCompileInputs.cache
+/Users/maggiefleck/Desktop/NoPressure/FractionGenerator/FractionGenerator/obj/Debug/FractionGenerator.exe
+/Users/maggiefleck/Desktop/NoPressure/FractionGenerator/FractionGenerator/obj/Debug/FractionGenerator.pdb

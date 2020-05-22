@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+//using System.Numerics;
 using UnityEngine;
 
 public class carscript : MonoBehaviour
@@ -28,9 +29,12 @@ public class carscript : MonoBehaviour
 
         if(Input.GetKey(KeyCode.W))
         {
-            rb.AddForce(0, 0, (float)200);
+            rb.AddForce(0, 0, (float)2);
             tf = tfreset;
         }
+
+        tf.eulerAngles = new Vector3(0, 0, 0);
+
         
     }
 }

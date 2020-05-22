@@ -1,0 +1,7 @@
+
+exercise: Random number generator. Ask the user how many numbers they want to generate. Create an array of that size. Store each random number in the array. Print the array to the screen. Each random number should be printed with an index:
+0. 78
+1. 32
+2. 4
+etc...
+Ask the user which number they would like to change. Use a pointer (int*) to change the number(generate a new random number). The program should print the entire Array again so the user can verify the change took place.

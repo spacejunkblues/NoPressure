@@ -86,7 +86,7 @@ namespace InClassLesson9
                 Console.WriteLine(y);
 
 
-
+                
 
 
 
@@ -149,7 +149,9 @@ namespace InClassLesson9
 
 
 
-
+                    Console.WriteLine(*xPtr);
+                    Console.WriteLine(xPtr[0]);
+                    Console.WriteLine(xPtr[1]);
                     xPtr[1] = 99;
 
                     //Print the original array
@@ -161,7 +163,7 @@ namespace InClassLesson9
                         Console.WriteLine(number);
                     }
 
-
+    
                     
 
                 }//End of fixed
@@ -190,8 +192,24 @@ namespace InClassLesson9
 
                 //--------------------Using dynamic memory with pointers------------------------------------
             unsafe
-            { 
+            {
+                int[] days;
+                int[] two;
+
+
+                //Console.Write(new char[10]);
+
+                days = new int[7];
+                two = days;
+
+                //days[10] = 10;
+
+                days[0] = 3;
                 //int* x;
+
+
+                int size = 10;
+                char[] name = new char[size];
 
                 //doesn't work, needs to be fixed
                 //x = &(new int[3])[0];
@@ -218,7 +236,9 @@ namespace InClassLesson9
                     Console.Write("x: ");
                     Console.WriteLine(*x);
                 }
-            }
+            }//end of unsafe
+
+            //Console.WriteLine(two);
 
         }
     }

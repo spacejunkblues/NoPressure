@@ -1,17 +1,12 @@
-﻿<Properties StartupConfiguration="{D8C5DDDD-8004-4115-B831-4F57DFDBC0AF}|Default">
-  <MonoDevelop.Ide.ItemProperties.Satisfying__Code PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Satisfying_Code/Program.cs">
+﻿<Properties StartupConfiguration="{A31B4593-82A1-48AB-ACB2-4606D76D3309}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RandomNumberGenerator/Program.cs">
     <Files>
-      <File FileName="Satisfying_Code/Program.cs" Line="14" Column="91" />
+      <File FileName="RandomNumberGenerator/Program.cs" Line="47" Column="42" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Satisfying_Code" expanded="True">
-            <Node name="Satisfying_Code" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
-          </Node>
+          <Node name="RandomNumberGenerator" expanded="True" selected="True" />
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
@@ -25,6 +20,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.RandomNumberGenerator PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

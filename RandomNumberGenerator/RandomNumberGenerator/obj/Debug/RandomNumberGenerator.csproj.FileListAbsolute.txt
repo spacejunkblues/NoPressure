@@ -1,0 +1,6 @@
+/Users/maggiefleck/Desktop/NoPressure/RandomNumberGenerator/RandomNumberGenerator/bin/Debug/RandomNumberGenerator.exe
+/Users/maggiefleck/Desktop/NoPressure/RandomNumberGenerator/RandomNumberGenerator/bin/Debug/RandomNumberGenerator.pdb
+/Users/maggiefleck/Desktop/NoPressure/RandomNumberGenerator/RandomNumberGenerator/obj/Debug/RandomNumberGenerator.csprojAssemblyReference.cache
+/Users/maggiefleck/Desktop/NoPressure/RandomNumberGenerator/RandomNumberGenerator/obj/Debug/RandomNumberGenerator.csproj.CoreCompileInputs.cache
+/Users/maggiefleck/Desktop/NoPressure/RandomNumberGenerator/RandomNumberGenerator/obj/Debug/RandomNumberGenerator.exe
+/Users/maggiefleck/Desktop/NoPressure/RandomNumberGenerator/RandomNumberGenerator/obj/Debug/RandomNumberGenerator.pdb

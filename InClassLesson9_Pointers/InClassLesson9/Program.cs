@@ -4,7 +4,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace InClassLesson9
 {
-    class Program:PrintPointer
+    class Program : PrintPointer
     {
         static void Main(string[] args)
         {

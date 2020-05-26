@@ -4,3 +4,9 @@
 /Users/maggiefleck/Desktop/NoPressure/RandomNumberGenerator/RandomNumberGenerator/obj/Debug/RandomNumberGenerator.csproj.CoreCompileInputs.cache
 /Users/maggiefleck/Desktop/NoPressure/RandomNumberGenerator/RandomNumberGenerator/obj/Debug/RandomNumberGenerator.exe
 /Users/maggiefleck/Desktop/NoPressure/RandomNumberGenerator/RandomNumberGenerator/obj/Debug/RandomNumberGenerator.pdb
+C:\Users\User\Documents\GitHub\NoPressure\RandomNumberGenerator\RandomNumberGenerator\bin\Debug\RandomNumberGenerator.exe
+C:\Users\User\Documents\GitHub\NoPressure\RandomNumberGenerator\RandomNumberGenerator\bin\Debug\RandomNumberGenerator.pdb
+C:\Users\User\Documents\GitHub\NoPressure\RandomNumberGenerator\RandomNumberGenerator\obj\Debug\RandomNumberGenerator.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\RandomNumberGenerator\RandomNumberGenerator\obj\Debug\RandomNumberGenerator.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\RandomNumberGenerator\RandomNumberGenerator\obj\Debug\RandomNumberGenerator.exe
+C:\Users\User\Documents\GitHub\NoPressure\RandomNumberGenerator\RandomNumberGenerator\obj\Debug\RandomNumberGenerator.pdb

@@ -1,0 +1,13 @@
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson10_MultiDemArrays\InClassLesson10_MultiDemArrays\bin\Debug\netcoreapp3.1\InClassLesson10_MultiDemArrays.exe
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson10_MultiDemArrays\InClassLesson10_MultiDemArrays\bin\Debug\netcoreapp3.1\InClassLesson10_MultiDemArrays.deps.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson10_MultiDemArrays\InClassLesson10_MultiDemArrays\bin\Debug\netcoreapp3.1\InClassLesson10_MultiDemArrays.runtimeconfig.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson10_MultiDemArrays\InClassLesson10_MultiDemArrays\bin\Debug\netcoreapp3.1\InClassLesson10_MultiDemArrays.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson10_MultiDemArrays\InClassLesson10_MultiDemArrays\bin\Debug\netcoreapp3.1\InClassLesson10_MultiDemArrays.dll
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson10_MultiDemArrays\InClassLesson10_MultiDemArrays\bin\Debug\netcoreapp3.1\InClassLesson10_MultiDemArrays.pdb
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson10_MultiDemArrays\InClassLesson10_MultiDemArrays\obj\Debug\netcoreapp3.1\InClassLesson10_MultiDemArrays.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson10_MultiDemArrays\InClassLesson10_MultiDemArrays\obj\Debug\netcoreapp3.1\InClassLesson10_MultiDemArrays.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson10_MultiDemArrays\InClassLesson10_MultiDemArrays\obj\Debug\netcoreapp3.1\InClassLesson10_MultiDemArrays.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson10_MultiDemArrays\InClassLesson10_MultiDemArrays\obj\Debug\netcoreapp3.1\InClassLesson10_MultiDemArrays.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson10_MultiDemArrays\InClassLesson10_MultiDemArrays\obj\Debug\netcoreapp3.1\InClassLesson10_MultiDemArrays.dll
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson10_MultiDemArrays\InClassLesson10_MultiDemArrays\obj\Debug\netcoreapp3.1\InClassLesson10_MultiDemArrays.pdb
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson10_MultiDemArrays\InClassLesson10_MultiDemArrays\obj\Debug\netcoreapp3.1\InClassLesson10_MultiDemArrays.genruntimeconfig.cache

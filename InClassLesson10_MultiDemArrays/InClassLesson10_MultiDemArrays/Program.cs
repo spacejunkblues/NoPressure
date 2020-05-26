@@ -30,12 +30,18 @@ namespace InClassLesson10_MultiDemArrays
             //How about just the first name?
             Console.WriteLine(names[0]);
 
+            names[1] = new char[7];
 
-            var m = Console.Read();
-            m = Console.Read();
-            m = Console.Read();
-            m = Console.Read();
-            m = Console.Read();
+            names[1][0] = 'M';
+            names[1][1] = 'a';
+            names[1][2] = 'r';
+            names[1][3] = 's';
+            names[1][4] = 'h';
+            names[1][5] = 'a';
+            names[1][6] = 'l';
+
+
+
 
 
 
@@ -45,7 +51,9 @@ namespace InClassLesson10_MultiDemArrays
 
 
             //--------2D array------------------
-            int[,] numbers = new int[3, 4];
+            int[,] numbers;
+            
+            numbers = new int[3, 4];
 
             //2D Array will have each sub array be the same size
 
@@ -82,12 +90,13 @@ namespace InClassLesson10_MultiDemArrays
             {
                 for(int j=0; j<3; j++)
                 {
-                    TicTacToeBoard[i, j] = ' ';//Put an * to see the blanks
+                    TicTacToeBoard[i, j] = '*';//Put an * to see the blanks
                 }
             }
 
             //put an 'X' in the center
             TicTacToeBoard[1, 1] = 'X';
+            TicTacToeBoard[0, 2] = 'O';
 
             //Print the board
             for (int i = 0; i < 3; i++)

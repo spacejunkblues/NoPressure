@@ -1,0 +1,6 @@
+/Users/maggiefleck/Desktop/NoPressure/Jagged_Arrays/Jagged_Arrays/bin/Debug/Jagged_Arrays.exe
+/Users/maggiefleck/Desktop/NoPressure/Jagged_Arrays/Jagged_Arrays/bin/Debug/Jagged_Arrays.pdb
+/Users/maggiefleck/Desktop/NoPressure/Jagged_Arrays/Jagged_Arrays/obj/Debug/Jagged_Arrays.csprojAssemblyReference.cache
+/Users/maggiefleck/Desktop/NoPressure/Jagged_Arrays/Jagged_Arrays/obj/Debug/Jagged_Arrays.csproj.CoreCompileInputs.cache
+/Users/maggiefleck/Desktop/NoPressure/Jagged_Arrays/Jagged_Arrays/obj/Debug/Jagged_Arrays.exe
+/Users/maggiefleck/Desktop/NoPressure/Jagged_Arrays/Jagged_Arrays/obj/Debug/Jagged_Arrays.pdb

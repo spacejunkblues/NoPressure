@@ -1,13 +1,13 @@
-﻿<Properties StartupConfiguration="{A31B4593-82A1-48AB-ACB2-4606D76D3309}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="RandomNumberGenerator/Program.cs">
+﻿<Properties StartupConfiguration="{F89CE76E-68F7-4334-ADB9-22D56EF0063B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="InClassLesson10_MultiDemArrays/Program.cs">
     <Files>
-      <File FileName="RandomNumberGenerator/Program.cs" Line="64" Column="1" />
+      <File FileName="InClassLesson10_MultiDemArrays/Program.cs" Line="10" Column="45" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="RandomNumberGenerator" expanded="True">
-            <Node name="RandomNumberGenerator" expanded="True">
+          <Node name="InClassLesson10_MultiDemArrays" expanded="True">
+            <Node name="InClassLesson10_MultiDemArrays" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
@@ -24,9 +24,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.RandomNumberGenerator PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.InClassLesson10__MultiDemArrays PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

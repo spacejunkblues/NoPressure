@@ -100,8 +100,8 @@ namespace InClassLesson9
 
 
 
-
-
+                
+                
 
                 //now lets try to use it with an Array
                 int[] numArray = { 71, 22, 53 };

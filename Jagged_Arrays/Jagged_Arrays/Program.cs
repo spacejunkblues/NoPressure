@@ -48,11 +48,12 @@ namespace Jagged_Arrays
 
                         Console.Write(CharIndex + 1);
                         Console.WriteLine(". :");
-
-                        EnterCheck += (Convert.ToChar(Console.Read()));
+                        names[i] = new char[names[i].Length + 1];
+                        EnterCheck = (char)Console.Read();
                         if (EnterCheck != 13)
                         {
-                            names[i] = new char[names[i].Length + 1];
+                            //CharIndex is an index to find out which character to change
+                            
                             names[i][CharIndex] = EnterCheck;
                             CharIndex++;
                         }
@@ -63,7 +64,11 @@ namespace Jagged_Arrays
                             
                         
                     }
-                    Console.Write(names[i] [i]);
+                    for (ulong j = 0; j < HowManyNames; j++) 
+                    {
+                        Console.Write(names[j][j]);
+                    }
+                    
 
 
                     i++;

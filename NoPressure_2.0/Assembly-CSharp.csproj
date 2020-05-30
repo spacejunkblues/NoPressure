@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Spherescript.cs" />
      <Compile Include="Assets\carscript.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/maggiefleck/Desktop/NoPressure/NoPressure_2.0/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

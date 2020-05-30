@@ -9,12 +9,7 @@ public class carscript : MonoBehaviour
     public Rigidbody rb;
     double acceleration = 0.0;
     int i = 0;
-    public float rotation = 0;
-    public GameObject transformreset;
-    private Transform tfreset;
-        
-    
-    
+    public float rotation = 0;   
 
     // Start is called before the first frame update
     void Start()
@@ -25,12 +20,10 @@ public class carscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        tfreset = GetComponent<Transform>();
 
         if(Input.GetKey(KeyCode.W))
         {
-            rb.AddForce(0, 0, (float)4 + (float)acceleration);
-            tf = tfreset;
+            rb.AddForce(0 + (float)acceleration, 0, 0);
             acceleration += 0.5;
         }
         else if(acceleration > 0.3)

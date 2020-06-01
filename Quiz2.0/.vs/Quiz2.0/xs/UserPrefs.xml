@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{2676DAF0-4298-4A01-BE4C-A42A9679F57F}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Quiz2.0/Program.cs">
     <Files>
-      <File FileName="Quiz2.0/Program.cs" Line="18" Column="43" />
+      <File FileName="Quiz2.0/Program.cs" Line="29" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,14 +14,7 @@
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>names</Value>
-          <Value>names[i][CharIndex]</Value>
-          <Value>CharIndex</Value>
-          <Value>i</Value>
-          <Value>(char)129</Value>
-          <Value>EnterCheck</Value>
-        </State>
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

@@ -7,50 +7,98 @@ namespace Quiz2
 {
     class MainClass
     {
-
-
-        static string[] Q1(ref String[][] Q1, int index)
+        //This is the function that lets the user build there own quiz
+        static string[] Q11(ref String[][] Q12, int index)
         {
             int i = 0;
-            Console.WriteLine("Hello this is the question function.");
-            Console.WriteLine("What is the questiion?");
-            Console.WriteLine("The first sentence is the question.");
-            Console.WriteLine("The other 3 are the possible answers.");
-            Q1[index] = new string[4];
+
+            //Displying which question they are doing
+            Console.Write("Question ");
+            Console.Write(index + 1);
+            Console.WriteLine(". :");
+
+            Q12[index] = new string[4];
             while (i < 4)
             {
                 Console.Write(i + 1);
                 Console.WriteLine(". :");
-                Q1[index][i] = Console.ReadLine();
+                Q12[index][i] = Console.ReadLine();
                 i++;
             }
+            Console.WriteLine("Press any key to continue:");
+            Console.ReadKey();
             
-            return Q1[index];
+            return Q12[index];
         }
 
-        static string[] Q2(ref string[][] Q2)
+        static string [] DisplayQuiz(ref string[][] Questions)
         {
-            Q1(ref Q2, 1);
-            return Q2[1];
-        }
-
-
-        public static void Main(string[] args)
-        {
-            string[][] Questions = new string[4][];
-
-            Q1(ref Questions, 0);
             int i = 0;
-
-            Console.Write(i + 1);
-            Console.WriteLine(". :");
             while (i < 4)
             {
+                Console.Write(i + 1);
+                Console.WriteLine(". :");
                 Console.WriteLine(Questions[0][i]);
                 i++;
             }
-            
+            Console.WriteLine(" ");
 
+            return Questions[0];
+        }
+
+        public static void Main(string[] args)
+        {
+            //Declaring variables
+            string[][] Questions;
+            string WhatTheUserWantsToDo;
+            bool LoopActive;
+
+            //Init variables
+            Questions = new string[4][];
+            WhatTheUserWantsToDo = " ";
+            LoopActive = true;
+
+            while (LoopActive)
+            {
+
+                //Introduction to user
+                Console.WriteLine("Hello, this a buildable quiz. would you");
+                Console.WriteLine("like to 'do' the preset, or would you like to");
+                Console.WriteLine("'build' you own?");
+                Console.WriteLine("All lower case, then enter. feel free to copy and paste:");
+                WhatTheUserWantsToDo = Console.ReadLine();
+
+                if (WhatTheUserWantsToDo == "build")
+                {
+
+
+                    //Displaying Built Questions
+                    int i = 0;
+                    for (int Index = 0;Index <= 5; Index++)
+                    {
+                        //Gives the user information on how to build the quiz
+                        Console.WriteLine("The first sentence is the question.");
+                        Console.WriteLine("The other 4 are the possible answers.");
+
+                        Q11(ref Questions, Index);
+                        while (i < 4)
+                        {
+                            Console.Write(i + 1);
+                            Console.WriteLine(". :");
+                            Console.WriteLine(Questions[Index][i]);
+                            i++;
+                        }
+                        Console.WriteLine(" ");
+                    }
+
+
+                }
+
+                if (WhatTheUserWantsToDo == "do")
+                {
+
+                }
+            }
         }
     }
 }

@@ -6,7 +6,8 @@ public class Spherescript : MonoBehaviour
 {
     public Transform tf;
     public Rigidbody rb;
-    public bool Onground = false;
+    public GameObject Clone;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,18 +25,11 @@ public class Spherescript : MonoBehaviour
         {
              rb.AddForce(0, 0, (float)6);
         }
-        if(Input.GetKey(KeyCode.Space) || Onground)
+        if(Input.GetKeyDown(KeyCode.Space))
         {
-            rb.AddForce(0, 10, 0);
-            Onground = false;
+            rb.AddForce(0, 200, 0);
+            Instantiate(Clone);
         }
-        void OnCollisionStay(Collision col)
-        {
-            if (col.collider.name == "cube")
-            {
-                Onground = true;
-            }
-            
-        }
+        
     }
 }

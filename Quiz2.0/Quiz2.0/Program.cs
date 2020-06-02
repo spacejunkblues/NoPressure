@@ -17,7 +17,7 @@ namespace Quiz2
             Console.Write(index + 1);
             Console.WriteLine(". :");
 
-            Q12[index] = new string[4];
+            Q12[index] = new string[5];
             while (i < 4)
             {
                 Console.Write(i + 1);
@@ -74,7 +74,7 @@ namespace Quiz2
 
                     //Displaying Built Questions
                     int i = 0;
-                    for (int Index = 0;Index <= 5; Index++)
+                    for (int Index = 0;Index < 4; Index++)
                     {
                         //Gives the user information on how to build the quiz
                         Console.WriteLine("The first sentence is the question.");
@@ -96,7 +96,13 @@ namespace Quiz2
 
                 if (WhatTheUserWantsToDo == "do")
                 {
-
+                    int j = 0;
+                    while (j < 4)
+                    {
+                        DisplayQuiz(ref Questions);
+                        j++;
+                    }
+                    
                 }
             }
         }

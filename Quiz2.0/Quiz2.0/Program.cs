@@ -7,6 +7,33 @@ namespace Quiz2
 {
     class MainClass
     {
+        static string[][]SetQuiz(ref string[][] QuizArray, ref int[]answers)
+        {
+            QuizArray = new string[5][];
+
+            QuizArray[0] = new string[5];
+            QuizArray[1] = new string[5];
+            QuizArray[2] = new string[5];
+            QuizArray[3] = new string[5];
+            QuizArray[4] = new string[5];
+
+            QuizArray[0][0] =  "What is my name";
+            QuizArray[0][1] =  "1. Marshal";
+            QuizArray[0][2] =  "2. Henry";
+            QuizArray[0][3] =  "3. Richard";
+            QuizArray[0][4] =  "4. Your Name";
+            answers[0] = 1;
+
+            QuizArray[1][0] =  "What is the mcdonalds motto?";
+            QuizArray[1][1] =  "1. Im Hating it";
+            QuizArray[1][2] =  "2. Im loving it";
+            QuizArray[1][3] =  "3. Why is there even a motto?";
+            QuizArray[1][4] =  "4. I hate Mcdonalds";
+            answers[1] = 3;
+
+            return QuizArray;
+        }
+
         //This is the function that lets the user build there own quiz
         static string[] Q11(ref String[][] Q12, int index)
         {
@@ -31,17 +58,16 @@ namespace Quiz2
             return Q12[index];
         }
 
-        static string [] DisplayQuiz(ref string[][] Questions)
+        static string [] DisplayQuiz(ref string[][] Questions, ref int[] ThereAnswers, ref int WhichQuestion)
         {
             int i = 0;
             while (i < 4)
             {
-                Console.Write(i + 1);
-                Console.WriteLine(". :");
-                Console.WriteLine(Questions[0][i]);
+                Console.WriteLine(Questions[WhichQuestion][i]);
                 i++;
             }
             Console.WriteLine(" ");
+            ThereAnswers[i] = Convert.ToInt32(Console.ReadLine());
 
             return Questions[0];
         }
@@ -52,11 +78,17 @@ namespace Quiz2
             string[][] Questions;
             string WhatTheUserWantsToDo;
             bool LoopActive;
+            int[] Answers;
+            int[] ThereAnswers;
 
             //Init variables
-            Questions = new string[4][];
+            Questions = new string[5][];
             WhatTheUserWantsToDo = " ";
             LoopActive = true;
+            Answers = new int[5];
+            ThereAnswers = new int[5];
+
+            SetQuiz(ref Questions, ref Answers);
 
             while (LoopActive)
             {
@@ -81,6 +113,13 @@ namespace Quiz2
                         Console.WriteLine("The other 4 are the possible answers.");
 
                         Q11(ref Questions, Index);
+
+                        //Asking which statement they would like to be the answer
+                        Console.WriteLine("Which Possible answer would you like to be the answer?");
+                        
+                            Answers[i] =  Convert.ToInt32(Console.ReadLine());
+                        
+
                         while (i < 4)
                         {
                             Console.Write(i + 1);
@@ -93,17 +132,17 @@ namespace Quiz2
 
 
                 }
-
-                if (WhatTheUserWantsToDo == "do")
-                {
-                    int j = 0;
-                    while (j < 4)
+                
+                    if (WhatTheUserWantsToDo == "do")
                     {
-                        DisplayQuiz(ref Questions);
-                        j++;
+                        int j = 0;
+                        while (j < 4)
+                        {
+                            DisplayQuiz(ref Questions, ref ThereAnswers,ref j);
+                            j++;
+                        }
+
                     }
-                    
-                }
             }
         }
     }

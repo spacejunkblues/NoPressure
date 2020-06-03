@@ -32,11 +32,17 @@ public class Spherescript : MonoBehaviour
             rb.AddForce(0, 200, 0);
             DoubleJump += 1;
         }
-        if(counter > 300)
+        
+
+    }
+
+    private void FixedUpdate()
+    {
+        if (counter > 200)
         {
             DoubleJump = 0;
             counter = 0;
-        }  
+        }
         counter++;
     }
 }

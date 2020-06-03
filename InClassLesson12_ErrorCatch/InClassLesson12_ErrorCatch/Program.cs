@@ -9,6 +9,15 @@ namespace InClassLesson12_ErrorCatch
     {
         //You can create an error message using the following code
         //throw new Exception("Here's an error");
+        static void SomeFunction(int age)
+        {
+            if(age < 0)
+            {
+                Console.WriteLine("I'm in the age<0 if statement");
+                throw new Exception("Age has to be greater then 0");
+            }
+            Console.WriteLine("I'm at the end of SomeFunction");
+        }
 
         static void Main(string[] args)
         {
@@ -20,23 +29,43 @@ namespace InClassLesson12_ErrorCatch
 
 
             //Do an example of try catch using
-            //x = Convert.ToInt32(Console.ReadLine());
+            try
+            {
+                Console.WriteLine("I'm in the try!");
+                x = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("I'm in the try after the readline"); //everything after the error is throw, will get skipped. If theres an error
 
-            //show how to catch an error
+            }
+            catch (Exception e)//this will get skipped if the try works without error
+            {
+                Console.WriteLine("I'm in the catch!");
 
-            //shows how code gets skipped when an error is caught
+                //show how catch can get passed an Exception parameter
+                Console.WriteLine(e.Message);
+            }
 
-            //show how catch can get passed an Exception parameter
 
             //Call SomeFunction here that shows how to create an error using throw
+            try
+            {
+                SomeFunction(-1);
 
-            //Give an example on how throws can be used with try-catch
+            }
+            catch(Exception MyError)
+            {
+                Console.WriteLine(MyError.Message);
+            }
+
 
 
             //Go over sleeps for fun
-            //Console.WriteLine("One");
+            Console.WriteLine("One");
             //1000 miliseconds is 1 second
-            //Thread.Sleep(1000);
+            Thread.Sleep(1000);
+            Console.WriteLine("Two");
+            Thread.Sleep(1000);
+            Console.WriteLine("Three");
+            Thread.Sleep(1000);
 
 
 

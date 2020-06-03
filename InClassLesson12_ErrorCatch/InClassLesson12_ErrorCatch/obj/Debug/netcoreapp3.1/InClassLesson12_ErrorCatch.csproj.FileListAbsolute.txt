@@ -1,0 +1,13 @@
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson12_ErrorCatch\InClassLesson12_ErrorCatch\bin\Debug\netcoreapp3.1\InClassLesson12_ErrorCatch.exe
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson12_ErrorCatch\InClassLesson12_ErrorCatch\bin\Debug\netcoreapp3.1\InClassLesson12_ErrorCatch.deps.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson12_ErrorCatch\InClassLesson12_ErrorCatch\bin\Debug\netcoreapp3.1\InClassLesson12_ErrorCatch.runtimeconfig.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson12_ErrorCatch\InClassLesson12_ErrorCatch\bin\Debug\netcoreapp3.1\InClassLesson12_ErrorCatch.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson12_ErrorCatch\InClassLesson12_ErrorCatch\bin\Debug\netcoreapp3.1\InClassLesson12_ErrorCatch.dll
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson12_ErrorCatch\InClassLesson12_ErrorCatch\bin\Debug\netcoreapp3.1\InClassLesson12_ErrorCatch.pdb
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson12_ErrorCatch\InClassLesson12_ErrorCatch\obj\Debug\netcoreapp3.1\InClassLesson12_ErrorCatch.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson12_ErrorCatch\InClassLesson12_ErrorCatch\obj\Debug\netcoreapp3.1\InClassLesson12_ErrorCatch.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson12_ErrorCatch\InClassLesson12_ErrorCatch\obj\Debug\netcoreapp3.1\InClassLesson12_ErrorCatch.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson12_ErrorCatch\InClassLesson12_ErrorCatch\obj\Debug\netcoreapp3.1\InClassLesson12_ErrorCatch.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson12_ErrorCatch\InClassLesson12_ErrorCatch\obj\Debug\netcoreapp3.1\InClassLesson12_ErrorCatch.dll
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson12_ErrorCatch\InClassLesson12_ErrorCatch\obj\Debug\netcoreapp3.1\InClassLesson12_ErrorCatch.pdb
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson12_ErrorCatch\InClassLesson12_ErrorCatch\obj\Debug\netcoreapp3.1\InClassLesson12_ErrorCatch.genruntimeconfig.cache

@@ -1,0 +1,11 @@
+exercise: create a program that will take 10 names. The 10 names must be stored in a dynamic array. Make a menu that has four options: 1. add name, 2. delete name, 3. view all names, 4. search
+
+create 4 functions. Add, Search, ViewAll, Delete
+
+Add will add the user input into the array then display all names. Don't store the index that is open, instead use your Search function to find the first open spot. Make sure duplicate names can't be entered.
+Search will parse the array (loop through it) and return the first index of where the name is stored. Throw an exception if not found. 
+ViewAll displays all names. Don't display blanks.
+Delete will delete the user selected (or typed). 
+
+Use try-catch everytime the user inputs a value.
+Use try-catch whenever search is used (since it can throw an exception)

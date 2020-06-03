@@ -1,0 +1,13 @@
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson13_Recursion\InClassLesson13_Recursion\bin\Debug\netcoreapp3.1\InClassLesson13_Recursion.exe
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson13_Recursion\InClassLesson13_Recursion\bin\Debug\netcoreapp3.1\InClassLesson13_Recursion.deps.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson13_Recursion\InClassLesson13_Recursion\bin\Debug\netcoreapp3.1\InClassLesson13_Recursion.runtimeconfig.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson13_Recursion\InClassLesson13_Recursion\bin\Debug\netcoreapp3.1\InClassLesson13_Recursion.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson13_Recursion\InClassLesson13_Recursion\bin\Debug\netcoreapp3.1\InClassLesson13_Recursion.dll
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson13_Recursion\InClassLesson13_Recursion\bin\Debug\netcoreapp3.1\InClassLesson13_Recursion.pdb
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson13_Recursion\InClassLesson13_Recursion\obj\Debug\netcoreapp3.1\InClassLesson13_Recursion.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson13_Recursion\InClassLesson13_Recursion\obj\Debug\netcoreapp3.1\InClassLesson13_Recursion.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson13_Recursion\InClassLesson13_Recursion\obj\Debug\netcoreapp3.1\InClassLesson13_Recursion.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson13_Recursion\InClassLesson13_Recursion\obj\Debug\netcoreapp3.1\InClassLesson13_Recursion.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson13_Recursion\InClassLesson13_Recursion\obj\Debug\netcoreapp3.1\InClassLesson13_Recursion.dll
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson13_Recursion\InClassLesson13_Recursion\obj\Debug\netcoreapp3.1\InClassLesson13_Recursion.pdb
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson13_Recursion\InClassLesson13_Recursion\obj\Debug\netcoreapp3.1\InClassLesson13_Recursion.genruntimeconfig.cache

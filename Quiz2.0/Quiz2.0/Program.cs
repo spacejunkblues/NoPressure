@@ -1,6 +1,6 @@
 ﻿//Marshal Fleck
 //Fleckm210@gmail.com
-//This is an assignment for a quiz that uses functions
+//This is an assignment for an unfinished quiz that uses functions
 using System;
 
 namespace Quiz2
@@ -35,6 +35,7 @@ namespace Quiz2
         }
 
         //This is the function that lets the user build there own quiz
+        //Sets a single question into the Question array
         static string[] Q11(ref String[][] Q12, int index)
         {
             int i = 0;
@@ -58,7 +59,7 @@ namespace Quiz2
             return Q12[index];
         }
 
-        static string [] DisplayQuiz(ref string[][] Questions, ref int[] ThereAnswers, ref int WhichQuestion)
+        static string [] DisplayQuiz(ref string[][] Questions, ref int[] ThereAnswers, int WhichQuestion)
         {
             int i = 0;
             while (i < 4)
@@ -68,6 +69,7 @@ namespace Quiz2
             }
             Console.WriteLine(" ");
             ThereAnswers[i] = Convert.ToInt32(Console.ReadLine());
+
 
             return Questions[0];
         }
@@ -106,6 +108,7 @@ namespace Quiz2
 
                     //Displaying Built Questions
                     int i = 0;
+                    //loops through each of the 5 quiz questions       example:   Questions[Index][] 
                     for (int Index = 0;Index < 4; Index++)
                     {
                         //Gives the user information on how to build the quiz
@@ -138,7 +141,7 @@ namespace Quiz2
                         int j = 0;
                         while (j < 4)
                         {
-                            DisplayQuiz(ref Questions, ref ThereAnswers,ref j);
+                            DisplayQuiz(ref Questions, ref ThereAnswers,j);
                             j++;
                         }
 

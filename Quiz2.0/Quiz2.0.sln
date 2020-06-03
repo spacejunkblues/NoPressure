@@ -1,6 +1,7 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz2.0", "Quiz2.0\Quiz2.0.csproj", "{2676DAF0-4298-4A01-BE4C-A42A9679F57F}"
 EndProject
 Global
@@ -9,9 +10,15 @@ Global
 		Release|anycpu = Release|anycpu
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2676DAF0-4298-4A01-BE4C-A42A9679F57F}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{2676DAF0-4298-4A01-BE4C-A42A9679F57F}.Debug|anycpu.Build.0 = Debug|anycpu
-		{2676DAF0-4298-4A01-BE4C-A42A9679F57F}.Release|anycpu.ActiveCfg = Release|anycpu
-		{2676DAF0-4298-4A01-BE4C-A42A9679F57F}.Release|anycpu.Build.0 = Release|anycpu
+		{2676DAF0-4298-4A01-BE4C-A42A9679F57F}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{2676DAF0-4298-4A01-BE4C-A42A9679F57F}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{2676DAF0-4298-4A01-BE4C-A42A9679F57F}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{2676DAF0-4298-4A01-BE4C-A42A9679F57F}.Release|anycpu.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0556A0E7-18F0-4114-A37C-0FB94C3E4FF2}
 	EndGlobalSection
 EndGlobal

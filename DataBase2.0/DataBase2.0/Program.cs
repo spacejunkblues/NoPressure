@@ -14,7 +14,7 @@ namespace DataBase2
             int i = 0;
             i = Search(Names, "");
             string NewName = "";
-            bool AlreadyInDataBase = false;
+            bool AllIsOkay = true;
 
             while (true)
             {
@@ -28,40 +28,19 @@ namespace DataBase2
                 Console.WriteLine("");
                 Console.WriteLine("");
 
-                //Makes sure that the new name is not a duplicate
-                for (int Index = 0; Index < 10; Index++)
+                for (int index = 0; index < 10; index++)
                 {
-                    if (NewName == Names[Index])
+                    if (NewName == Names[index])
                     {
-                        //Clears space
-                        Console.WriteLine("");
-                        Console.WriteLine("");
-
-                        Console.WriteLine("Sorry, that name is already in the database.");
-                        Console.WriteLine("Try Again.");
-
-                        //Clears space
-                        Console.WriteLine("");
-                        Console.WriteLine("");
-
-                        Console.WriteLine("Press any key to continue:");
-                        Console.ReadKey();
-
-                        //Telling the code to repeat
-                        AlreadyInDataBase = true;
-
-                        break;
+                        AllIsOkay = false;
                     }
                 }
-
-                //Tells the code to break from the loop if AlreadyInDataBase = false
-                if (!AlreadyInDataBase)
+                if (AllIsOkay)
                 {
-                    Names[i] = NewName;
                     break;
                 }
-            }
 
+            }
 
             //Displays the added name
             Console.Write("Okay, ");
@@ -72,17 +51,15 @@ namespace DataBase2
             Console.WriteLine("");
             Console.WriteLine("");
 
-        }
-
-        //This is the function that displays the users options
-        static void DisplayOptions()
-        {
-            //Tells the user what they can do
-            Console.WriteLine("You can 'add' a person.");
-            Console.WriteLine("You can 'delete' a person.");
-            Console.WriteLine("You can 'view' all names.");
-            Console.WriteLine("Or you can 'search' for a person:");
-        }
+            //This is the function that displays the users options
+            static void DisplayOptions()
+            {
+                //Tells the user what they can do
+                Console.WriteLine("You can 'add' a person.");
+                Console.WriteLine("You can 'delete' a person.");
+                Console.WriteLine("You can 'view' all names.");
+                Console.WriteLine("Or you can 'search' for a person:");
+             }
 
         //Determines the closest blank name
         static int Search(string[]Names, string WhatToSearchFor)
@@ -182,7 +159,7 @@ namespace DataBase2
         }
 
 
-        //Start of our program
+            //Start of our program
         public static void Main(string[] args)
         {
             //Declaring variables

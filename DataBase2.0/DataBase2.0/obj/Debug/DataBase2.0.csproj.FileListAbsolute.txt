@@ -1,0 +1,6 @@
+/Users/maggiefleck/Desktop/NoPressure/DataBase2.0/DataBase2.0/bin/Debug/DataBase2.0.exe
+/Users/maggiefleck/Desktop/NoPressure/DataBase2.0/DataBase2.0/bin/Debug/DataBase2.0.pdb
+/Users/maggiefleck/Desktop/NoPressure/DataBase2.0/DataBase2.0/obj/Debug/DataBase2.0.csprojAssemblyReference.cache
+/Users/maggiefleck/Desktop/NoPressure/DataBase2.0/DataBase2.0/obj/Debug/DataBase2.0.csproj.CoreCompileInputs.cache
+/Users/maggiefleck/Desktop/NoPressure/DataBase2.0/DataBase2.0/obj/Debug/DataBase2.0.exe
+/Users/maggiefleck/Desktop/NoPressure/DataBase2.0/DataBase2.0/obj/Debug/DataBase2.0.pdb

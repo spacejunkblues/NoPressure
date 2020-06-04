@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InClassLesson12_ErrorCatch", "InClassLesson12_ErrorCatch.csproj", "{F330362D-2AB2-4AA7-AD9B-62F4F82DF962}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F330362D-2AB2-4AA7-AD9B-62F4F82DF962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F330362D-2AB2-4AA7-AD9B-62F4F82DF962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F330362D-2AB2-4AA7-AD9B-62F4F82DF962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F330362D-2AB2-4AA7-AD9B-62F4F82DF962}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

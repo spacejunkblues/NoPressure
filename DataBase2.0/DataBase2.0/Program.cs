@@ -101,37 +101,85 @@ namespace DataBase2
             return ClosestNumber;
         }
 
-        static string[] Delete(string[] Names)
+        static string[] Delete(string[] Names, ref bool IsAnError)
         {
             int WhichNameToDelete = 0;
+            bool IsAName = false;
+            IsAnError = true;
 
-            //Asking the user which name to delete
-            for (int i = 0;i > 10; i++)
+            //Determines if names[index] does not equal nothing
+            for (int index = 0; index < 10; index++)
             {
-                Console.Write(i + 1);
-                Console.Write(". ");
-                Console.WriteLine(Names[i]);
+                if (Names[index] != (null))
+                {
+                    Console.Write(index + 1);
+                    Console.Write(". ");
+                    Console.WriteLine(Names[index]);
+                    IsAName = true;
+                }
+            }
+            if (IsAName)
+            {
+                //Clears space
+                Console.WriteLine(" ");
+
+                //Asks user for which name they would like to delete
+                Console.WriteLine("Which person would you like to delete?");
+                Console.WriteLine("(Use the index number to the left of the name, then hit enter):");
+
+                try
+                {
+                    WhichNameToDelete = Convert.ToInt32(Console.ReadLine());
+                    IsAnError = false;
+                    Names[WhichNameToDelete + 1] = (null);
+                }   
+                catch (Exception)
+                {
+                    
+                }
+            }
+            else
+            {
+                Console.WriteLine("Sorry, there is no names.");
             }
 
-            //Asks user for which name they would like to delete
-            Console.WriteLine("Which person would you like to delete?");
-            Console.WriteLine("(Use the index number to the left of the name, then hit enter):");
-
-            try
-            {
-                WhichNameToDelete = Convert.ToInt32(Console.ReadLine());
-            }
-            catch (Exception)
-            {
-
-            }
+            //Clears space
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            
 
             return Names;
         }
 
+        static void ViewNames(string[]Names, ref bool IsNames)
+        {
+            //If There is names in the database
+            IsNames = false;
 
+            //Determines if names[index] does not equal nothing
+            for (int index = 0; index < 10; index++)
+            {
+                if (Names[index] != (null))
+                {
+                    Console.Write(index + 1);
+                    Console.Write(". ");
+                    Console.WriteLine(Names[index]);
+                    IsNames = true;
+                }
+            }
 
+            //Clears space
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
 
+            if (IsNames)
+            {
+                //Asks the user if they want to continue
+                Console.WriteLine("Press any key to continue:");
+                Console.ReadKey();
+            }
+          
+        }
 
 
         //Start of our program
@@ -139,15 +187,21 @@ namespace DataBase2
         {
             //Declaring variables
             string[] Names;
-            string IfRunTheProgramAgain;
             string WhatTheUserWantsToDo;
+            string WhatToSearchFor;
             bool MainMenuActive;
+            bool IsAnError;
+            bool IsNames;
+            int SearchIndex;
 
             //Init variables
             Names = new string[10];
             MainMenuActive = true;
-            IfRunTheProgramAgain = " ";
+            IsAnError = true;
+            IsNames = false;
             WhatTheUserWantsToDo = " ";
+            WhatToSearchFor = " ";
+            SearchIndex = 0;
 
             //Introduction to the user
             Console.WriteLine("Hello. This is a databse that can store the names");
@@ -176,45 +230,79 @@ namespace DataBase2
                     AddName(ref Names);
                 }
 
+                //If the user wants to delete a person
                 if (WhatTheUserWantsToDo == "delete")
                 {
-
+                    while (true)
+                    {
+                        Names = Delete(Names, ref IsAnError);
+                        if (IsAnError)
+                        {
+                            Console.WriteLine("Sorry, you have to type a number.");
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }
+                    
                 }
 
-
-
-
-                while(true)
+                //If the user wants to view all the names
+                if (WhatTheUserWantsToDo == "view")
                 {
-                    //Asking the user if he would like to run the program again
-                    Console.WriteLine("Would you like to run the program again?");
-                    Console.WriteLine("'yes' or 'no' :");
-                    IfRunTheProgramAgain = Console.ReadLine();
+                      ViewNames(Names, ref IsNames);
+                     if (!IsNames)
+                     {
+                        Console.WriteLine("Sorry, there is no names in the database.");
 
-                    //Determining if the user wants to run the program again
-                    //If User types 'no'
-                    if (IfRunTheProgramAgain == "no")
-                    {
-                        MainMenuActive = false;
-                        break;
-                    }
+                        //Clears space
+                        Console.WriteLine(" ");
+                        Console.WriteLine(" ");
 
-                    //If User types 'yes'
-                    //This is so that i can error check if the user didnt type the right word
-                    else if (IfRunTheProgramAgain == "yes")
-                    {
-                        break;
-                    }
-
-                    //This is error checking the user input
-                    else
-                    {
-                        Console.WriteLine("Sorry, you have to type 'yes' or 'no'.");
+                        //ASks the user if he wants to move on
                         Console.WriteLine("Press any key to continue:");
                         Console.ReadKey();
-                    }
+
+                            
+                     }
                 }
 
+                //Calls the search function if the user typed "search"
+                if (WhatTheUserWantsToDo == "search")
+                {
+                        //Asks the user for information on who to search for
+                        Console.WriteLine("Who would you like to search for?");
+                        WhatToSearchFor = Console.ReadLine();
+
+                        //Clears space
+                        Console.WriteLine(" ");
+                        Console.WriteLine(" ");
+
+
+                    //Calls the search function
+                    SearchIndex = Search(Names, WhatToSearchFor);
+
+                    if (Names[SearchIndex] != (null) )
+                    {
+                        //Prints the answer
+                        Console.Write("The index for that person is :");
+                        Console.WriteLine(SearchIndex + 1);
+
+                        //Clears space
+                        Console.WriteLine(" ");
+                        Console.WriteLine(" ");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Sorry, there is no one in the database that has that name. ");
+                    }
+
+                }
+
+                //Clears space
+                Console.WriteLine(" ");
+                Console.WriteLine(" ");
             }
         }
     }

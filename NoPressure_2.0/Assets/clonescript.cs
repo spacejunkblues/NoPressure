@@ -5,6 +5,8 @@ using UnityEngine;
 public class clonescript : MonoBehaviour
 {
     public Rigidbody rb;
+    Random rnd = new Random();
+    float random;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +16,7 @@ public class clonescript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.AddForce();
+        random = rnd.Next(2, 10);
+        rb.AddForce(random, random, random);
     }
 }

@@ -1,4 +1,8 @@
-exercise: create a program that will take 10 names. The 10 names must be stored in a dynamic array. Make a menu that has four options: 1. add name, 2. delete name, 3. view all names, 4. search
+exercise: create a program that will take 10 names. The 10 names must be stored in a dynamic array. Make a menu that has four options: 
+1. add name 
+2. delete name 
+3. view all names
+4. search
 
 create 4 functions. Add, Search, ViewAll, Delete
 

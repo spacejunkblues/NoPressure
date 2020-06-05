@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{A4A27381-AAF7-400D-83D2-02142276A11D}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="DataBase2.0/Program.cs">
     <Files>
-      <File FileName="DataBase2.0/Program.cs" Line="284" Column="1" />
+      <File FileName="DataBase2.0/Program.cs" Line="41" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,6 +16,10 @@
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
           <Value>Names[0]</Value>
+          <Value>Names[index] != (null)</Value>
+          <Value>Names</Value>
+          <Value>Names[WhichNameToDelete - 1] != (null)</Value>
+          <Value>e.Message</Value>
         </State>
       </Pad>
     </Pads>

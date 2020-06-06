@@ -8,7 +8,6 @@ public class carscript : MonoBehaviour
     public Transform tf;
     public Rigidbody rb;
     double acceleration = 0.0;
-    int i = 0;
     public float rotation = 0;
     int counter = 0;
     public GameObject Player;

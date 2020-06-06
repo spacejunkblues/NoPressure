@@ -7,6 +7,7 @@ public class playerscript : MonoBehaviour
     public Rigidbody rb;
     public Transform tf;
     float Size = 0.3f;
+    bool onground = true;
 
     // Start is called before the first frame update
     void Start()
@@ -36,5 +37,23 @@ public class playerscript : MonoBehaviour
         {
             tf.position = new Vector3((float)tf.position.x, (float)tf.position.y, (float)tf.position.z - (float)Size);
         }
+
+        if(Input.GetKey(KeyCode.Space) && onground)
+        {
+            rb.AddForce(0, 300, 0);
+            onground = false;
+        }
+    }
+
+    private void OnCollisionStay(Collision collision)//the Collision varible that gets passed, has infomation about what the car collided with. 
+    {
+       // Debug.Log(collision.collider.name);
+        Debug.Log(collision.gameObject.name);
+        if(collision.collider.name == "floor")
+        {
+            onground = true;
+        }
+        onground = true;
+        
     }
 }

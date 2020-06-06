@@ -12,7 +12,7 @@ public class playerscript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+       tf.position = new Vector3((Random.Range(-10.0f, 10.0f)), tf.position.y, (Random.Range(-10.0f, 10.0f)));
     }
 
     // Update is called once per frame
@@ -38,9 +38,10 @@ public class playerscript : MonoBehaviour
             tf.position = new Vector3((float)tf.position.x, (float)tf.position.y, (float)tf.position.z - (float)Size);
         }
 
-        if(Input.GetKey(KeyCode.Space) && onground)
+        if(Input.GetKeyDown(KeyCode.Space) && onground)
         {
             rb.AddForce(0, 300, 0);
+            Instantiate(this);
             onground = false;
         }
     }

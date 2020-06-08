@@ -127,7 +127,6 @@ namespace DataBase2
         {
             int WhichNameToDelete = 0;
             bool IsAName = false;
-            bool IfTyped = false;
             IsAnError = true;
 
             //Determines if names[index] does not equal nothing
@@ -162,8 +161,6 @@ namespace DataBase2
 
                     if (Names[WhichNameToDelete - 1] != (null))
                     {
-
-                        IfTyped = true;
                         IsAnError = false;
                         Names[WhichNameToDelete - 1] = (null);
                     }
@@ -205,17 +202,20 @@ namespace DataBase2
         {
             //If There is names in the database
             IsNames = false;
+            int ActualIndex = 0;
 
             //Determines if names[index] does not equal nothing
-            for (int index = 0; index < 10; index++)
+            for (int index = 0; ActualIndex < 10;)
             {
-                if (Names[index] != (null))
+                if (Names[ActualIndex] != (null))
                 {
                     Console.Write(index + 1);
                     Console.Write(". ");
-                    Console.WriteLine(Names[index]);
+                    Console.WriteLine(Names[ActualIndex]);
                     IsNames = true;
+                    index++;
                 }
+                ActualIndex++;
             }
 
             //Clears space
@@ -236,7 +236,7 @@ namespace DataBase2
             Console.WriteLine("You can 'add' a name,");
             Console.WriteLine("You can 'delete' a name,");
             Console.WriteLine("You can 'view' all names,");
-
+            Console.WriteLine("Or you can 'search' for a name.");
         }
             
 

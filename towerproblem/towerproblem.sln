@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "towerproblem", "towerproblem\towerproblem.csproj", "{9C12C9D8-17B0-440D-95F5-A885D5CCB1F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C12C9D8-17B0-440D-95F5-A885D5CCB1F9}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{9C12C9D8-17B0-440D-95F5-A885D5CCB1F9}.Debug|anycpu.Build.0 = Debug|anycpu
+		{9C12C9D8-17B0-440D-95F5-A885D5CCB1F9}.Release|anycpu.ActiveCfg = Release|anycpu
+		{9C12C9D8-17B0-440D-95F5-A885D5CCB1F9}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+EndGlobal

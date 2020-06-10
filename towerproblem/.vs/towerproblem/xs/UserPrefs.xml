@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{9C12C9D8-17B0-440D-95F5-A885D5CCB1F9}|Default">
+  <MonoDevelop.Ide.ItemProperties.towerproblem FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="towerproblem/Program.cs">
+    <Files>
+      <File FileName="towerproblem/Program.cs" Line="15" Column="41" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

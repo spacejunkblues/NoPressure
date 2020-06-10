@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz2.0", "Quiz2.0.csproj", "{2676DAF0-4298-4A01-BE4C-A42A9679F57F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2676DAF0-4298-4A01-BE4C-A42A9679F57F}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{2676DAF0-4298-4A01-BE4C-A42A9679F57F}.Debug|anycpu.Build.0 = Debug|anycpu
+		{2676DAF0-4298-4A01-BE4C-A42A9679F57F}.Release|anycpu.ActiveCfg = Release|anycpu
+		{2676DAF0-4298-4A01-BE4C-A42A9679F57F}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+EndGlobal

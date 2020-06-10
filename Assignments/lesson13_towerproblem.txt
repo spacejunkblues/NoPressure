@@ -1,0 +1,9 @@
+exercise: create a program that solves the prymid game. USE RECURRSION. The input of the game is how many rings and which peg to move the rings to. The output will show the player where to move each rings to win. Call the Pegs A, B, and C. Call the rings Ring 1, 2, 3, .. etc. 1 being the smallest ring. The rings start on Peg A. An example output should look like t his:
+
+Move Ring 3 from Peg B to Peg C
+Move Ring 2 from Peg A to Peg B
+...
+
+You can print it all out at once, but put in some ReadKeys() if the console dumps beyond what is readable. You are required problem solve, debug and comment!!
+
+Smaller rings can't go on top of bigger rings. Can only move one ring at a time.

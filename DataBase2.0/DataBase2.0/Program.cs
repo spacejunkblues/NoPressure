@@ -109,6 +109,7 @@ namespace DataBase2
                 if (Names[i] == WhatToSearchFor)
                 {
                     ClosestNumber = i;
+                    //break;
                 }
             }
             
@@ -236,7 +237,7 @@ namespace DataBase2
             Console.WriteLine("You can 'add' a name,");
             Console.WriteLine("You can 'delete' a name,");
             Console.WriteLine("You can 'view' all names,");
-            Console.WriteLine("Or you can 'search' for a name.");
+            Console.WriteLine("Or you can 'search' for a name.");           
         }
             
 
@@ -287,6 +288,87 @@ namespace DataBase2
                 Console.WriteLine(" ");
                 Console.WriteLine(" ");
 
+               /*switch (WhatTheUserWantsToDo)
+                {
+                    case "add":
+                        //Calls the function that adds a name to the Names array
+                        AddName(ref Names);
+                        ViewNames(Names, ref IsNames);
+                        break;
+
+                    case "delete":
+                        try
+                        {
+                            Names = Delete(Names, ref IsAnError);
+                        }
+                        catch (Exception Error)
+                        {
+                            Console.WriteLine(Error.Message);
+
+                            //Clears space
+                            Console.WriteLine(" ");
+                            Console.WriteLine(" ");
+                        }
+                        break;
+
+                    case "view":
+                        ViewNames(Names, ref IsNames);
+                        if (!IsNames)
+                        {
+                            Console.WriteLine("Sorry, there is no names in the database.");
+
+                            //Clears space
+                            Console.WriteLine(" ");
+                            Console.WriteLine(" ");
+
+                            //ASks the user if he wants to move on
+                            Console.WriteLine("Press any key to continue:");
+                            Console.ReadKey();
+
+
+                        }
+                        break;
+
+                    case "search":
+                        //Asks the user for information on who to search for
+                        Console.WriteLine("Who would you like to search for?");
+                        WhatToSearchFor = Console.ReadLine();
+
+
+
+                        //Clears space
+                        Console.WriteLine(" ");
+                        Console.WriteLine(" ");
+
+                        try
+                        {
+                            //Calls the search function
+                            SearchIndex = Search(Names, WhatToSearchFor);
+                        }
+                        catch
+                        {
+                            Console.WriteLine("Sorry, there is no one in the database that has that name.");
+
+                            //Clears space
+                            Console.WriteLine(" ");
+                            Console.WriteLine(" ");
+
+
+                        }
+
+                        if (Names[SearchIndex] != (null))
+                        {
+                            //Prints the answer
+                            Console.Write("The index for that person is :");
+                            Console.WriteLine(SearchIndex + 1);
+
+                            //Clears space
+                            Console.WriteLine(" ");
+                            Console.WriteLine(" ");
+                        }
+                        break;
+                }*/
+
                 //Determines what the user wants to do
                 if (WhatTheUserWantsToDo == "add")
                 {
@@ -297,7 +379,7 @@ namespace DataBase2
                 }
 
                 //If the user wants to delete a person
-                if (WhatTheUserWantsToDo == "delete")
+                else if (WhatTheUserWantsToDo == "delete")
                 {
                     try
                     {
@@ -315,7 +397,7 @@ namespace DataBase2
                 }
 
                 //If the user wants to view all the names
-                if (WhatTheUserWantsToDo == "view")
+                else if (WhatTheUserWantsToDo == "view")
                 {
                       ViewNames(Names, ref IsNames);
                      if (!IsNames)
@@ -335,17 +417,17 @@ namespace DataBase2
                 }
 
                 //Calls the search function if the user typed "search"
-                if (WhatTheUserWantsToDo == "search")
+                else if (WhatTheUserWantsToDo == "search")
                 {
-                        //Asks the user for information on who to search for
-                        Console.WriteLine("Who would you like to search for?");
-                        WhatToSearchFor = Console.ReadLine();
+                    //Asks the user for information on who to search for
+                    Console.WriteLine("Who would you like to search for?");
+                    WhatToSearchFor = Console.ReadLine();
 
                         
 
-                        //Clears space
-                        Console.WriteLine(" ");
-                        Console.WriteLine(" ");
+                    //Clears space
+                    Console.WriteLine(" ");
+                    Console.WriteLine(" ");
 
                     try
                     {
@@ -373,6 +455,12 @@ namespace DataBase2
                         Console.WriteLine(" ");
                         Console.WriteLine(" ");
                     }
+
+                }
+                else
+                {
+                    //invalid option. Do nothing
+                    Console.Write("Not a valid option");
 
                 }
 

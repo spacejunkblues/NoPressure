@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{4E9D22C6-38A3-4561-5762-B2CA5719C8F6}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/playercontroller.cs">
+    <Files>
+      <File FileName="Assets/zombiescript.cs" Line="54" Column="18" />
+      <File FileName="Assets/playercontroller.cs" Line="46" Column="10" />
+      <File FileName="Assets/camerascript.cs" Line="8" Column="24" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7acede26-0e06-4485-89cc-2b770c3026ad" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

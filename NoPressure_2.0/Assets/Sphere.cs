@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spherescript : MonoBehaviour
+public class Sphere : MonoBehaviour
 {
     public Transform tf;
     public Rigidbody rb;

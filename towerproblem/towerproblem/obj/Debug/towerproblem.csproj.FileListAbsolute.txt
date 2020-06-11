@@ -1,0 +1,6 @@
+/Users/maggiefleck/Desktop/NoPressure/towerproblem/towerproblem/bin/Debug/towerproblem.exe
+/Users/maggiefleck/Desktop/NoPressure/towerproblem/towerproblem/bin/Debug/towerproblem.pdb
+/Users/maggiefleck/Desktop/NoPressure/towerproblem/towerproblem/obj/Debug/towerproblem.csprojAssemblyReference.cache
+/Users/maggiefleck/Desktop/NoPressure/towerproblem/towerproblem/obj/Debug/towerproblem.csproj.CoreCompileInputs.cache
+/Users/maggiefleck/Desktop/NoPressure/towerproblem/towerproblem/obj/Debug/towerproblem.exe
+/Users/maggiefleck/Desktop/NoPressure/towerproblem/towerproblem/obj/Debug/towerproblem.pdb

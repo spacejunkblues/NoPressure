@@ -60,7 +60,7 @@ public class zombiescript : MonoBehaviour
             BehindYou = true;
             //  Debug.Log(ToTheRight);
         }
-        else if (transform.position.x < player.transform.position.x)
+        else if (transform.position.z < player.transform.position.z)
         {
             if (BehindYou)
             {

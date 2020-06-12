@@ -1,19 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playercontroller : MonoBehaviour
 {
     public Rigidbody rb;
     public Transform tf;
-    float Spees = 0.1f;
+    float Spees = 0.06f;
     bool onground = true;
     public GameObject player;
+    public Scene sc;
 
     // Start is called before the first frame update
     void Start()
     {
        tf.position = new Vector3((Random.Range(-10.0f, 10.0f)), tf.position.y, (Random.Range(-10.0f, 10.0f)));
+
     }
 
     // Update is called once per frame

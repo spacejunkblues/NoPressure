@@ -8,48 +8,61 @@ namespace towerproblem
     class MainClass
     {
         //Function that solves the problem using recurence
-        static void towersolution(int HowManyRings)
+        static void MoveRings(int HowManyRings, char StartPeg, char TargetPeg)
         {
-            //While the program has not given it self a -1
-            if (HowManyRings != -1)
+            //
+            if (HowManyRings != 1) 
             {
-                string[] pegs = new string[3];
-                pegs[0] = "A";
-                pegs[1] = "B";
-                pegs[2] = "C";
-                int pegindex = 1;
-                int[] pegsequence = new int [4];
-
-                pegsequence[0] = 1;
-                pegsequence[1] = 2;
-                pegsequence[2] = 1;
-
-                //will run the amount of rings there are to solve
-                for (int i = 0; i <= HowManyRings; i++)
-                {
-                    if (pegindex == 3)
-                    {
-                        pegindex = 0;
-                    }
-
-                    //Printing the answer to the screen
-                    Console.Write("Move ring ");
-                    Console.Write(pegsequence[i]);
-                    Console.Write(" to peg ");
-                    Console.Write(pegs[pegsequence[i]]);
-                    Console.WriteLine(".");
-                    pegindex++;
-                }
+                MoveRings(HowManyRings - 1, StartPeg, DetermineOpenPeg(TargetPeg, StartPeg));
             }
 
-            //will exit the function if the program gives it self a -1
-            else
+            Console.Write("Move ring ");
+            Console.Write(HowManyRings);
+            Console.Write(" from peg ");
+            Console.Write(StartPeg);
+            Console.Write(" to peg ");
+            Console.Write(TargetPeg);
+            Console.WriteLine(".");
+
+            if (HowManyRings != 1)
             {
-                return;
+                TargetPeg++;
+                MoveRings(HowManyRings - 1, TargetPeg, DetermineOpenPeg(TargetPeg, StartPeg));
+            }
+        }
+
+        static char DetermineOpenPeg(char peg1, char peg2) 
+        {
+
+            char OpenPeg = ' ';
+
+            if (peg1 == 'A' && peg2 == 'B') 
+            {
+                OpenPeg = 'C';
+            }
+            else if (peg1 == 'B' && peg2 == 'A') 
+            {
+                OpenPeg = 'C';
+            }
+            else if(peg1 == 'C' && peg2 == 'B') 
+            {
+                OpenPeg = 'A';
+            }
+            else if (peg1 == 'B' && peg2 == 'C')
+            {
+                OpenPeg = 'A';
+            }
+            else if (peg1 == 'C' && peg2 == 'A')
+            {
+                OpenPeg = 'B';
+            }
+            else if (peg1 == 'A' && peg2 == 'C')
+            {
+                OpenPeg = 'B';
             }
 
-            //Recalls the same function
-            towersolution(HowManyRings - 1);
+            return OpenPeg;
+
         }
 
         public static void Main(string[] args)
@@ -57,24 +70,29 @@ namespace towerproblem
             //Declaring variables
             int HowManyRings = 1;
             bool LoopActive = true;
+          
 
-            //It will run while the user has not typed a number sucessfully
-            while (LoopActive)
-            {
-                Console.WriteLine("How many rings are there?");
-                try
+           
+
+                //It will run while the user has not typed a number sucessfully
+                while (LoopActive)
                 {
-                    HowManyRings = Convert.ToInt32(Console.ReadLine());
-                    LoopActive = false;
+                    Console.WriteLine("How many rings are there?");
+                    try
+                    {
+                        HowManyRings = Convert.ToInt32(Console.ReadLine());
+                        LoopActive = false;
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Sorry, you have to type a number.");
+                    }
                 }
-                catch
-                {
-                    Console.WriteLine("Sorry, you have to type a number.");
-                }
-            }
 
             //Calling the function that solves the problem
-            towersolution(HowManyRings - 1);
+            MoveRings(HowManyRings, 'A', 'B');
+
+
         }
     }
 }

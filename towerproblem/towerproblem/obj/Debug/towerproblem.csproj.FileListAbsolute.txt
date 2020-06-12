@@ -4,3 +4,9 @@
 /Users/maggiefleck/Desktop/NoPressure/towerproblem/towerproblem/obj/Debug/towerproblem.csproj.CoreCompileInputs.cache
 /Users/maggiefleck/Desktop/NoPressure/towerproblem/towerproblem/obj/Debug/towerproblem.exe
 /Users/maggiefleck/Desktop/NoPressure/towerproblem/towerproblem/obj/Debug/towerproblem.pdb
+C:\Users\User\Documents\GitHub\NoPressure\towerproblem\towerproblem\bin\Debug\towerproblem.exe
+C:\Users\User\Documents\GitHub\NoPressure\towerproblem\towerproblem\bin\Debug\towerproblem.pdb
+C:\Users\User\Documents\GitHub\NoPressure\towerproblem\towerproblem\obj\Debug\towerproblem.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\towerproblem\towerproblem\obj\Debug\towerproblem.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\towerproblem\towerproblem\obj\Debug\towerproblem.exe
+C:\Users\User\Documents\GitHub\NoPressure\towerproblem\towerproblem\obj\Debug\towerproblem.pdb

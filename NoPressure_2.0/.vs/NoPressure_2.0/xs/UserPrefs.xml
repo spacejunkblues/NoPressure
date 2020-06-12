@@ -1,14 +1,35 @@
 ﻿<Properties StartupConfiguration="{4E9D22C6-38A3-4561-5762-B2CA5719C8F6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/playercontroller.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/zombiegenerator.cs">
     <Files>
       <File FileName="Assets/zombiescript.cs" Line="54" Column="18" />
       <File FileName="Assets/playercontroller.cs" Line="46" Column="10" />
-      <File FileName="Assets/camerascript.cs" Line="8" Column="24" />
+      <File FileName="Assets/camerascript.cs" />
+      <File FileName="Assets/zombiegenerator.cs" Line="7" Column="25" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NoPressure_2.0" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="zombiegenerator.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>Names[0]</Value>
+          <Value>Names[index] != (null)</Value>
+          <Value>Names</Value>
+          <Value>Names[WhichNameToDelete - 1] != (null)</Value>
+          <Value>e.Message</Value>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7acede26-0e06-4485-89cc-2b770c3026ad" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4c450b2e-d994-4140-b2d2-bc26425451e4" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

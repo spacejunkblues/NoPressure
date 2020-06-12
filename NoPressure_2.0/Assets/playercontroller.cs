@@ -7,7 +7,7 @@ public class playercontroller : MonoBehaviour
 {
     public Rigidbody rb;
     public Transform tf;
-    float Spees = 0.06f;
+    float Spees = 0.08f;
     bool onground = true;
     public GameObject player;
     public Scene sc;

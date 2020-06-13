@@ -11,6 +11,7 @@ public class playercontroller : MonoBehaviour
     bool onground = true;
     public GameObject player;
     public Scene sc;
+    public GameObject food;
 
     // Start is called before the first frame update
     void Start()
@@ -47,10 +48,10 @@ public class playercontroller : MonoBehaviour
             rb.AddForce(0, 300, 0);
             onground = false;
         }
-        if (Input.GetKey(KeyCode.P))
-        {
-            tf.localScale = new Vector3(tf.localScale.x + 1, tf.localScale.y +1,tf.localScale.z +1);
-        }
+        //if (Input.GetKey(KeyCode.P))
+        //{
+         //   tf.localScale = new Vector3(tf.localScale.x + 1, tf.localScale.y +1,tf.localScale.z +1);
+        //}
     }
 
     private void OnCollisionStay(Collision collision)//the Collision varible that gets passed, has infomation about what the car collided with. 
@@ -72,6 +73,11 @@ public class playercontroller : MonoBehaviour
             {
                 Destroy(collision.gameObject);
             }
+        }
+
+        else if(collision.gameObject.name == "food(Clone)")
+        {
+            tf.localScale = new Vector3(tf.localScale.x + 1, tf.localScale.y + 1, tf.localScale.z + 1);
         }
         
     }

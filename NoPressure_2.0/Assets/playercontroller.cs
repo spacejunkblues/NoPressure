@@ -47,6 +47,10 @@ public class playercontroller : MonoBehaviour
             rb.AddForce(0, 300, 0);
             onground = false;
         }
+        if (Input.GetKey(KeyCode.P))
+        {
+            tf.localScale = new Vector3(tf.localScale.x + 1, tf.localScale.y +1,tf.localScale.z +1);
+        }
     }
 
     private void OnCollisionStay(Collision collision)//the Collision varible that gets passed, has infomation about what the car collided with. 

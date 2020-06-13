@@ -2,9 +2,9 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/zombiegenerator.cs">
     <Files>
       <File FileName="Assets/zombiescript.cs" Line="54" Column="18" />
-      <File FileName="Assets/playercontroller.cs" Line="46" Column="10" />
+      <File FileName="Assets/playercontroller.cs" Line="10" Column="23" />
       <File FileName="Assets/camerascript.cs" />
-      <File FileName="Assets/zombiegenerator.cs" Line="7" Column="25" />
+      <File FileName="Assets/zombiegenerator.cs" Line="21" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

@@ -17,8 +17,6 @@ public class zombiescript : MonoBehaviour
     void Start()
     {
         ChangeOfDirection = false;
-        ToTheRight = true;
-        BehindYou = true;
         rb.AddForce(-(float)250, 0, 0);
         rb.AddForce(0, 0, -(float)250);
     }

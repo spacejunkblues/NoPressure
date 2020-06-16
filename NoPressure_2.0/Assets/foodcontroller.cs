@@ -17,11 +17,12 @@ public class foodcontroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        food.SetActive(true);
         counter++;
         if (counter > 200)
         {
             Instantiate(food);
-            tf.position = new Vector3(Random.RandomRange(0, 10), Random.RandomRange(0, 10), Random.RandomRange(0, 10));
+            tf.position = new Vector3(Random.Range(0, 10), Random.Range(0, 10), Random.Range(0, 10));
             counter = 0;
         }
     }

@@ -12,12 +12,12 @@ public class playercontroller : MonoBehaviour
     public GameObject player;
     public Scene sc;
     public GameObject food;
+    public GameObject zombie;
 
     // Start is called before the first frame update
     void Start()
     {
-       tf.position = new Vector3((Random.Range(-10.0f, 10.0f)), tf.position.y, (Random.Range(-10.0f, 10.0f)));
-
+        tf.position = new Vector3(Random.Range(-10.0f, 10.0f), tf.position.y, Random.Range(-10.0f, 10.0f));
     }
 
     // Update is called once per frame
@@ -56,14 +56,14 @@ public class playercontroller : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)//the Collision varible that gets passed, has infomation about what the car collided with. 
     {
-       // Debug.Log(collision.collider.name);
+        // Debug.Log(collision.collider.name);
         //Debug.Log(collision.gameObject.name);
         if(collision.collider.name == "floor")
         {
             onground = true;
         }
 
-        else if(collision.collider.name == "zombie") 
+        if(collision.collider.name == "zombie") 
         {
             if (collision.gameObject.transform.localScale.x > tf.localScale.x) 
             {
@@ -75,9 +75,24 @@ public class playercontroller : MonoBehaviour
             }
         }
 
-        else if(collision.gameObject.name == "food(Clone)")
+        if (collision.collider.name == "zombie(Clone)")
+        {
+            if (collision.gameObject.transform.localScale.x > tf.localScale.x)
+            {
+                Destroy(player);
+            }
+            else
+            {
+                Destroy(collision.gameObject);
+            }
+        }
+
+        if (collision.gameObject.name == "food(Clone)")
         {
             tf.localScale = new Vector3(tf.localScale.x + 1, tf.localScale.y + 1, tf.localScale.z + 1);
+            Spees -= (float)0.001;
+            Destroy(collision.gameObject);
+            Instantiate(zombie);
         }
         
     }

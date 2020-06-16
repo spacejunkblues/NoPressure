@@ -18,7 +18,6 @@ public class playercontroller : MonoBehaviour
     {
         tf.position = new Vector3(Random.Range(-10.0f, 10.0f), tf.position.y, Random.Range(-10.0f, 10.0f));
         onground = false;
-        tf.localScale = new Vector3(tf.localScale.x + 100, tf.localScale.y + 100, tf.localScale.z + 100);
     }
 
     // Update is called once per frame
@@ -66,8 +65,8 @@ public class playercontroller : MonoBehaviour
 
         if (collision.gameObject.name == "food(Clone)")
         {
-            tf.localScale = new Vector3(tf.localScale.x + 1, tf.localScale.y + 1, tf.localScale.z + 1);
-            Spees -= (float)0.005;
+            tf.localScale = new Vector3(tf.localScale.x + (float)0.5, tf.localScale.y + (float)0.5, tf.localScale.z + (float)0.5);
+            Spees -= (float)0.003;
             Destroy(collision.gameObject);
         }
         

@@ -65,7 +65,9 @@
   <ItemGroup>
     <Compile Include="Assets\Sphere.cs" />
     <Compile Include="Assets\camerascript.cs" />
+    <Compile Include="Assets\camerascript1.cs" />
     <Compile Include="Assets\carscript.cs" />
+    <Compile Include="Assets\circlecontroller.cs" />
     <Compile Include="Assets\foodcontroller.cs" />
     <Compile Include="Assets\playercontroller.cs" />
     <Reference Include="Unity.Timeline.Editor">

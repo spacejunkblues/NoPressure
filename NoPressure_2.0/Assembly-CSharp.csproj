@@ -68,8 +68,6 @@
     <Compile Include="Assets\carscript.cs" />
     <Compile Include="Assets\foodcontroller.cs" />
     <Compile Include="Assets\playercontroller.cs" />
-    <Compile Include="Assets\zombiegenerator.cs" />
-    <Compile Include="Assets\zombiescript.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/maggiefleck/Desktop/NoPressure/NoPressure_2.0/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

@@ -7,11 +7,14 @@ public class foodcontroller : MonoBehaviour
     private Transform tf;
     public int counter;
     public GameObject food;
+    int proceduration;
+
     // Start is called before the first frame update
     void Start()
     {
         tf = food.GetComponent<Transform>();
         counter = 0;
+        proceduration = 0;
     }
 
     // Update is called once per frame
@@ -22,8 +25,14 @@ public class foodcontroller : MonoBehaviour
         if (counter > 200)
         {
             Instantiate(food);
-            tf.position = new Vector3(Random.Range(0, 10), Random.Range(0, 10), Random.Range(0, 10));
+            tf.position = new Vector3(Random.Range(0, 30), Random.Range(0, 30), Random.Range(0, 30));
             counter = 0;
+        }
+        if (proceduration < 10)
+        {
+            Instantiate(food);
+            tf.position = new Vector3(Random.Range(0, 30), Random.Range(0, 30), Random.Range(0, 30));
+            proceduration++;
         }
     }
 }

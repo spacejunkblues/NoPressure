@@ -8,11 +8,15 @@ namespace towerproblem
     class MainClass
     {
         //Function that solves the problem using recurence
+        //MoveRings will move the number of rings given from StartPeg to TargetPeg
         static void MoveRings(int HowManyRings, char StartPeg, char TargetPeg)
         {
             //
             if (HowManyRings != 1) 
             {
+                //move the rings that are on top of the current ring. 
+                //Move the rings from StartPeg to open peg.
+                //MoveRings(number of rings on top of current, peg the current ring is on, open peg)
                 MoveRings(HowManyRings - 1, StartPeg, DetermineOpenPeg(TargetPeg, StartPeg));
             }
 
@@ -24,10 +28,15 @@ namespace towerproblem
             Console.Write(TargetPeg);
             Console.WriteLine(".");
 
+            Console.WriteLine("press any key to continue:");
+            Console.ReadKey();
+            Console.WriteLine();
+
             if (HowManyRings != 1)
-            {
-                TargetPeg++;
-                MoveRings(HowManyRings - 1, TargetPeg, DetermineOpenPeg(TargetPeg, StartPeg));
+            {                
+                //takes all the rings that were moved from up above, and moves them to the target
+                //From open peg, to targetpeg
+                MoveRings(HowManyRings - 1, DetermineOpenPeg(TargetPeg, StartPeg), TargetPeg);
             }
         }
 
@@ -89,7 +98,11 @@ namespace towerproblem
                     }
                 }
 
+                Console.WriteLine();
+                Console.WriteLine();
+
             //Calling the function that solves the problem
+            Console.WriteLine("");
             MoveRings(HowManyRings, 'A', 'B');
 
 

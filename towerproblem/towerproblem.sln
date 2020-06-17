@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "towerproblem", "towerproblem\towerproblem.csproj", "{9C12C9D8-17B0-440D-95F5-A885D5CCB1F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C12C9D8-17B0-440D-95F5-A885D5CCB1F9}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{9C12C9D8-17B0-440D-95F5-A885D5CCB1F9}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{9C12C9D8-17B0-440D-95F5-A885D5CCB1F9}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{9C12C9D8-17B0-440D-95F5-A885D5CCB1F9}.Release|anycpu.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {893015BB-122D-4B87-9F63-2AE351AF2D23}
+	EndGlobalSection
+EndGlobal

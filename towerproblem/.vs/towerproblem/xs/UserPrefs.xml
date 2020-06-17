@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{9C12C9D8-17B0-440D-95F5-A885D5CCB1F9}|Default">
+  <MonoDevelop.Ide.ItemProperties.towerproblem PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="towerproblem/Program.cs">
+    <Files>
+      <File FileName="towerproblem/Program.cs" Line="51" Column="40" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="towerproblem" expanded="True">
+            <Node name="towerproblem" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>Names[0]</Value>
+          <Value>Names[index] != (null)</Value>
+          <Value>Names</Value>
+          <Value>Names[WhichNameToDelete - 1] != (null)</Value>
+          <Value>e.Message</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

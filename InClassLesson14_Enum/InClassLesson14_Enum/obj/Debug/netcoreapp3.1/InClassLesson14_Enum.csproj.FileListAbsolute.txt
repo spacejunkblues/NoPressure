@@ -1,0 +1,13 @@
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson14_Enum\InClassLesson14_Enum\bin\Debug\netcoreapp3.1\InClassLesson14_Enum.exe
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson14_Enum\InClassLesson14_Enum\bin\Debug\netcoreapp3.1\InClassLesson14_Enum.deps.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson14_Enum\InClassLesson14_Enum\bin\Debug\netcoreapp3.1\InClassLesson14_Enum.runtimeconfig.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson14_Enum\InClassLesson14_Enum\bin\Debug\netcoreapp3.1\InClassLesson14_Enum.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson14_Enum\InClassLesson14_Enum\bin\Debug\netcoreapp3.1\InClassLesson14_Enum.dll
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson14_Enum\InClassLesson14_Enum\bin\Debug\netcoreapp3.1\InClassLesson14_Enum.pdb
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson14_Enum\InClassLesson14_Enum\obj\Debug\netcoreapp3.1\InClassLesson14_Enum.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson14_Enum\InClassLesson14_Enum\obj\Debug\netcoreapp3.1\InClassLesson14_Enum.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson14_Enum\InClassLesson14_Enum\obj\Debug\netcoreapp3.1\InClassLesson14_Enum.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson14_Enum\InClassLesson14_Enum\obj\Debug\netcoreapp3.1\InClassLesson14_Enum.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson14_Enum\InClassLesson14_Enum\obj\Debug\netcoreapp3.1\InClassLesson14_Enum.dll
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson14_Enum\InClassLesson14_Enum\obj\Debug\netcoreapp3.1\InClassLesson14_Enum.pdb
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson14_Enum\InClassLesson14_Enum\obj\Debug\netcoreapp3.1\InClassLesson14_Enum.genruntimeconfig.cache

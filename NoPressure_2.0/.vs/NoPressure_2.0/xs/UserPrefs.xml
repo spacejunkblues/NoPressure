@@ -1,17 +1,15 @@
 ﻿<Properties StartupConfiguration="{4E9D22C6-38A3-4561-5762-B2CA5719C8F6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/circlecontroller.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/playercontroller.cs">
     <Files>
-      <File FileName="Assets/playercontroller.cs" Line="69" Column="34" />
+      <File FileName="Assets/playercontroller.cs" Line="70" Column="285" />
       <File FileName="Assets/foodcontroller.cs" />
-      <File FileName="Assets/circlecontroller.cs" Line="5" Column="42" />
-      <File FileName="Assets/camerascript1.cs" Line="20" Column="79" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NoPressure_2.0" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="circlecontroller.cs" selected="True" />
+              <Node name="playercontroller.cs" selected="True" />
             </Node>
           </Node>
         </State>

@@ -12,12 +12,14 @@ public class playercontroller : MonoBehaviour
     public GameObject player;
     public Scene sc;
     public GameObject food;
+    public float sizemultiplier;
 
     // Start is called before the first frame update
     void Start()
     {
         tf.position = new Vector3(Random.Range(-10.0f, 10.0f), tf.position.y, Random.Range(-10.0f, 10.0f));
         onground = false;
+        sizemultiplier = (float)0.5;
     }
 
     // Update is called once per frame
@@ -30,7 +32,7 @@ public class playercontroller : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
-            tf.position = new Vector3((float)tf.position.x - (float)Spees, (float)tf.position.y, (float)tf.position.z);
+            tf.position = new Vector3(tf.position.x - Spees, (float)tf.position.y, (float)tf.position.z);
         }
 
         if (Input.GetKey(KeyCode.D))
@@ -65,7 +67,8 @@ public class playercontroller : MonoBehaviour
 
         if (collision.gameObject.name == "food(Clone)")
         {
-            tf.localScale = new Vector3(tf.localScale.x + (float)0.5, tf.localScale.y + (float)0.5, tf.localScale.z + (float)0.5);
+            tf.localScale = new Vector3(tf.localScale.x + (collision.gameObject.transform.localScale.x - sizemultiplier), tf.localScale.y + (collision.gameObject.transform.localScale.y - sizemultiplier), tf.localScale.z + (collision.gameObject.transform.localScale.z - sizemultiplier));
+            //sizemultiplier += (float)tf.localScale.z / 2;
             Spees -= (float)0.003;
             Destroy(collision.gameObject);
         }

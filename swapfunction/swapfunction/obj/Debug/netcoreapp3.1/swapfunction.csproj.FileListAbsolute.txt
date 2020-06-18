@@ -1,0 +1,13 @@
+C:\Users\User\Documents\GitHub\NoPressure\swapfunction\swapfunction\bin\Debug\netcoreapp3.1\swapfunction.exe
+C:\Users\User\Documents\GitHub\NoPressure\swapfunction\swapfunction\bin\Debug\netcoreapp3.1\swapfunction.deps.json
+C:\Users\User\Documents\GitHub\NoPressure\swapfunction\swapfunction\bin\Debug\netcoreapp3.1\swapfunction.runtimeconfig.json
+C:\Users\User\Documents\GitHub\NoPressure\swapfunction\swapfunction\bin\Debug\netcoreapp3.1\swapfunction.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\NoPressure\swapfunction\swapfunction\bin\Debug\netcoreapp3.1\swapfunction.dll
+C:\Users\User\Documents\GitHub\NoPressure\swapfunction\swapfunction\bin\Debug\netcoreapp3.1\swapfunction.pdb
+C:\Users\User\Documents\GitHub\NoPressure\swapfunction\swapfunction\obj\Debug\netcoreapp3.1\swapfunction.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\swapfunction\swapfunction\obj\Debug\netcoreapp3.1\swapfunction.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\swapfunction\swapfunction\obj\Debug\netcoreapp3.1\swapfunction.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\swapfunction\swapfunction\obj\Debug\netcoreapp3.1\swapfunction.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\NoPressure\swapfunction\swapfunction\obj\Debug\netcoreapp3.1\swapfunction.dll
+C:\Users\User\Documents\GitHub\NoPressure\swapfunction\swapfunction\obj\Debug\netcoreapp3.1\swapfunction.pdb
+C:\Users\User\Documents\GitHub\NoPressure\swapfunction\swapfunction\obj\Debug\netcoreapp3.1\swapfunction.genruntimeconfig.cache

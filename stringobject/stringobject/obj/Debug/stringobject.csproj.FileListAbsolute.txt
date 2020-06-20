@@ -1,0 +1,6 @@
+/Users/maggiefleck/Desktop/NoPressure/stringobject/stringobject/bin/Debug/stringobject.exe
+/Users/maggiefleck/Desktop/NoPressure/stringobject/stringobject/bin/Debug/stringobject.pdb
+/Users/maggiefleck/Desktop/NoPressure/stringobject/stringobject/obj/Debug/stringobject.csprojAssemblyReference.cache
+/Users/maggiefleck/Desktop/NoPressure/stringobject/stringobject/obj/Debug/stringobject.csproj.CoreCompileInputs.cache
+/Users/maggiefleck/Desktop/NoPressure/stringobject/stringobject/obj/Debug/stringobject.exe
+/Users/maggiefleck/Desktop/NoPressure/stringobject/stringobject/obj/Debug/stringobject.pdb

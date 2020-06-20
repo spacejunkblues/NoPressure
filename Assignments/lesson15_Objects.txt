@@ -7,14 +7,14 @@ Give it two private attributes:
 	Size - will keep track of how many characters are in the array
 
 Create three methods (functions of the class):
-	SetString - takes an array of char's as a parameter, and stores that array of chars into CharArray.
-		Note, the method should not point to the orignal array. Change the orignal array to test if this works.
+	SetString - takes an array of char's as a parameter, and stores that array of 		chars into CharArray.
+		Note, the method should not point to the orignal array. Change the orignal 		array to test if this works.
 
-	GetString - returns the CharArray. This function should return a copy of whats stored. 
+	GetString - returns the CharArray. This function should return a copy of whats 		stored. 
 		Again, changing one array should not change the other.
 
-	AppendString - will have a char array as a parameter. Add these charaters to the end of CharArray. 
-		Example, if "Hello" was already stored and I called AppendString(" World"). 
+	AppendString - will have a char array as a parameter. Add these charaters to the 	end of CharArray. 
+		Example, if "Hello" was already stored and I called AppendString(" 			World"). 
 		The method should change CharArray to say "Hello World".
 
 Note: For these methods you will need to loop. You can use .length for your loops or you can make a SetString parameter that requires the size of the incoming array. Using 'Size' when looping through CharArray.

@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{C4733CC3-B77F-4F8D-B3A1-D004942EA78A}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="stringobject/Program.cs">
     <Files>
-      <File FileName="stringobject/Program.cs" Line="6" Column="25" />
+      <File FileName="stringobject/Program.cs" Line="10" Column="8" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,8 +15,9 @@
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
-          <Value>name</Value>
-          <Value>CharArray</Value>
+          <Value>name1</Value>
+          <Value>name2</Value>
+          <Value>ch</Value>
         </State>
       </Pad>
     </Pads>
@@ -25,7 +26,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
   <MonoDevelop.Ide.ItemProperties.stringobject PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/maggiefleck/Desktop/NoPressure/stringobject/stringobject/Program.cs" relfile="stringobject/Program.cs" line="92" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

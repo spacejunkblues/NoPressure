@@ -7,7 +7,7 @@ namespace stringobject
     class Mstring
     {
         //Created 2 private variables, CharArray, and Size
-        char[] CharArray;
+        public char[] CharArray;
         long Size;
 
         //Three methods for acessing and changing mstring
@@ -83,7 +83,18 @@ namespace stringobject
     {
         public static void Main(string[] args)
         {
-            
+            Mstring name1 = new Mstring();
+            Mstring name2 = new Mstring();
+
+            char[] ch = new char[1];
+            ch[0] = 'd';
+
+            name1.SetString(ch);
+            Console.WriteLine( name1.GetString()[0]);
+            ch[0] = 'a';
+            name2.SetString(ch);
+            Console.WriteLine(name2.GetString()[0]);
+
         }
     }
 }

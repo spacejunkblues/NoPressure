@@ -7,7 +7,7 @@ namespace stringobject
     class Mstring
     {
         //Created 2 private variables, CharArray, and Size
-        public char[] CharArray;
+        char[] CharArray;
         long Size;
 
         //Three methods for acessing and changing mstring
@@ -22,13 +22,28 @@ namespace stringobject
             AssignArrays(ref CharArray, mstring, mstring.Length);
         }
 
+        //Three methods for acessing and changing mstring
+        //SetString sets CharArray to mstring
+        public void SetString(string mstring)
+        {
+            //create a chararray
+            char[] placeholder = new char[mstring.Length];
+
+            //convert mstring to char array
+            for (int i = 0; i < mstring.Length; i++)
+                placeholder[i] = mstring[i];
+
+            //call setstring with that chararray
+            SetString(placeholder);
+        }
+
         //GetString returns the CharArray
         public char[] GetString()
         {
             //Copy of CharArray
             char[] clone = new char[CharArray.Length];
 
-            //Assigns copy of CharArray
+            //Assigns copy of CharArray using AssignArrays
             AssignArrays(ref clone, CharArray, Size);
 
             //Returns a copy of chararray to MainClass
@@ -66,6 +81,7 @@ namespace stringobject
         }
 
         //Assign Arrays to Each Other
+        //Assumes arrays are same size
         void AssignArrays(ref char[]Array1, char[]Array2, long Index)
         {
             //Assigns one Array to another
@@ -86,15 +102,35 @@ namespace stringobject
             Mstring name1 = new Mstring();
             Mstring name2 = new Mstring();
 
-            char[] ch = new char[1];
+            char[] ch = new char[2];
             ch[0] = 'd';
 
             name1.SetString(ch);
-            Console.WriteLine( name1.GetString()[0]);
+            Console.WriteLine(name1.GetString()[0]);
             ch[0] = 'a';
+            ch[1] = 'b';
             name2.SetString(ch);
             Console.WriteLine(name2.GetString()[0]);
 
+            //name2.AppendString('b');
+            Console.WriteLine(name2.GetString());
+
+            char[] ch2 = new char[5];
+
+            ch2[0] = 'h';
+            ch2[1] = 'e';
+            ch2[2] = 'l';
+            ch2[3] = 'l';
+            ch2[4] = 'o';
+
+            name2.AppendString(ch2);
+
+            string name3 = "uncle";
+
+            Console.WriteLine(name3[0]);
+
+            name2.SetString("Hello");
+            Console.WriteLine(name2.GetString());
         }
     }
 }

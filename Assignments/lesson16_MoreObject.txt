@@ -1,0 +1,11 @@
+constructor
+destructor
+inherietance
+overload operators - + == != < >
+
+
+assignment: create a contructor for your string class that will accept a char[] as an inital value. Overload the constructor with no parameter so that an initial value isn't required. Overload the contructor to accept a string
+
+
+assignment: Overload the > and < operators for your MString class. Reference ASCII table to make sure it makes sense.
+Account for lower case, uppercase and numbers.

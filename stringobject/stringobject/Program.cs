@@ -93,44 +93,150 @@ namespace stringobject
             }
         }
 
-    }
+		//Assign Arrays to Each Other
+		//Assumes arrays are same size
+		void AssignArrays(ref char[] Array1, string Array2, long index)
+        {
+			//Assigns one Array to another
+			for (long i = 0; i < index; i++)
+			{
+				//Assigns Arrays
+				Array1[i] = Array2[(int)i];
 
-    class MainClass
+			}
+		}
+
+		//Accepts an Initial Value for CharArray
+		public Mstring(char[]InitialValue)
+        {
+            //Makes sure that both arrays are the same size
+			CharArray = new char[InitialValue.Length];
+
+			//Assigns CharArray to InitialValue using AssignArrays
+			AssignArrays(ref CharArray, InitialValue, Size);
+        }
+
+        //Overloads the Function so that a Initial Value is not Required
+		public Mstring()
+        {
+            //Gives CharArray a Preset size of 10
+			CharArray = new char[10];
+        }
+
+		//Overloads the Function so that a String can be accepted as an Initial Value
+		public Mstring(string InitialValue)
+        {
+			//Makes sure that both arrays are the same size
+			CharArray = new char[InitialValue.Length];
+
+			//Assigns CharArray to InitialValue using AssignArrays
+			AssignArrays(ref CharArray, InitialValue, Size);
+		}
+
+        //OverLoads the <> Operators to check ascii values to find the greater person
+        static public bool operator <(Mstring m1, Mstring m2)
+        {
+            //PlaceHolds the Ascii values for changing
+            int PlaceHolder1 = 0;
+            int PlaceHolder2 = 0;
+
+            //Index for Determining length
+            long Index = m1.CharArray.Length;
+
+            //Determines longer length
+            if (m1.CharArray.Length > m2.CharArray.Length)
+            {
+                Index = m2.CharArray.Length;
+            }
+            else
+            {
+                Index = m1.CharArray.Length;
+            }
+
+            //Loops thru the arrays til it can find a winner
+            for (long i = 0; i < Index; i++)
+            {
+                //Assigns the PlaceHolders to the ascii values
+                PlaceHolder1 = m1.CharArray[i];
+                PlaceHolder2 = m2.CharArray[i];
+
+                //Checks for Upper and lower case
+                if (PlaceHolder1 < 91 && PlaceHolder1 > 64)
+                {
+                    PlaceHolder1 += 32;
+                }
+
+                //Finds the greater ascii value
+                if (PlaceHolder1 > PlaceHolder2)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+		//OverLoads the <> Operators to check ascii values to find the greater person
+		static public bool operator >(Mstring m1, Mstring m2)
+		{
+            //PlaceHolds the Ascii values for changing
+            int PlaceHolder1 = 0;
+            int PlaceHolder2 = 0;
+
+            //Index for Determining length
+            long Index = m1.CharArray.Length;
+
+            //Determines longer length
+            if(m2.CharArray.Length < m1.CharArray.Length)
+            {
+                Index = m2.CharArray.Length;
+            }
+            else
+            {
+                Index = m1.CharArray.Length;
+            }
+
+            //Loops thru the arrays til it can find a winner
+            for (long i = 0; i < Index; i++)
+            {
+                //Assigns the PlaceHolders to the ascii values
+                PlaceHolder1 = m2.CharArray[i];
+                PlaceHolder2 = m1.CharArray[i];
+
+                //Checks for Upper and lower case
+                if (PlaceHolder2 < 91 && PlaceHolder2 > 64)
+                {
+                    PlaceHolder2 += 32;
+                }
+
+                //Finds the greater ascii value
+                if (PlaceHolder2 > PlaceHolder1)
+                {
+                    return true;
+                }
+            } 
+
+            //if this runs, the statement is false
+            return false;
+        }
+
+        
+	}
+
+	class MainClass
     {
         public static void Main(string[] args)
         {
             Mstring name1 = new Mstring();
             Mstring name2 = new Mstring();
 
-            char[] ch = new char[2];
-            ch[0] = 'd';
-
-            name1.SetString(ch);
-            Console.WriteLine(name1.GetString()[0]);
-            ch[0] = 'a';
-            ch[1] = 'b';
-            name2.SetString(ch);
-            Console.WriteLine(name2.GetString()[0]);
-
-            //name2.AppendString('b');
-            Console.WriteLine(name2.GetString());
-
-            char[] ch2 = new char[5];
-
-            ch2[0] = 'h';
-            ch2[1] = 'e';
-            ch2[2] = 'l';
-            ch2[3] = 'l';
-            ch2[4] = 'o';
-
-            name2.AppendString(ch2);
-
-            string name3 = "uncle";
-
-            Console.WriteLine(name3[0]);
-
-            name2.SetString("Hello");
-            Console.WriteLine(name2.GetString());
+            name1.SetString("a");                                    
+            if (name1 > name2)
+            {
+                Console.WriteLine("Name1 is greater!");
+            }
+            
+            Console.ReadLine();
         }
     }
 }

@@ -1,0 +1,13 @@
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson16_MoreObjects\InClassLesson16_MoreObjects\obj\Debug\netcoreapp3.1\InClassLesson16_MoreObjects.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson16_MoreObjects\InClassLesson16_MoreObjects\obj\Debug\netcoreapp3.1\InClassLesson16_MoreObjects.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson16_MoreObjects\InClassLesson16_MoreObjects\obj\Debug\netcoreapp3.1\InClassLesson16_MoreObjects.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson16_MoreObjects\InClassLesson16_MoreObjects\obj\Debug\netcoreapp3.1\InClassLesson16_MoreObjects.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson16_MoreObjects\InClassLesson16_MoreObjects\bin\Debug\netcoreapp3.1\InClassLesson16_MoreObjects.exe
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson16_MoreObjects\InClassLesson16_MoreObjects\bin\Debug\netcoreapp3.1\InClassLesson16_MoreObjects.deps.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson16_MoreObjects\InClassLesson16_MoreObjects\bin\Debug\netcoreapp3.1\InClassLesson16_MoreObjects.runtimeconfig.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson16_MoreObjects\InClassLesson16_MoreObjects\bin\Debug\netcoreapp3.1\InClassLesson16_MoreObjects.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson16_MoreObjects\InClassLesson16_MoreObjects\bin\Debug\netcoreapp3.1\InClassLesson16_MoreObjects.dll
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson16_MoreObjects\InClassLesson16_MoreObjects\bin\Debug\netcoreapp3.1\InClassLesson16_MoreObjects.pdb
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson16_MoreObjects\InClassLesson16_MoreObjects\obj\Debug\netcoreapp3.1\InClassLesson16_MoreObjects.dll
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson16_MoreObjects\InClassLesson16_MoreObjects\obj\Debug\netcoreapp3.1\InClassLesson16_MoreObjects.pdb
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson16_MoreObjects\InClassLesson16_MoreObjects\obj\Debug\netcoreapp3.1\InClassLesson16_MoreObjects.genruntimeconfig.cache

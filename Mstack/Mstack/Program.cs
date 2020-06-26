@@ -7,22 +7,34 @@ namespace Mstack
     {
         //Created two variables, Data and Next
         //Data holds an int variable
-        int Data;
+        public int Data;
 
         //Data is the next one in the mstack
-        mstack Next;
+        public mstack Next;
 
         //Push Adds one mstack to the mstack
         public void Push(int NewStack)
         {
+            //Creates new stack piece
+            Next = new mstack();
 
+            //Assigns the data
+            Next.Data = NewStack;
         }
 
         //Pop takes the top of the stask and returns
         public int Pop()
         {
-
-            return 1;
+            //Returns the next mstack's data
+            if (Next.Data != 0)
+            {
+                return Next.Data;
+            }
+            else
+            {
+                Next.Next = new mstack();
+                return Next.Next.Data;
+            }
         }
     }
 
@@ -30,7 +42,9 @@ namespace Mstack
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            mstack stack = new mstack();
+            stack.Push(10);
+            Console.WriteLine( stack.Pop());
         }
     }
 }

@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{63A45CBF-8EBD-46C1-9097-1BE3BEE35656}|Default">
-  <MonoDevelop.Ide.ItemProperties.Mstack FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Mstack PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Mstack/Program.cs">
     <Files>
-      <File FileName="Mstack/Program.cs" Line="25" Column="22" />
+      <File FileName="Mstack/Program.cs" Line="48" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,11 +16,8 @@
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
-          <Value>m1.CharArray</Value>
-          <Value>m2.CharArray</Value>
-          <Value>PlaceHolder1</Value>
-          <Value>PlaceHolder2</Value>
-          <Value>PlaceHolder2 &gt; PlaceHolder1</Value>
+          <Value>Next</Value>
+          <Value>NewStack</Value>
         </State>
       </Pad>
     </Pads>

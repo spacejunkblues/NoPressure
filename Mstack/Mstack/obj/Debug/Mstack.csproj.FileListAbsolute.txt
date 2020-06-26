@@ -1,0 +1,6 @@
+/Users/maggiefleck/Desktop/NoPressure/Mstack/Mstack/bin/Debug/Mstack.exe
+/Users/maggiefleck/Desktop/NoPressure/Mstack/Mstack/bin/Debug/Mstack.pdb
+/Users/maggiefleck/Desktop/NoPressure/Mstack/Mstack/obj/Debug/Mstack.csprojAssemblyReference.cache
+/Users/maggiefleck/Desktop/NoPressure/Mstack/Mstack/obj/Debug/Mstack.csproj.CoreCompileInputs.cache
+/Users/maggiefleck/Desktop/NoPressure/Mstack/Mstack/obj/Debug/Mstack.exe
+/Users/maggiefleck/Desktop/NoPressure/Mstack/Mstack/obj/Debug/Mstack.pdb

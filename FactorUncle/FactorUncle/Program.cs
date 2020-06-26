@@ -117,7 +117,7 @@ namespace FactorUncle
 
 
             //char[] Test = Readit.ReadLine();
-            //char[] Test2 = Readit.ReadLine();
+            char[] Test2 = Readit.ReadLine();
         }
     }
 }

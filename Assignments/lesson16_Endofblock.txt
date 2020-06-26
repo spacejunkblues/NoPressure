@@ -1,0 +1,15 @@
+assignment: Create a class that can handle storing other objects (make it generic)(I think it can be done using generic). Call it MStack. For Marshy Stack. A stack is defined as first in last out. So in other words, I can have a person object that I want to store, let's call it uncle. I can "push" uncle to the stack then I can "push" marshy to the stack. When I "pop" I will get the last one, in this case masrshy. DO NOT USE AN ARRAY
+
+you should have two functions:
+
+	Push: adds the object to MStack
+
+	Pop: removes the top object from the stack, and returns it.
+
+two attributes:
+	
+	Data: This will be generic type
+
+	Next: this will of type MStack
+
+make it happen with int's first. Then make it generic once you got it.

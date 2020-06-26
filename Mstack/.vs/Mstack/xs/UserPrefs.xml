@@ -1,13 +1,14 @@
-﻿<Properties StartupConfiguration="{C4733CC3-B77F-4F8D-B3A1-D004942EA78A}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="stringobject/Program.cs">
+﻿<Properties StartupConfiguration="{63A45CBF-8EBD-46C1-9097-1BE3BEE35656}|Default">
+  <MonoDevelop.Ide.ItemProperties.Mstack FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mstack/Program.cs">
     <Files>
-      <File FileName="stringobject/Program.cs" Line="213" Column="1" />
+      <File FileName="Mstack/Program.cs" Line="25" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="stringobject" expanded="True">
-            <Node name="stringobject" expanded="True">
+          <Node name="Mstack" expanded="True">
+            <Node name="Mstack" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
@@ -26,7 +27,6 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
-  <MonoDevelop.Ide.ItemProperties.stringobject PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

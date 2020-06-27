@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/io.unity
+- path: Assets/Platformer.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

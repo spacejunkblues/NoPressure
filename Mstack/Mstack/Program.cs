@@ -15,26 +15,37 @@ namespace Mstack
         //Push Adds one mstack to the mstack
         public void Push(int NewStack)
         {
-            //Creates new stack piece
-            Next = new mstack();
-
-            //Assigns the data
-            Next.Data = NewStack;
-        }
-
-        //Pop takes the top of the stask and returns
-        public int Pop()
-        {
-            //Returns the next mstack's data
-            if (Next.Data != 0)
+            //Creates new stack piece if it is empty
+            if (Next == null)
             {
-                return Next.Data;
+                Next = new mstack();
+            }
+
+            //Assigns the data if this stack is full
+            if (Data != 0)
+            {
+                Next.Push(NewStack);
             }
             else
             {
-                Next.Next = new mstack();
-                return Next.Next.Data;
+                Data = NewStack;
             }
+        }
+
+        //Pop takes the top of the mstack and returns it
+        public int Pop()
+        {
+            //Int for placeholding data
+            int PlaceHolder = Data;
+
+            //Grabs the data from the next one in the stack if it is not empty
+            if (Next != null)
+            {
+                Data = Next.Pop();
+            }
+
+            //Return the PlaceHolder
+            return PlaceHolder;
         }
     }
 
@@ -45,6 +56,13 @@ namespace Mstack
             mstack stack = new mstack();
             stack.Push(10);
             Console.WriteLine( stack.Pop());
+
+            stack.Push(20);
+            stack.Push(30);
+
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
+
         }
     }
 }

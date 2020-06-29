@@ -24,7 +24,8 @@ namespace Mstack
             //Assigns the data if this stack is full
             if (Data != 0)
             {
-                Next.Push(NewStack);
+                Next.Push(Data);
+                Data = NewStack;
             }
             else
             {
@@ -54,14 +55,15 @@ namespace Mstack
         public static void Main(string[] args)
         {
             mstack stack = new mstack();
-            stack.Push(10);
-            Console.WriteLine( stack.Pop());
 
+            stack.Push(10);
             stack.Push(20);
             stack.Push(30);
 
             Console.WriteLine(stack.Pop());
             Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
+
 
         }
     }

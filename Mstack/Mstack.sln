@@ -1,6 +1,7 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mstack", "Mstack\Mstack.csproj", "{63A45CBF-8EBD-46C1-9097-1BE3BEE35656}"
 EndProject
 Global
@@ -9,9 +10,15 @@ Global
 		Release|anycpu = Release|anycpu
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{63A45CBF-8EBD-46C1-9097-1BE3BEE35656}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{63A45CBF-8EBD-46C1-9097-1BE3BEE35656}.Debug|anycpu.Build.0 = Debug|anycpu
-		{63A45CBF-8EBD-46C1-9097-1BE3BEE35656}.Release|anycpu.ActiveCfg = Release|anycpu
-		{63A45CBF-8EBD-46C1-9097-1BE3BEE35656}.Release|anycpu.Build.0 = Release|anycpu
+		{63A45CBF-8EBD-46C1-9097-1BE3BEE35656}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{63A45CBF-8EBD-46C1-9097-1BE3BEE35656}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{63A45CBF-8EBD-46C1-9097-1BE3BEE35656}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{63A45CBF-8EBD-46C1-9097-1BE3BEE35656}.Release|anycpu.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3E0C50E-C6EA-49B5-9035-6A69E85F1471}
 	EndGlobalSection
 EndGlobal

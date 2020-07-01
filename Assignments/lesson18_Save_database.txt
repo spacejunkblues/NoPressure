@@ -1,0 +1,11 @@
+Assignment: Create a database that stores names. You can just store the names in an array. 4 menu options:
+
+Add Name: adds name to the array
+
+Save: saves the contents of the array to a file.example. {"dog", "cat"} it should save as:
+dog
+cat
+
+Load: loads the array from the file into the array.
+
+View: displays all names from the array

@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{BDE66E9D-73E4-4374-97B0-79B8C446EBBB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="InClassLesson18_SaveFiles/Program.cs">
+    <Files>
+      <File FileName="InClassLesson18_SaveFiles/Program.cs" Line="9" Column="108" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="InClassLesson18_SaveFiles" expanded="True">
+            <Node name="InClassLesson18_SaveFiles" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>i</Value>
+          <Value>OriginalArray</Value>
+          <Value>PlaceHolder</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.InClassLesson18__SaveFiles PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

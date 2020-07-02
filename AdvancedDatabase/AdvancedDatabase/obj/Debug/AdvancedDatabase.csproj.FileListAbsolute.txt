@@ -1,0 +1,6 @@
+/Users/maggiefleck/Desktop/NoPressure/AdvancedDatabase/AdvancedDatabase/bin/Debug/AdvancedDatabase.exe
+/Users/maggiefleck/Desktop/NoPressure/AdvancedDatabase/AdvancedDatabase/bin/Debug/AdvancedDatabase.pdb
+/Users/maggiefleck/Desktop/NoPressure/AdvancedDatabase/AdvancedDatabase/obj/Debug/AdvancedDatabase.csprojAssemblyReference.cache
+/Users/maggiefleck/Desktop/NoPressure/AdvancedDatabase/AdvancedDatabase/obj/Debug/AdvancedDatabase.csproj.CoreCompileInputs.cache
+/Users/maggiefleck/Desktop/NoPressure/AdvancedDatabase/AdvancedDatabase/obj/Debug/AdvancedDatabase.exe
+/Users/maggiefleck/Desktop/NoPressure/AdvancedDatabase/AdvancedDatabase/obj/Debug/AdvancedDatabase.pdb

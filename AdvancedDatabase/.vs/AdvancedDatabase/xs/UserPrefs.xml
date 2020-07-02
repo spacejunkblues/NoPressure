@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{2FF767AF-793A-46CA-B88D-35EC195252F5}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="AdvancedDatabase/Program.cs">
     <Files>
-      <File FileName="AdvancedDatabase/Program.cs" Line="1" Column="1" />
+      <File FileName="AdvancedDatabase/Program.cs" Line="87" Column="30" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,13 +15,14 @@
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
-          <Value>Next</Value>
-          <Value>NewStack</Value>
+          <Value>i</Value>
+          <Value>OriginalArray</Value>
+          <Value>PlaceHolder</Value>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.AdvancedDatabase FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.AdvancedDatabase PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,6 +1,7 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedDatabase", "AdvancedDatabase\AdvancedDatabase.csproj", "{2FF767AF-793A-46CA-B88D-35EC195252F5}"
 EndProject
 Global
@@ -9,9 +10,15 @@ Global
 		Release|anycpu = Release|anycpu
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2FF767AF-793A-46CA-B88D-35EC195252F5}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{2FF767AF-793A-46CA-B88D-35EC195252F5}.Debug|anycpu.Build.0 = Debug|anycpu
-		{2FF767AF-793A-46CA-B88D-35EC195252F5}.Release|anycpu.ActiveCfg = Release|anycpu
-		{2FF767AF-793A-46CA-B88D-35EC195252F5}.Release|anycpu.Build.0 = Release|anycpu
+		{2FF767AF-793A-46CA-B88D-35EC195252F5}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{2FF767AF-793A-46CA-B88D-35EC195252F5}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{2FF767AF-793A-46CA-B88D-35EC195252F5}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{2FF767AF-793A-46CA-B88D-35EC195252F5}.Release|anycpu.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91B94F7A-DDE7-49AC-ACC1-0CCA1528E219}
 	EndGlobalSection
 EndGlobal

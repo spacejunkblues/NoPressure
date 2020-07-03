@@ -4,3 +4,9 @@
 /Users/maggiefleck/Desktop/NoPressure/AdvancedDatabase/AdvancedDatabase/obj/Debug/AdvancedDatabase.csproj.CoreCompileInputs.cache
 /Users/maggiefleck/Desktop/NoPressure/AdvancedDatabase/AdvancedDatabase/obj/Debug/AdvancedDatabase.exe
 /Users/maggiefleck/Desktop/NoPressure/AdvancedDatabase/AdvancedDatabase/obj/Debug/AdvancedDatabase.pdb
+C:\Users\User\Documents\GitHub\NoPressure\AdvancedDatabase\AdvancedDatabase\bin\Debug\AdvancedDatabase.exe
+C:\Users\User\Documents\GitHub\NoPressure\AdvancedDatabase\AdvancedDatabase\bin\Debug\AdvancedDatabase.pdb
+C:\Users\User\Documents\GitHub\NoPressure\AdvancedDatabase\AdvancedDatabase\obj\Debug\AdvancedDatabase.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\AdvancedDatabase\AdvancedDatabase\obj\Debug\AdvancedDatabase.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\AdvancedDatabase\AdvancedDatabase\obj\Debug\AdvancedDatabase.exe
+C:\Users\User\Documents\GitHub\NoPressure\AdvancedDatabase\AdvancedDatabase\obj\Debug\AdvancedDatabase.pdb

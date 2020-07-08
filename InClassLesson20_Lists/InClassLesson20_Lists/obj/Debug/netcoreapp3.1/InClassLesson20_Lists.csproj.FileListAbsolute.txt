@@ -1,0 +1,13 @@
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson20_Lists\InClassLesson20_Lists\bin\Debug\netcoreapp3.1\InClassLesson20_Lists.exe
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson20_Lists\InClassLesson20_Lists\bin\Debug\netcoreapp3.1\InClassLesson20_Lists.deps.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson20_Lists\InClassLesson20_Lists\bin\Debug\netcoreapp3.1\InClassLesson20_Lists.runtimeconfig.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson20_Lists\InClassLesson20_Lists\bin\Debug\netcoreapp3.1\InClassLesson20_Lists.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson20_Lists\InClassLesson20_Lists\bin\Debug\netcoreapp3.1\InClassLesson20_Lists.dll
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson20_Lists\InClassLesson20_Lists\bin\Debug\netcoreapp3.1\InClassLesson20_Lists.pdb
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson20_Lists\InClassLesson20_Lists\obj\Debug\netcoreapp3.1\InClassLesson20_Lists.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson20_Lists\InClassLesson20_Lists\obj\Debug\netcoreapp3.1\InClassLesson20_Lists.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson20_Lists\InClassLesson20_Lists\obj\Debug\netcoreapp3.1\InClassLesson20_Lists.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson20_Lists\InClassLesson20_Lists\obj\Debug\netcoreapp3.1\InClassLesson20_Lists.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson20_Lists\InClassLesson20_Lists\obj\Debug\netcoreapp3.1\InClassLesson20_Lists.dll
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson20_Lists\InClassLesson20_Lists\obj\Debug\netcoreapp3.1\InClassLesson20_Lists.pdb
+C:\Users\User\Documents\GitHub\NoPressure\InClassLesson20_Lists\InClassLesson20_Lists\obj\Debug\netcoreapp3.1\InClassLesson20_Lists.genruntimeconfig.cache

@@ -80,15 +80,13 @@ namespace marshcode
 
         public IEnumerator<T> GetEnumerator()
         {
-            cur = Temp;
-
-            while (cur != null)
+            mstack<T> mpointer = Temp;
+          
+            while (mpointer != null) 
             {
-                yield return cur.Data;
-                cur = cur.Next;
-
-            }
-
+                yield return mpointer.Data;
+                mpointer = mpointer.Next;
+            }                       
         }
 
     }//End of mstack class

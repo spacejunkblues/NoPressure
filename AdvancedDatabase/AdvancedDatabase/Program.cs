@@ -40,7 +40,7 @@ namespace AdvancedDatabase
                 Console.WriteLine("Sorry, you cannot give nothing as a name.");
                 Console.WriteLine("Your person will not be entered into the database");
 
-                //Wipe the incorrect from the database
+                //Wipe the incorrect name from the database
                 PlaceHolder = null;
             }
             else if(blankfound)
@@ -62,7 +62,7 @@ namespace AdvancedDatabase
         public static void Save(string[]SavedArray)
         {
             //Creates path for saving
-            string Path = @"/Users/maggiefleck/Desktop/NoPressure/Test.txt";
+            string Path = @".\Test.txt";
 
             for (int i = 0; i < SavedArray.Length; i++)
             {
@@ -71,7 +71,6 @@ namespace AdvancedDatabase
                     //Saves names to a file inside the program directory
                     System.IO.File.AppendAllText(Path, SavedArray[i] + (char) 10);
                 }
-
             }
         }
 
@@ -79,12 +78,58 @@ namespace AdvancedDatabase
         public static string[] Load(string[] OriginalArray)
         {
             //Creates path for loading
-            string Path = @"/Users/maggiefleck/Desktop/NoPressure/Test.txt";
+            string Path = @".\Test.txt";
 
-            //Loads a name from the array file
-            for (int i = 0; i < 10; i++)
+            //Created PlaceHolder for original array
+            string[] PlaceHolder = new string[OriginalArray.Length + System.IO.File.ReadAllLines(Path).Length];
+
+            //Assigns original array to placeholder
+            for (int i = 0; i < OriginalArray.Length; i++) 
             {
-                OriginalArray = System.IO.File.ReadAllLines(Path);
+                PlaceHolder[i] = OriginalArray[i];
+            }
+
+            //Assigns seperate index for loaded names
+            int j = 0;
+
+            if (OriginalArray[0] != null)
+            {
+
+                //Assigns Loaded array to placeholder
+                for (int i = OriginalArray.Length; i < PlaceHolder.Length; i++)
+                {
+                    //assigns arrays to eachother
+                    PlaceHolder[i] = System.IO.File.ReadAllLines(Path)[j];
+
+                    //Increments j
+                    j++;
+                }
+            }
+            else 
+            {
+                //Assigns Loaded array to placeholder
+                for (int i = 0; i < PlaceHolder.Length; i++)
+                {                  
+                    //assigns arrays to eachother
+                    PlaceHolder[i] = System.IO.File.ReadAllLines(Path)[j];
+
+                    //Increments j
+                    j++;
+
+                    if (j + 1 > System.IO.File.ReadAllLines(Path).Length) 
+                    {
+                        break;
+                    }
+                }
+            }
+
+            //Assigns placeholder to original array
+            OriginalArray = new string[PlaceHolder.Length];
+
+            //Assignsplaceholder to original array
+            for (int i = 0; i < OriginalArray.Length; i++)
+            {
+                OriginalArray[i] = PlaceHolder[i];
             }
 
             //Returns the modified array

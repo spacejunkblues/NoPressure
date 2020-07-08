@@ -35,6 +35,16 @@ namespace InClassLesson19_Enum
             }
         }
 
+
+        static IEnumerator<string> Animals()
+        {
+            yield return "dog";
+            yield return "cat";
+            yield return "bird";
+            yield return "mouse";
+            yield return "bear";
+        }
+
         static void Main(string[] args)
         {
             //introduce the IEnum class
@@ -113,6 +123,29 @@ namespace InClassLesson19_Enum
             Console.WriteLine(z.Current);
 
 
+
+
+
+            IEnumerator<string> enumReturn = Animals();
+
+            mstack<int> ms = new mstack<int>();
+
+            ms.Push(10);
+            ms.Push(20);
+            ms.Push(30);
+            ms.Push(40);
+            ms.Push(50);
+            ms.Push(60);
+
+
+
+
+            foreach (var c in ms)
+            {
+                Console.WriteLine(c);
+            }
+
+            Console.WriteLine();
 
 
             //*****INCLASS EXERCISE!!!! Copy mstack into it's own cs file. Import into this project and add it's namespace  ********

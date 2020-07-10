@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{9F775EDE-5651-4FA2-9A1E-BF4780741B65}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="InClassLesson21_IO/Program.cs">
+    <Files>
+      <File FileName="InClassLesson21_IO/Program.cs" Line="129" Column="84" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="InClassLesson21_IO" expanded="True">
+            <Node name="InClassLesson21_IO" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>maxwidth</Value>
+          <Value>maxheight</Value>
+          <Value>j</Value>
+          <Value>i2 &lt; 10</Value>
+          <Value>i2</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.InClassLesson21__IO PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

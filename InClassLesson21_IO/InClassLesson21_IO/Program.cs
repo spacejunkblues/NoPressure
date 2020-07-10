@@ -4,6 +4,11 @@ using System.Web;
 
 namespace InClassLesson21_IO
 {
+    class MazeObject
+    {
+        public int y;
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -59,7 +64,7 @@ namespace InClassLesson21_IO
 
                 //up
                 ConsoleKeyInfo i = Console.ReadKey();
-                if (i2 > 1)
+                if (i2 > Console.WindowTop)
                 {
                     if (i.Key == ConsoleKey.UpArrow)
                     {
@@ -74,7 +79,7 @@ namespace InClassLesson21_IO
                 }
 
                 //down
-                if (i2 < 19)
+                if (i2 < Console.WindowHeight)
                 {
                     if (i.Key == ConsoleKey.DownArrow)
                     {
@@ -89,7 +94,7 @@ namespace InClassLesson21_IO
                 }
 
                 //left
-                if (i1 > 0)
+                if (i1 > Console.WindowLeft)
                 {
                     if (i.Key == ConsoleKey.LeftArrow)
                     {
@@ -104,7 +109,7 @@ namespace InClassLesson21_IO
                 }
 
                 //right
-                if (i1 < 80)
+                if (i1 < Console.WindowWidth)
                 {
                     if (i.Key == ConsoleKey.RightArrow)
                     {
@@ -120,7 +125,7 @@ namespace InClassLesson21_IO
 
                 Random m = new Random();
 
-                //Create maze
+                /*Create maze
                 for (int index = 0; index < 200; index++)
                 {
                     Console.BackgroundColor = ConsoleColor.Black;
@@ -128,7 +133,9 @@ namespace InClassLesson21_IO
 
                     Console.SetCursorPosition(i1 + m.Next(0, 80), i2 + m.Next(0, 26));
                     Console.Write(m.Next(0, 20));
-                }
+                }*/
+
+                Console.CursorVisible = false;
             }
 
         }

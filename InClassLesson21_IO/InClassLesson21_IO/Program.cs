@@ -59,12 +59,18 @@ namespace InClassLesson21_IO
             
             int y = maxheight / 2;
 
+            Console.CursorVisible = false;
+
 
             //Use ReadyKey to move the character. Use var to get the return and figure out how to check for UpArrow
             while (true)
             {
                 //Take key info for movement
-                ConsoleKeyInfo i = Console.ReadKey();
+                ConsoleKeyInfo i= new ConsoleKeyInfo();
+                var noKeyPressedYet = i.Key;
+                if (Console.KeyAvailable)
+                     i= Console.ReadKey(true);
+               
 
                 //up
                 if (y > Console.WindowTop)
@@ -142,7 +148,6 @@ namespace InClassLesson21_IO
                     Console.Write(m.Next(0, 20));
                 }*/
 
-                Console.CursorVisible = false;
             }
 
         }

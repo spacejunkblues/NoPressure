@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{9F775EDE-5651-4FA2-9A1E-BF4780741B65}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="InClassLesson21_IO/Program.cs">
     <Files>
-      <File FileName="InClassLesson21_IO/Program.cs" Line="10" Column="6" />
+      <File FileName="InClassLesson21_IO/Program.cs" Line="79" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,11 +15,9 @@
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
-          <Value>maxwidth</Value>
-          <Value>maxheight</Value>
-          <Value>j</Value>
-          <Value>i2 &lt; 10</Value>
-          <Value>i2</Value>
+          <Value>Console.CursorLeft</Value>
+          <Value>Console.CursorTop</Value>
+          <Value>(char)0</Value>
         </State>
       </Pad>
     </Pads>

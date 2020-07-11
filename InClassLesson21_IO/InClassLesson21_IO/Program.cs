@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Web;
 
 namespace InClassLesson21_IO
 {
@@ -13,11 +11,11 @@ namespace InClassLesson21_IO
     {
         static void Main(string[] args)
         {
-            var j = Console.ReadKey();
+            //var j = Console.ReadKey();
 
-            
 
-            //write to the screen
+
+            /*write to the screen
             Console.WriteLine("Hello World!");
 
             //move the cursor
@@ -41,83 +39,92 @@ namespace InClassLesson21_IO
             Console.ResetColor();
             Console.Clear();
 
+            */
+
             //get WindowHeight and WindowWidth
             int maxheight = Console.WindowHeight;
             int maxwidth = Console.WindowWidth;
 
-            for (int i = 1; i <= maxheight; i++)
-                Console.WriteLine(i);
+            //for (int i = 1; i <= maxheight; i++)
+            //    Console.WriteLine(i);
 
-            Console.Clear();
+            //Console.Clear();
 
             //print a '*' in the middle of the console
             Console.SetCursorPosition(maxwidth / 2, maxheight / 2);
             Console.Write("*");
 
-            int i1 = maxwidth / 2;
-            int i2 = maxheight / 2;
+            //Assigning x and y coordinates to the middle of the screen
+            int x = maxwidth / 2;
+            
+            int y = maxheight / 2;
 
 
             //Use ReadyKey to move the character. Use var to get the return and figure out how to check for UpArrow
             while (true)
             {
+                //Take key info for movement
+                ConsoleKeyInfo i = Console.ReadKey();
 
                 //up
-                ConsoleKeyInfo i = Console.ReadKey();
-                if (i2 > Console.WindowTop)
+                if (y > Console.WindowTop)
                 {
                     if (i.Key == ConsoleKey.UpArrow)
                     {
-                        Console.Clear();
+                        Console.SetCursorPosition(x, y);
+                        Console.Write((char)32);
 
-                        Console.SetCursorPosition(i1, i2 - 1);
+                        Console.SetCursorPosition(x, y - 1);
 
-                        i2 -= 1;
+                        y -= 1;
 
                         Console.Write("*");
                     }
                 }
 
                 //down
-                if (i2 < Console.WindowHeight)
+                if (y < Console.WindowHeight)
                 {
                     if (i.Key == ConsoleKey.DownArrow)
                     {
-                        Console.Clear();
+                        Console.SetCursorPosition(x, y);
+                        Console.Write((char)32);
 
-                        Console.SetCursorPosition(i1, i2 + 1);
+                        Console.SetCursorPosition(x, y + 1);
 
-                        i2 += 1;
+                        y += 1;
 
                         Console.Write("*");
                     }
                 }
 
                 //left
-                if (i1 > Console.WindowLeft)
+                if (x > Console.WindowLeft)
                 {
                     if (i.Key == ConsoleKey.LeftArrow)
                     {
-                        Console.Clear();
+                        Console.SetCursorPosition(x, y);
+                        Console.Write((char)32);
 
-                        Console.SetCursorPosition(i1 - 1, i2);
+                        Console.SetCursorPosition(x - 1, y);
 
-                        i1 -= 1;
+                        x -= 1;
 
                         Console.Write("*");
                     }
                 }
 
                 //right
-                if (i1 < Console.WindowWidth)
+                if (x < Console.WindowWidth)
                 {
                     if (i.Key == ConsoleKey.RightArrow)
                     {
-                        Console.Clear();
+                        Console.SetCursorPosition(x, y);
+                        Console.Write((char)32);
 
-                        Console.SetCursorPosition(i1 + 1, i2);
+                        Console.SetCursorPosition(x + 1, y);
 
-                        i1 += 1;
+                        x += 1;
 
                         Console.Write("*");
                     }

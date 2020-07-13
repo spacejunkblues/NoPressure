@@ -1,0 +1,23 @@
+1.phase 1
+
+	1.copy maze project into separate file
+
+	2.create object for player
+		1.A position vector
+		2.method for getting coordinates (will return a vector)
+		3.method (Move) for moving player will have 2 parameters:
+			1.vector: current position, where the player is right now
+			2.vector: next position of where the player should go next
+			
+			Note: will check with maze's CheckVectors before movement
+
+	3.create object for maze
+		1.A position vector
+		2.create method (IfCanMove) for comparing vectors for movement inside maze (will return a boolean value)
+			1.will find closest vector
+			2.compare for alleged movement to check for conflict
+	
+	4.create object for x and y coordinates (call it a vector)
+		1.method (GetVector) for setting coordinates (will return a vector)
+		2.method (SetVector) for getting coordinates (will return a vector) with one parameter:
+			1.A vector

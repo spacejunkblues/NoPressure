@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace InClassLesson21_IO
 {
@@ -12,7 +13,7 @@ namespace InClassLesson21_IO
         static void Main(string[] args)
         {
             //var j = Console.ReadKey();
-
+            
 
 
             /*write to the screen
@@ -56,17 +57,17 @@ namespace InClassLesson21_IO
 
             //Assigning x and y coordinates to the middle of the screen
             int x = maxwidth / 2;
-            
+                        
             int y = maxheight / 2;
 
             Console.CursorVisible = false;
 
-
+            
             //Use ReadyKey to move the character. Use var to get the return and figure out how to check for UpArrow
             while (true)
             {
                 //Take key info for movement
-                ConsoleKeyInfo i= new ConsoleKeyInfo();
+                ConsoleKeyInfo i = new ConsoleKeyInfo();
                 var noKeyPressedYet = i.Key;
                 if (Console.KeyAvailable)
                      i= Console.ReadKey(true);

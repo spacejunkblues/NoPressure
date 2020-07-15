@@ -1,0 +1,13 @@
+C:\Users\User\Documents\GitHub\NoPressure\MazeGame\MazeGame\obj\Debug\netcoreapp3.1\MazeGame.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\MazeGame\MazeGame\obj\Debug\netcoreapp3.1\MazeGame.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\MazeGame\MazeGame\obj\Debug\netcoreapp3.1\MazeGame.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\MazeGame\MazeGame\obj\Debug\netcoreapp3.1\MazeGame.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\NoPressure\MazeGame\MazeGame\bin\Debug\netcoreapp3.1\MazeGame.exe
+C:\Users\User\Documents\GitHub\NoPressure\MazeGame\MazeGame\bin\Debug\netcoreapp3.1\MazeGame.deps.json
+C:\Users\User\Documents\GitHub\NoPressure\MazeGame\MazeGame\bin\Debug\netcoreapp3.1\MazeGame.runtimeconfig.json
+C:\Users\User\Documents\GitHub\NoPressure\MazeGame\MazeGame\bin\Debug\netcoreapp3.1\MazeGame.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\NoPressure\MazeGame\MazeGame\bin\Debug\netcoreapp3.1\MazeGame.dll
+C:\Users\User\Documents\GitHub\NoPressure\MazeGame\MazeGame\bin\Debug\netcoreapp3.1\MazeGame.pdb
+C:\Users\User\Documents\GitHub\NoPressure\MazeGame\MazeGame\obj\Debug\netcoreapp3.1\MazeGame.dll
+C:\Users\User\Documents\GitHub\NoPressure\MazeGame\MazeGame\obj\Debug\netcoreapp3.1\MazeGame.pdb
+C:\Users\User\Documents\GitHub\NoPressure\MazeGame\MazeGame\obj\Debug\netcoreapp3.1\MazeGame.genruntimeconfig.cache

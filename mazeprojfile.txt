@@ -1,0 +1,49 @@
+1.phase 1
+
+	1.copy maze project into separate file
+
+	2.create object for player
+		1.A position vector
+		2.A public maze(MZ)
+		3.A char(what to print to the screen)
+		4.method for getting coordinates(GetPos) (will return a vector)
+		5.method (Move) for moving player will have 2 parameters:
+			1.Direction(an consolekey)
+			2.HowFar(an int)
+
+			Note: will check with MZ.list.wall's IfCanMove before movement
+
+		6.method (Print)for printing player to the screen
+
+	3.create object for maze walls
+		1.A position vector
+		2.char(WallChar) for printing to screen
+		3.method (IfCanMove) for comparing vectors for movement inside maze (will return a boolean value)
+			1.compare for alleged movement to check for conflict within walls
+			2.one perameter: a pos vector
+
+		Note: will be stored in a list
+	
+	4.create object for x and y coordinates (call it a vector)
+		1.x pos(int)
+		2.y pos(int)
+		3.method (GetVectPos) for setting coordinates will have 2 paramaters(pass by referance):
+			1.x(int)
+			2.y(int)
+
+		4.method (SetVector) for setting coordinates with one parameter:
+			1.A vector
+
+		5.CompareVect that returns a boolean value if they are equal with 1 perameter:
+			1.Vector to check
+
+	5.create object for maze
+		1.list for storing individual wall objects
+		2.method for creating objects for all maze wall characters from maze .txt file
+		3.method for printing out the entire maze 
+
+	6.create object for mz end
+		1.a pos vector
+		2.a char for printing
+		3.method for if player has won
+ 

@@ -1,0 +1,11 @@
+/Users/maggiefleck/Desktop/NoPressure/InClassLesson21_IO/InClassLesson21_IO/bin/Release/netcoreapp3.1/InClassLesson21_IO.deps.json
+/Users/maggiefleck/Desktop/NoPressure/InClassLesson21_IO/InClassLesson21_IO/bin/Release/netcoreapp3.1/InClassLesson21_IO.runtimeconfig.json
+/Users/maggiefleck/Desktop/NoPressure/InClassLesson21_IO/InClassLesson21_IO/bin/Release/netcoreapp3.1/InClassLesson21_IO.runtimeconfig.dev.json
+/Users/maggiefleck/Desktop/NoPressure/InClassLesson21_IO/InClassLesson21_IO/bin/Release/netcoreapp3.1/InClassLesson21_IO.dll
+/Users/maggiefleck/Desktop/NoPressure/InClassLesson21_IO/InClassLesson21_IO/bin/Release/netcoreapp3.1/InClassLesson21_IO.pdb
+/Users/maggiefleck/Desktop/NoPressure/InClassLesson21_IO/InClassLesson21_IO/obj/Release/netcoreapp3.1/InClassLesson21_IO.AssemblyInfoInputs.cache
+/Users/maggiefleck/Desktop/NoPressure/InClassLesson21_IO/InClassLesson21_IO/obj/Release/netcoreapp3.1/InClassLesson21_IO.AssemblyInfo.cs
+/Users/maggiefleck/Desktop/NoPressure/InClassLesson21_IO/InClassLesson21_IO/obj/Release/netcoreapp3.1/InClassLesson21_IO.csproj.CoreCompileInputs.cache
+/Users/maggiefleck/Desktop/NoPressure/InClassLesson21_IO/InClassLesson21_IO/obj/Release/netcoreapp3.1/InClassLesson21_IO.dll
+/Users/maggiefleck/Desktop/NoPressure/InClassLesson21_IO/InClassLesson21_IO/obj/Release/netcoreapp3.1/InClassLesson21_IO.pdb
+/Users/maggiefleck/Desktop/NoPressure/InClassLesson21_IO/InClassLesson21_IO/obj/Release/netcoreapp3.1/InClassLesson21_IO.genruntimeconfig.cache

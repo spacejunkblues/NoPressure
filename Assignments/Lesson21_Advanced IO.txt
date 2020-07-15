@@ -1,0 +1,11 @@
+Use Console.Readline with strings
+Convert.ToInt32 to get numbers
+Console.ReadKey(true) to get info
+declare info variable with var or let
+use Console.SetCursorPosition(x,y)
+
+Clear
+BackgroundColor
+ForegroundColor
+
+exercise: create a maze. Make a dude that has to walk through it. Make a player object and a maze object. You will have to check to make sure the player can't walk through walls. Pick an ascii character for the player and for the walls.

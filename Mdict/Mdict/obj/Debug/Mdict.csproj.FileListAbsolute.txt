@@ -1,0 +1,6 @@
+/Users/maggiefleck/Desktop/NoPressure/Mdict/Mdict/bin/Debug/Mdict.exe
+/Users/maggiefleck/Desktop/NoPressure/Mdict/Mdict/bin/Debug/Mdict.pdb
+/Users/maggiefleck/Desktop/NoPressure/Mdict/Mdict/obj/Debug/Mdict.csprojAssemblyReference.cache
+/Users/maggiefleck/Desktop/NoPressure/Mdict/Mdict/obj/Debug/Mdict.csproj.CoreCompileInputs.cache
+/Users/maggiefleck/Desktop/NoPressure/Mdict/Mdict/obj/Debug/Mdict.exe
+/Users/maggiefleck/Desktop/NoPressure/Mdict/Mdict/obj/Debug/Mdict.pdb

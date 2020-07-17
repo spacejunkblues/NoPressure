@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualBasic.CompilerServices;
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace MazeGame
 {
@@ -89,7 +90,7 @@ namespace MazeGame
                 }
                 catch 
                 {
-                
+                    
                 }
             }
         }
@@ -166,6 +167,50 @@ namespace MazeGame
         List<MZWall> MzList = new List<MZWall>();
 
         //Created CreateMaze method for creating maze from .txt file
+        public void CreateMaze()
+        {
+            string[] Mazetxt;
+
+            bool IfError;
+
+            try
+            {
+                Mazetxt = File.ReadAllLines(@"/Maze.txt");
+                IfError = false;
+            }
+            catch
+            {
+                Mazetxt = File.ReadAllLines(@"\Maze.txt");
+                IfError = true;
+            }
+
+            if (!IfError)
+            {
+                for (int i = 0; i < File.ReadAllLines(@"/Maze.txt").Length; i++)
+                {
+                    //Create objects for all the walls
+                    for (int j = 0; i < Mazetxt[i].Length; j++)
+                    {
+                        MZWall wl = new MZWall(j, i, Mazetxt[i][j]);
+                        MzList.Add(wl);
+                    }
+                }
+            }
+
+            if (IfError)
+            {
+                for (int i = 0; i < File.ReadAllLines(@"\Maze.txt").Length; i++)
+                {
+                    //Create objects for all the walls
+                    for (int j = 0; i < Mazetxt[i].Length; j++)
+                    {
+                        MZWall wl = new MZWall(j, i, Mazetxt[i][j]);
+                        MzList.Add(wl);
+                    }
+
+                }
+            }
+        }
 
         //Created PrintMaze for printing the entire maze to the screen
 
@@ -205,6 +250,8 @@ namespace MazeGame
 
             //Create Maze Object
             Maze mz = new Maze();
+            pl.SetMazePointer(mz);
+            mz.CreateMaze();
 
             //Use ReadyKey to move the character. Use var to get the return and figure out how to check for UpArrow
             while (true)

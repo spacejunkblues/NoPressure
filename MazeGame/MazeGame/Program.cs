@@ -1,40 +1,116 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.CompilerServices;
+using System;
 using System.Collections.Generic;
 
 namespace MazeGame
 {
-    class Player 
+    class UniFeatures 
     {
-        //Create vector for movement
-        public Vector pos;
+        public Vector pos = new Vector();
 
+        public char Apearance;
+
+        public void Print() 
+        {
+            Console.SetCursorPosition(pos.x, pos.y);
+            Console.Write(Apearance);
+        }
+
+        public void Clear() 
+        {
+            Console.SetCursorPosition(pos.x, pos.y);
+            Console.Write(" ");
+        }
+    }
+
+    class Player:UniFeatures 
+    {
         //Create maze for checking walls
         public Maze mz;
 
-        //Create char for printing to the screen
-        char Apearance;
 
         //Constructor for setting variables and printing player
         public Player()
         {
             Apearance = '*';
             pos = new Vector(Console.WindowWidth / 2, Console.WindowHeight/ 2);
-            print();
+            Print();
         }
 
-        //Print for printing player to the screen
-        public void print() 
+
+        public void Move(ConsoleKeyInfo Direction, int HowFar) 
         {
-            Console.SetCursorPosition(pos.x, pos.y);
-            Console.WriteLine(Apearance);
+            //**************Not Done. need to reference maze's walls***************************
+
+            //Create temporary wall to test move
+            MZWall wall = new MZWall(40, 13, '╩');
+            wall.Apearance = '╚';
+
+            //determine which way to move
+            int x1 = 0;
+            int y1 = 0;
+
+            if (Direction.Key == ConsoleKey.UpArrow) 
+            {
+                y1 = HowFar * -1;
+            }
+            else if (Direction.Key == ConsoleKey.DownArrow)
+            {
+                y1 = HowFar;
+            }
+            else if (Direction.Key == ConsoleKey.RightArrow)
+            {
+                x1 = HowFar;
+            }
+            else if (Direction.Key == ConsoleKey.LeftArrow)
+            {
+                x1 = HowFar * -1;
+            }
+
+            //get MovedPos
+            //Check for how far and what direction we move to find MovedPos
+            Vector MovedPos = new Vector(pos.x + x1, pos.y + y1);
+
+            //check for collison against the wall
+            //check position of wall with MovedPos
+            if (MovedPos != wall.pos) 
+            {
+                try
+                {
+                    //Stress test
+                    Console.SetCursorPosition(MovedPos.x, MovedPos.y);
+
+                    Clear();
+                    
+                    //move the player
+                    pos.SetVectPos(MovedPos);
+
+                    Print();
+                }
+                catch 
+                {
+                
+                }
+            }
         }
 
+        public void SetMazePointer(Maze maz) 
+        {
+            mz = maz;
+        }
     }
 
     //MZwall is to check for movement collisions within maze
-    class MZWall 
+    class MZWall:UniFeatures 
     {
-    
+        public MZWall(int x, int y, char Apear) 
+        {
+            pos.x = x;
+            pos.y = y;
+            Apearance = Apear;
+
+            Print();
+        }
     }
 
     //Vector is for setting and getting position inside screen
@@ -58,6 +134,7 @@ namespace MazeGame
             Newpos.GetVectPos(ref x, ref y);
         }
 
+       
         //Constructor for setting coordinates when creating vector
         public Vector(int x1, int y1)
         {
@@ -70,18 +147,33 @@ namespace MazeGame
         {
         
         }
+
+        public static bool operator ==(Vector v1, Vector v2) 
+        {
+            return v1.x == v2.x && v1.y == v2.y;
+        }
+
+        public static bool operator !=(Vector v1, Vector v2) 
+        {
+            return v1.x != v2.x || v1.y != v2.y;
+        }
     }
 
-    //Maze will control the maze walls with a list
+    //Maze will control the maze walls with a list*************
     class Maze 
     {
         //List for controlling maze walls
         List<MZWall> MzList = new List<MZWall>();
+
+        //Created CreateMaze method for creating maze from .txt file
+
+        //Created PrintMaze for printing the entire maze to the screen
+
     }
 
-    class MZEnd 
+    class MZEnd:UniFeatures //***********************
     {
-    
+        //Created IfWon for determining if the player has won
     }
 
     class Program
@@ -122,8 +214,12 @@ namespace MazeGame
                 var noKeyPressedYet = i.Key;
 
                 //Take info from console if a key is available in the buffer
-                if (Console.KeyAvailable) 
+                if (Console.KeyAvailable)
+                {
                     i = Console.ReadKey(true);
+                    pl.Move(i, 1);
+                    
+                }
                 
             }
         }

@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{04C10876-1CCF-46A3-B7A3-C1F888A58877}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="MazeGame/Program.cs">
     <Files>
-      <File FileName="MazeGame/Program.cs" Line="177" Column="14" />
+      <File FileName="MazeGame/Program.cs" Line="251" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +14,10 @@
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
+        <State>
+          <Value>wall</Value>
+          <Value>mz.MzList</Value>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

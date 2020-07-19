@@ -43,9 +43,7 @@ namespace MazeGame
         {
             //**************Not Done. need to reference maze's walls***************************
 
-            //Create temporary wall to test move
-            MZWall wall = new MZWall(40, 13, '╩');
-            wall.Apearance = '╚';
+            Print();
 
             //determine which way to move
             int x1 = 0;
@@ -72,27 +70,31 @@ namespace MazeGame
             //Check for how far and what direction we move to find MovedPos
             Vector MovedPos = new Vector(pos.x + x1, pos.y + y1);
 
-            //check for collison against the wall
-            //check position of wall with MovedPos
-            if (MovedPos != wall.pos) 
+            foreach (MZWall wall in mz.MzList)
             {
-                try
+                if (MovedPos == wall.pos)
                 {
-                    //Stress test
-                    Console.SetCursorPosition(MovedPos.x, MovedPos.y);
-
-                    Clear();
-                    
-                    //move the player
-                    pos.SetVectPos(MovedPos);
-
-                    Print();
-                }
-                catch 
-                {
-                    
+                    return;
                 }
             }
+
+            try
+            {
+                //Stress test
+                Console.SetCursorPosition(MovedPos.x, MovedPos.y);
+
+                Clear();
+                    
+                //move the player
+                pos.SetVectPos(MovedPos);
+
+                Print();
+            }
+            catch 
+            {
+                    
+            }
+            
         }
 
         public void SetMazePointer(Maze maz) 
@@ -164,7 +166,7 @@ namespace MazeGame
     class Maze 
     {
         //List for controlling maze walls
-        List<MZWall> MzList = new List<MZWall>();
+        public List<MZWall> MzList = new List<MZWall>();
 
         //Created CreateMaze method for creating maze from .txt file
         public void CreateMaze()
@@ -175,37 +177,43 @@ namespace MazeGame
 
             try
             {
-                Mazetxt = File.ReadAllLines(@"/Maze.txt");
+                Mazetxt = File.ReadAllLines(@"Maze.txt");
                 IfError = false;
             }
             catch
             {
-                Mazetxt = File.ReadAllLines(@"\Maze.txt");
+                Mazetxt = File.ReadAllLines(@"Maze.txt");
                 IfError = true;
             }
 
             if (!IfError)
             {
-                for (int i = 0; i < File.ReadAllLines(@"/Maze.txt").Length; i++)
+                for (int i = 0; i < File.ReadAllLines(@"Maze.txt").Length; i++)
                 {
                     //Create objects for all the walls
-                    for (int j = 0; i < Mazetxt[i].Length; j++)
+                    for (int j = 0; j < Mazetxt[i].Length; j++)
                     {
-                        MZWall wl = new MZWall(j, i, Mazetxt[i][j]);
-                        MzList.Add(wl);
+                        if (Mazetxt[i][j] != (char)32)
+                        {
+                            MZWall wl = new MZWall(j, i, Mazetxt[i][j]);
+                            MzList.Add(wl);
+                        }
                     }
                 }
             }
 
             if (IfError)
             {
-                for (int i = 0; i < File.ReadAllLines(@"\Maze.txt").Length; i++)
+                for (int i = 0; i < File.ReadAllLines(@"Maze.txt").Length; i++)
                 {
                     //Create objects for all the walls
-                    for (int j = 0; i < Mazetxt[i].Length; j++)
+                    for (int j = 0; j < Mazetxt[i].Length; j++)
                     {
-                        MZWall wl = new MZWall(j, i, Mazetxt[i][j]);
-                        MzList.Add(wl);
+                        if (Mazetxt[i][j] != (char)32)
+                        {
+                            MZWall wl = new MZWall(j, i, Mazetxt[i][j]);
+                            MzList.Add(wl);
+                        }
                     }
 
                 }
@@ -265,7 +273,6 @@ namespace MazeGame
                 {
                     i = Console.ReadKey(true);
                     pl.Move(i, 1);
-                    
                 }
                 
             }

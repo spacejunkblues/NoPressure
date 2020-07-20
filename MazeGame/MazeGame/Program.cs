@@ -1,5 +1,4 @@
-﻿using Microsoft.VisualBasic.CompilerServices;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -24,32 +23,32 @@ namespace MazeGame
         }
     }
 
-    class Player:UniFeatures 
+    class Player : UniFeatures
     {
         //Create maze for checking walls
         public Maze mz;
 
+        //Create maze end to check for end
+        MZEnd end;
 
         //Constructor for setting variables and printing player
         public Player()
         {
             Apearance = '*';
-            pos = new Vector(Console.WindowWidth / 2, Console.WindowHeight/ 2);
+            pos = new Vector(1, 1);
             Print();
         }
 
 
-        public void Move(ConsoleKeyInfo Direction, int HowFar) 
+        public void Move(ConsoleKeyInfo Direction, int HowFar)
         {
-            //**************Not Done. need to reference maze's walls***************************
-
             Print();
 
             //determine which way to move
             int x1 = 0;
             int y1 = 0;
 
-            if (Direction.Key == ConsoleKey.UpArrow) 
+            if (Direction.Key == ConsoleKey.UpArrow)
             {
                 y1 = HowFar * -1;
             }
@@ -84,22 +83,35 @@ namespace MazeGame
                 Console.SetCursorPosition(MovedPos.x, MovedPos.y);
 
                 Clear();
-                    
+
                 //move the player
                 pos.SetVectPos(MovedPos);
 
                 Print();
             }
-            catch 
+            catch
             {
-                    
+
             }
-            
+
+            if (end != null)
+            {
+                if (end.pos == pos)
+                {
+                    Console.Write("You Have Won!!");
+                }
+            }
+
         }
 
-        public void SetMazePointer(Maze maz) 
+        public void SetMazePointer(Maze maz)
         {
             mz = maz;
+        }
+
+        public void SetEndPointer(MZEnd mzend)
+        {
+            end = mzend;
         }
     }
 
@@ -227,6 +239,14 @@ namespace MazeGame
     class MZEnd:UniFeatures //***********************
     {
         //Created IfWon for determining if the player has won
+
+        public MZEnd(char apear, int x, int y)
+        {
+            Apearance = apear;
+            pos.x = x;
+            pos.y = y;
+            Print();
+        }
     }
 
     class Program
@@ -256,10 +276,14 @@ namespace MazeGame
             //Create Player Object
             Player pl = new Player();
 
+            MZEnd end = new MZEnd('€', 40, 20);
+
             //Create Maze Object
             Maze mz = new Maze();
             pl.SetMazePointer(mz);
             mz.CreateMaze();
+            end.Print();
+            pl.SetEndPointer(end);
 
             //Use ReadyKey to move the character. Use var to get the return and figure out how to check for UpArrow
             while (true)
@@ -267,6 +291,7 @@ namespace MazeGame
                 //Creare variable to store key information
                 ConsoleKeyInfo i = new ConsoleKeyInfo();
                 var noKeyPressedYet = i.Key;
+                end.Print();
 
                 //Take info from console if a key is available in the buffer
                 if (Console.KeyAvailable)

@@ -57,6 +57,6 @@
 		1.Obstacles
 		2.A door? Optional
 		
-	3.Make it so that finishing the maze will print s new one
+	3.Make it so that finishing the maze will print a new one
 
 	4.Make it so that there are multiple mazes off screen that will print if you go all the way in that direction

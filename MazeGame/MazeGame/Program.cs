@@ -94,10 +94,12 @@ namespace MazeGame
 
             }
 
+            //Check if player has won
             if (end != null)
             {
                 if (end.pos == pos)
                 {
+                    Console.SetCursorPosition(Console.BufferWidth / 2, Console.WindowHeight -1);
                     Console.Write("You Have Won!!");
                 }
             }
@@ -189,7 +191,7 @@ namespace MazeGame
 
             try
             {
-                Mazetxt = File.ReadAllLines(@"Maze.txt");
+                Mazetxt = File.ReadAllLines(@"Maze2.txt");
                 IfError = false;
             }
             catch
@@ -200,7 +202,7 @@ namespace MazeGame
 
             if (!IfError)
             {
-                for (int i = 0; i < File.ReadAllLines(@"Maze.txt").Length; i++)
+                for (int i = 0; i < Mazetxt.Length; i++)
                 {
                     //Create objects for all the walls
                     for (int j = 0; j < Mazetxt[i].Length; j++)
@@ -216,7 +218,7 @@ namespace MazeGame
 
             if (IfError)
             {
-                for (int i = 0; i < File.ReadAllLines(@"Maze.txt").Length; i++)
+                for (int i = 0; i < Mazetxt.Length; i++)
                 {
                     //Create objects for all the walls
                     for (int j = 0; j < Mazetxt[i].Length; j++)
@@ -236,9 +238,8 @@ namespace MazeGame
 
     }
 
-    class MZEnd:UniFeatures //***********************
+    class MZEnd:UniFeatures 
     {
-        //Created IfWon for determining if the player has won
 
         public MZEnd(char apear, int x, int y)
         {
@@ -276,7 +277,7 @@ namespace MazeGame
             //Create Player Object
             Player pl = new Player();
 
-            MZEnd end = new MZEnd('€', 40, 20);
+            MZEnd end = new MZEnd('☺', 40, 20);
 
             //Create Maze Object
             Maze mz = new Maze();
@@ -285,19 +286,21 @@ namespace MazeGame
             end.Print();
             pl.SetEndPointer(end);
 
+
+
             //Use ReadyKey to move the character. Use var to get the return and figure out how to check for UpArrow
             while (true)
             {
                 //Creare variable to store key information
                 ConsoleKeyInfo i = new ConsoleKeyInfo();
                 var noKeyPressedYet = i.Key;
-                end.Print();
 
                 //Take info from console if a key is available in the buffer
                 if (Console.KeyAvailable)
                 {
                     i = Console.ReadKey(true);
                     pl.Move(i, 1);
+                    end.Print();
                 }
                 
             }

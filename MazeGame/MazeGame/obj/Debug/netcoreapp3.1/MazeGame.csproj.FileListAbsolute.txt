@@ -22,3 +22,4 @@ C:\Users\User\Documents\GitHub\NoPressure\MazeGame\MazeGame\obj\Debug\netcoreapp
 C:\Users\User\Documents\GitHub\NoPressure\MazeGame\MazeGame\obj\Debug\netcoreapp3.1\MazeGame.dll
 C:\Users\User\Documents\GitHub\NoPressure\MazeGame\MazeGame\obj\Debug\netcoreapp3.1\MazeGame.pdb
 C:\Users\User\Documents\GitHub\NoPressure\MazeGame\MazeGame\obj\Debug\netcoreapp3.1\MazeGame.genruntimeconfig.cache
+C:\Users\User\Documents\GitHub\NoPressure\MazeGame\MazeGame\obj\Debug\netcoreapp3.1\MazeGame.csprojAssemblyReference.cache

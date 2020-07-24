@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Security;
 using System.Security.Cryptography.X509Certificates;
 
 namespace InClass_GameTree
@@ -222,12 +223,112 @@ namespace InClass_GameTree
 
     class Program
     {
+        static Piece PlaceOtherPiece(Board curbrd, char player, ref bool win, ref int countwins)
+        {
+            win = false;
+            Piece tryPiece=new Piece();
+
+            foreach (var b in curbrd.blanks)
+            {
+                tryPiece = new Piece(b.x, b.y, player);
+
+                //make a fake board
+                Board newBoard = new Board(curbrd);
+
+                //place a piece onto the fake board
+                newBoard.PlacePiece(tryPiece, false);
+
+                //see if it cause me to win
+                if (newBoard.win(player))
+                {
+                    //if placeing the peice wins, then place the peice there!
+                    win = true;
+                    countwins++;
+                }
+            }
+            if (win)
+                return tryPiece;
+
+
+            //Make sure placing a piece doesn't cause the other guy to win
+            int lowestwins=10;
+            int lowestindex = 0;
+            int index = 0;
+            foreach (var b in curbrd.blanks)
+            {
+                tryPiece = new Piece(b.x, b.y, player);
+
+                //make a fake board
+                Board newBoard = new Board(curbrd);
+
+                //place a piece onto the fake board
+                newBoard.PlacePiece(tryPiece, false);
+
+                //find out who the other player is
+                char otherPlayer;
+
+                if (player == 'O')
+                    otherPlayer = 'X';
+                else
+                    otherPlayer = 'O';
+
+                Piece otherPlayersWin;
+                //press to next blank
+                if (newBoard.blanks.Count > 0)
+                {
+                    otherPlayersWin = PlaceOtherPiece(newBoard, otherPlayer, ref win, ref countwins);
+
+                    //find the solution with the least amount of wins.
+                    if (countwins < lowestwins)
+                    {
+                        lowestwins = countwins;
+                        lowestindex = index;
+                    }
+
+                    win = !win;
+
+
+                    if (!win)
+                    {
+
+                        tryPiece = new Piece(otherPlayersWin.x, otherPlayersWin.y, player);
+                        return tryPiece;
+                    }
+
+                    //if not null, that means we found a win and we should return it
+                    // if (otherPlayersWin.Appearnace == '?')
+                    //     return tryPiece;
+
+                    //Other player will win
+                    //if (otherPlayersWin.Appearnace != '?')
+                    //{
+                    //    tryPiece = new Piece(otherPlayersWin.x, otherPlayersWin.y, player);
+                    //    return tryPiece;
+                    //}
+                }
+
+                //if null, keep searching
+                index++;
+            }
+
+            //after all the blanks are checked, find the one in which there are no X wins
+            Piece randomBlank = new Piece();
+            randomBlank.x = curbrd.blanks[0].x;
+            randomBlank.y = curbrd.blanks[0].y;
+            randomBlank.Appearnace = player;
+
+
+            return randomBlank;//? means cats game
+        }
+
+
         //takes the current board state
         //figures out where the best place to place an 'O'
         //returns that info as a piece
-        static Piece PlaceEnemnyPiece(Board curbrd, char player)
+        static Piece PlaceEnemnyPiece(Board curbrd, char player, ref bool win)
         {
-            foreach(var b in curbrd.blanks)
+            win = false;
+            foreach (var b in curbrd.blanks)
             {
                 Piece tryPiece = new Piece(b.x, b.y, player);
 
@@ -238,11 +339,24 @@ namespace InClass_GameTree
                 newBoard.PlacePiece(tryPiece, false);
 
                 //see if it cause me to win
-                if(newBoard.win(player))
+                if (newBoard.win(player))
                 {
                     //if placeing the peice wins, then place the peice there!
+                    win = true;
                     return tryPiece;
                 }
+            }
+
+            //Make sure placing a piece doesn't cause the other guy to win
+            foreach (var b in curbrd.blanks)
+            {
+                Piece tryPiece = new Piece(b.x, b.y, player);
+
+                //make a fake board
+                Board newBoard = new Board(curbrd);
+
+                //place a piece onto the fake board
+                newBoard.PlacePiece(tryPiece, false);
 
                 //find out who the other player is
                 char otherPlayer;
@@ -252,27 +366,47 @@ namespace InClass_GameTree
                 else
                     otherPlayer = 'O';
 
-              
+                Piece otherPlayersWin;
                 //press to next blank
-                Piece otherPlayersWin = PlaceEnemnyPiece(newBoard, otherPlayer);
-
-                //if not null, that means we found a win and we should return it
-                if (otherPlayersWin.Appearnace == '?')
-                    return tryPiece;
-
-                //Other player will win
-                if(otherPlayersWin.Appearnace != '?')
+                if (newBoard.blanks.Count > 0)
                 {
-                    tryPiece = new Piece(otherPlayersWin.x, otherPlayersWin.y, player);
-                    return tryPiece;
+                    otherPlayersWin = PlaceEnemnyPiece(newBoard, otherPlayer, ref win);
+
+                    
+
+                    win = !win;
+
+
+                    if(!win)
+                    {
+
+                          tryPiece = new Piece(otherPlayersWin.x, otherPlayersWin.y, player);
+                          return tryPiece;
+                    }
+
+                    //if not null, that means we found a win and we should return it
+                    // if (otherPlayersWin.Appearnace == '?')
+                    //     return tryPiece;
+
+                    //Other player will win
+                    //if (otherPlayersWin.Appearnace != '?')
+                    //{
+                    //    tryPiece = new Piece(otherPlayersWin.x, otherPlayersWin.y, player);
+                    //    return tryPiece;
+                    //}
                 }
 
                 //if null, keep searching
             }
 
             //after all the blanks are checked, find the one in which there are no X wins
+            Piece randomBlank = new Piece();
+            randomBlank.x = curbrd.blanks[0].x;
+            randomBlank.y = curbrd.blanks[0].y;
+            randomBlank.Appearnace = player;
 
-            return new Piece(0,0,'?');//? means cats game
+            
+            return randomBlank;//? means cats game
         }
 
         static void Main(string[] args)
@@ -307,7 +441,9 @@ namespace InClass_GameTree
 
 
                 //find out where the best place is to place the peice
-                Piece e = PlaceEnemnyPiece(brd, 'O');
+                bool win =false;
+                int count=0;
+                Piece e = PlaceOtherPiece(brd, 'O', ref win, ref count);
 
 
                 //Place the Enemies peice

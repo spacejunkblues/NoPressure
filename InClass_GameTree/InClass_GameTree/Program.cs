@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 
@@ -8,12 +9,42 @@ namespace InClass_GameTree
     class Board
     {
         public List<Piece> pieces;
+        public List<Piece> blanks;
 
         public Board()
         {
             pieces = new List<Piece>();
+            blanks = new List<Piece>();
+
+            //fill the blanks
+            for(int x=0;x<=4;x += 2)
+            {
+                for (int y = 0; y <= 4; y += 2) 
+                {
+                    blanks.Add(new Piece(x, y,' '));
+                }
+            }
             Print();
 
+        }
+
+        //Used for fake boards!!!!
+        public Board(Board prevboard)
+        {
+            pieces = new List<Piece>();
+            blanks = new List<Piece>();
+
+            //add peices to new baord
+            foreach (var p in prevboard.pieces)
+            {
+                pieces.Add(p);
+            }
+
+            //add blanks
+            foreach (var p in prevboard.blanks)
+            {
+                blanks.Add(p);
+            }
         }
 
         public void Print()
@@ -26,10 +57,41 @@ namespace InClass_GameTree
             Console.WriteLine(" | | ");
         }
 
-        public void PlacePiece(int x, int y, char player)
+        public void PlacePiece(int x, int y, char player, bool show)
         {
-            pieces.Add(new Piece(x, y, player));
+            //save new peice in a variable
+            Piece newPiece = new Piece(x, y, player);
+
+            //add the new peice
+            pieces.Add(newPiece);
+
+
+            //search for the x,y coords in blank
+            int indexRemoved=-1;
+            for(int i=0;i<blanks.Count;i++)
+            {
+                if (blanks[i] == newPiece)
+                {
+                    indexRemoved = i;
+                    break;
+                }
+            }
+
+            //remove the found peice
+            if (indexRemoved > -1)
+                blanks.RemoveAt(indexRemoved);
+
+            if(show)
+                newPiece.Print();
+
         }
+
+        //overload to make it easier to use
+        public void PlacePiece(Piece p, bool show)
+        {
+            PlacePiece(p.x, p.y, p.Appearnace, show);
+        }
+
 
         //given a X or an O will return if that player has won
         public bool win(char player)
@@ -141,25 +203,86 @@ namespace InClass_GameTree
             x = x1;
             y = y1;
             Appearnace = player;
-            Print();
         }
         public void Print()
         {
             Console.SetCursorPosition(x, y);
             Console.Write(Appearnace);
         }
+
+        static public bool operator ==(Piece one, Piece two)
+        {
+            return one.x == two.x && one.y == two.y;
+        }
+        static public bool operator !=(Piece one, Piece two)
+        {
+            return one.x != two.x || one.y != two.y;
+        }
     }
 
     class Program
     {
+        //takes the current board state
+        //figures out where the best place to place an 'O'
+        //returns that info as a piece
+        static Piece PlaceEnemnyPiece(Board curbrd, char player)
+        {
+            foreach(var b in curbrd.blanks)
+            {
+                Piece tryPiece = new Piece(b.x, b.y, player);
+
+                //make a fake board
+                Board newBoard = new Board(curbrd);
+
+                //place a piece onto the fake board
+                newBoard.PlacePiece(tryPiece, false);
+
+                //see if it cause me to win
+                if(newBoard.win(player))
+                {
+                    //if placeing the peice wins, then place the peice there!
+                    return tryPiece;
+                }
+
+                //find out who the other player is
+                char otherPlayer;
+
+                if (player == 'O')
+                    otherPlayer = 'X';
+                else
+                    otherPlayer = 'O';
+
+              
+                //press to next blank
+                Piece otherPlayersWin = PlaceEnemnyPiece(newBoard, otherPlayer);
+
+                //if not null, that means we found a win and we should return it
+                if (otherPlayersWin.Appearnace == '?')
+                    return tryPiece;
+
+                //Other player will win
+                if(otherPlayersWin.Appearnace != '?')
+                {
+                    tryPiece = new Piece(otherPlayersWin.x, otherPlayersWin.y, player);
+                    return tryPiece;
+                }
+
+                //if null, keep searching
+            }
+
+            //after all the blanks are checked, find the one in which there are no X wins
+
+            return new Piece(0,0,'?');//? means cats game
+        }
 
         static void Main(string[] args)
         {
             Board brd = new Board();
             int x;
             int y;
+            char winner = 'N';
 
-            while (true)
+            do
             {
 
 
@@ -170,14 +293,41 @@ namespace InClass_GameTree
                 Console.WriteLine("y?");
                 y = Convert.ToInt32(Console.ReadLine());
 
-                //place the piece
-                brd.PlacePiece(x, y, 'X');
 
-                //say when won
-                Console.SetCursorPosition(0, 11);
+                //Player places the piece
+                brd.PlacePiece(x, y, 'X', true);
+
+                //say if Player won
                 if (brd.win('X'))
-                    Console.WriteLine("X WON");
-            }
+                {
+                    winner = 'X';
+                    break;
+                }
+
+
+
+                //find out where the best place is to place the peice
+                Piece e = PlaceEnemnyPiece(brd, 'O');
+
+
+                //Place the Enemies peice
+                brd.PlacePiece(e.x, e.y, e.Appearnace, true);
+
+                //see if Enenmy wins
+                if (brd.win('O'))
+                {
+                    winner = 'O';
+                    break;
+                }
+
+            }while ( winner !='X'  &&  winner != 'O');
+
+
+
+            Console.SetCursorPosition(0, 11);
+            Console.WriteLine(winner + " WON");
+
+
 
 
         }

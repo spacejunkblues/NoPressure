@@ -230,6 +230,21 @@ namespace InClass_GameTree
         //0 is a tie
         //-1 is X wins
         public int winner;
+
+        public WinState()
+        {
+            p = new Piece();
+
+        }
+        public WinState(Piece aPiece,int winstate)
+        {
+            p = new Piece();
+            p.x = aPiece.x;
+            p.y = aPiece.y;
+            p.Appearnace = aPiece.Appearnace;
+
+            winner = winstate;
+        }
     }
 
     class Program
@@ -237,6 +252,14 @@ namespace InClass_GameTree
         static int GetOtherPlayer(int player)
         {
             return player*-1;
+        }
+
+        static char PlayerChar(int player)
+        {
+            if (player == 1)
+                return 'O';
+            else
+                return 'X';
         }
 
         //player 1 is O
@@ -254,17 +277,81 @@ namespace InClass_GameTree
                 //try all choices on a new board
                 Board newBoard = new Board(curbrd);
 
+                //create a new peice at the blank location for the current player
+                Piece newPiece = new Piece();
+                newPiece.x = curbrd.blanks[i].x;
+                newPiece.y = curbrd.blanks[i].y;
+                newPiece.Appearnace = PlayerChar(player);
+
                 //try the current blank
-                newBoard.PlacePiece(curbrd.blanks[i], false);
+                newBoard.PlacePiece(newPiece, false);
+
+                //see if this results in a victory or lose
+                if (newBoard.win('O'))
+                {
+
+                    WinState winResult = new WinState(curbrd.blanks[i],1); //gets the blanks location and char loaded into the winstate
+                    winResult.p.Appearnace = 'O';//changes the appearnce to show who won
+                    winResult.winner = 1;
+
+                    return winResult;
+
+                }
+                else if(newBoard.win('X'))
+                {
+                    WinState winResult = new WinState(curbrd.blanks[i], -1); //gets the blanks location and char loaded into the winstate
+                    winResult.p.Appearnace = 'X';//changes the appearnce to show who won
+                    winResult.winner = -1;
+
+                    return winResult;
+
+                }
 
                 //deteremine the win state for the current blank
                 winStates[i] = TryPiece(newBoard, GetOtherPlayer(player));
 
+                //sets the winstate to the current blank spot
+                winStates[i].p.x = curbrd.blanks[i].x;
+                winStates[i].p.y = curbrd.blanks[i].y;
+                winStates[i].p.Appearnace = PlayerChar(player);
+
+                //do not change winstate.winner
+                //If placing an O on the current blank gives the next player a move that wins him the game. Assume this blank spot will win him the game.
+
             }
 
-            //decide which blank to choose
+            
+            //find the last move that will win, lose, tie
+            int winIndex=-1;    //each index starts out of range because there may be a no win scenerio
+            int loseIndex = -1;
+            int tieIndex = -1;
 
-            return new WinState();
+            //find the index's
+            for(int i=0;i<numOfChoices;i++)
+            {
+                if (winStates[i].winner == player)
+                    winIndex = i;
+
+                if (winStates[i].winner != player)
+                    loseIndex = i;
+
+
+                if (winStates[i].winner == 0)
+                    tieIndex = i;
+            }
+
+
+            //decide which blank to choose
+            if (winIndex >= 0)
+                return winStates[winIndex]; //choice the winning choice first
+            else if (tieIndex >= 0)
+                return winStates[tieIndex]; //if there was no winning choice, choose the tie
+            else if (loseIndex > -1)
+                return winStates[loseIndex]; //if all else fails, take the loss
+            else
+                return new WinState();//board is full
+
+
         }
 
         static Piece PlaceOtherPiece(Board curbrd, char player, ref bool win, ref int countwins)
@@ -487,11 +574,11 @@ namespace InClass_GameTree
                 //find out where the best place is to place the peice
                 bool win =false;
                 int count=0;
-                Piece e = PlaceOtherPiece(brd, 'O', ref win, ref count);
+                WinState ws = TryPiece(brd, 1);
 
 
                 //Place the Enemies peice
-                brd.PlacePiece(e.x, e.y, e.Appearnace, true);
+                brd.PlacePiece(ws.p, true);
 
                 //see if Enenmy wins
                 if (brd.win('O'))

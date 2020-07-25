@@ -221,8 +221,52 @@ namespace InClass_GameTree
         }
     }
 
+    class WinState
+    {
+        //This is the piece that caused the winstate
+        public Piece p;
+
+        //1 is O wins
+        //0 is a tie
+        //-1 is X wins
+        public int winner;
+    }
+
     class Program
     {
+        static int GetOtherPlayer(int player)
+        {
+            return player*-1;
+        }
+
+        //player 1 is O
+        //player -1 is X
+        //returns if the player will win,lose, or tie based on the current players choices at this level
+        static WinState TryPiece(Board curbrd, int player)
+        {
+            int numOfChoices = curbrd.blanks.Count;
+
+            //store the winstates of each peice
+            WinState[] winStates = new WinState[numOfChoices];
+
+            for(int i=0;i< numOfChoices; i++)
+            {
+                //try all choices on a new board
+                Board newBoard = new Board(curbrd);
+
+                //try the current blank
+                newBoard.PlacePiece(curbrd.blanks[i], false);
+
+                //deteremine the win state for the current blank
+                winStates[i] = TryPiece(newBoard, GetOtherPlayer(player));
+
+            }
+
+            //decide which blank to choose
+
+            return new WinState();
+        }
+
         static Piece PlaceOtherPiece(Board curbrd, char player, ref bool win, ref int countwins)
         {
             win = false;

@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Security;
 using System.Security.Cryptography.X509Certificates;
+using System.Threading;
 
 namespace InClass_GameTree
 {
@@ -58,6 +60,14 @@ namespace InClass_GameTree
             Console.WriteLine(" | | ");
         }
 
+        public void Print2() 
+        {
+            for (int i = 0; i < pieces.Count; i++) 
+            {
+                pieces[i].Print();
+            }
+        }
+
         public void PlacePiece(int x, int y, char player, bool show)
         {
             //save new peice in a variable
@@ -97,11 +107,7 @@ namespace InClass_GameTree
         //given a X or an O will return if that player has won
         public bool win(char player)
         {
-            
-
-            
             //build the win arrays first
-
             char[][] winArrays = new char[8][];
 
             for (int i=0; i< 8;i++)
@@ -572,8 +578,6 @@ namespace InClass_GameTree
 
 
                 //find out where the best place is to place the peice
-                bool win =false;
-                int count=0;
                 WinState ws = TryPiece(brd, 1);
 
 

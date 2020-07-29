@@ -278,6 +278,7 @@ namespace InClass_GameTree
             //store the winstates of each peice
             WinState[] winStates = new WinState[numOfChoices];
 
+            //i is the index of the blank
             for(int i=0;i< numOfChoices; i++)
             {
                 //try all choices on a new board
@@ -355,203 +356,119 @@ namespace InClass_GameTree
             else if (loseIndex > -1)
                 return winStates[loseIndex]; //if all else fails, take the loss
             else
-                return new WinState();//board is full
+                return new WinState();//board is full, this is returning a tie since winner defualts to zero
 
 
         }
 
-        static Piece PlaceOtherPiece(Board curbrd, char player, ref bool win, ref int countwins)
+
+        public static Piece PlaceEasyPiece(Board curbrd, char player) 
         {
-            win = false;
-            Piece tryPiece=new Piece();
+            //Create board arrays
+            char[][] LoseArrays = new char[8][];
 
-            foreach (var b in curbrd.blanks)
+            int[] Length = { 3, 2, 3, 2, 4, 2, 3, 2, 3 };
+            int LIndex = 0;
+
+            //Assign arrays set length
+            for (int i = 0; i < 8; i++) 
             {
-                tryPiece = new Piece(b.x, b.y, player);
-
-                //make a fake board
-                Board newBoard = new Board(curbrd);
-
-                //place a piece onto the fake board
-                newBoard.PlacePiece(tryPiece, false);
-
-                //see if it cause me to win
-                if (newBoard.win(player))
-                {
-                    //if placeing the peice wins, then place the peice there!
-                    win = true;
-                    countwins++;
-                }
-            }
-            if (win)
-                return tryPiece;
-
-
-            //Make sure placing a piece doesn't cause the other guy to win
-            int lowestwins=10;
-            int lowestindex = 0;
-            int index = 0;
-            foreach (var b in curbrd.blanks)
-            {
-                tryPiece = new Piece(b.x, b.y, player);
-
-                //make a fake board
-                Board newBoard = new Board(curbrd);
-
-                //place a piece onto the fake board
-                newBoard.PlacePiece(tryPiece, false);
-
-                //find out who the other player is
-                char otherPlayer;
-
-                if (player == 'O')
-                    otherPlayer = 'X';
-                else
-                    otherPlayer = 'O';
-
-                Piece otherPlayersWin;
-                //press to next blank
-                if (newBoard.blanks.Count > 0)
-                {
-                    otherPlayersWin = PlaceOtherPiece(newBoard, otherPlayer, ref win, ref countwins);
-
-                    //find the solution with the least amount of wins.
-                    if (countwins < lowestwins)
-                    {
-                        lowestwins = countwins;
-                        lowestindex = index;
-                    }
-
-                    win = !win;
-
-
-                    if (!win)
-                    {
-
-                        tryPiece = new Piece(otherPlayersWin.x, otherPlayersWin.y, player);
-                        return tryPiece;
-                    }
-
-                    //if not null, that means we found a win and we should return it
-                    // if (otherPlayersWin.Appearnace == '?')
-                    //     return tryPiece;
-
-                    //Other player will win
-                    //if (otherPlayersWin.Appearnace != '?')
-                    //{
-                    //    tryPiece = new Piece(otherPlayersWin.x, otherPlayersWin.y, player);
-                    //    return tryPiece;
-                    //}
-                }
-
-                //if null, keep searching
-                index++;
+                LoseArrays[i] = new char[3];
             }
 
-            //after all the blanks are checked, find the one in which there are no X wins
-            Piece randomBlank = new Piece();
-            randomBlank.x = curbrd.blanks[0].x;
-            randomBlank.y = curbrd.blanks[0].y;
-            randomBlank.Appearnace = player;
+            int[][] HValues = new int[3][];
+            int[][][] LAIndex = new int[3][][];
 
-
-            return randomBlank;//? means cats game
-        }
-
-
-        //takes the current board state
-        //figures out where the best place to place an 'O'
-        //returns that info as a piece
-        static Piece PlaceEnemnyPiece(Board curbrd, char player, ref bool win)
-        {
-            win = false;
-            foreach (var b in curbrd.blanks)
+            for (int i = 0; i<3; i++) 
             {
-                Piece tryPiece = new Piece(b.x, b.y, player);
-
-                //make a fake board
-                Board newBoard = new Board(curbrd);
-
-                //place a piece onto the fake board
-                newBoard.PlacePiece(tryPiece, false);
-
-                //see if it cause me to win
-                if (newBoard.win(player))
-                {
-                    //if placeing the peice wins, then place the peice there!
-                    win = true;
-                    return tryPiece;
-                }
+                HValues[i] = new int[3];
             }
 
-            //Make sure placing a piece doesn't cause the other guy to win
-            foreach (var b in curbrd.blanks)
+            for (int row = 0; row < 3; row++) 
             {
-                Piece tryPiece = new Piece(b.x, b.y, player);
+                //create boxes
+                LAIndex[row] = new int[3][];
 
-                //make a fake board
-                Board newBoard = new Board(curbrd);
-
-                //place a piece onto the fake board
-                newBoard.PlacePiece(tryPiece, false);
-
-                //find out who the other player is
-                char otherPlayer;
-
-                if (player == 'O')
-                    otherPlayer = 'X';
-                else
-                    otherPlayer = 'O';
-
-                Piece otherPlayersWin;
-                //press to next blank
-                if (newBoard.blanks.Count > 0)
+                for (int box = 0; box<3; box++) 
                 {
-                    otherPlayersWin = PlaceEnemnyPiece(newBoard, otherPlayer, ref win);
-
+                    LAIndex[row][box] = new int[Length[LIndex]];
+                    LIndex++;
                     
-
-                    win = !win;
-
-
-                    if(!win)
-                    {
-
-                          tryPiece = new Piece(otherPlayersWin.x, otherPlayersWin.y, player);
-                          return tryPiece;
-                    }
-
-                    //if not null, that means we found a win and we should return it
-                    // if (otherPlayersWin.Appearnace == '?')
-                    //     return tryPiece;
-
-                    //Other player will win
-                    //if (otherPlayersWin.Appearnace != '?')
-                    //{
-                    //    tryPiece = new Piece(otherPlayersWin.x, otherPlayersWin.y, player);
-                    //    return tryPiece;
-                    //}
+                    LAIndex[row][box][0] = row;
+                    LAIndex[row][box][1] = box + 3;
                 }
-
-                //if null, keep searching
             }
 
-            //after all the blanks are checked, find the one in which there are no X wins
-            Piece randomBlank = new Piece();
-            randomBlank.x = curbrd.blanks[0].x;
-            randomBlank.y = curbrd.blanks[0].y;
-            randomBlank.Appearnace = player;
+            LAIndex[0][0][2] = 6;
+            LAIndex[0][2][2] = 7;
+            LAIndex[1][1][2] = 6;
+            LAIndex[1][1][3] = 7;
+            LAIndex[2][0][2] = 7;
+            LAIndex[2][2][2] = 6;
 
-            
-            return randomBlank;//? means cats game
+            //load the array with X's and O's
+            foreach (var p in curbrd.pieces)
+            {
+
+                //--horzons---------
+
+                //load 1st array
+                int index = p.x / 2;
+                if (p.y == 0)
+                    LoseArrays[0][index] = p.Appearnace;
+
+                //load 2nd array
+                if (p.y == 2)
+                    LoseArrays[1][index] = p.Appearnace;
+
+
+                //load 3rd array
+                if (p.y == 4)
+                    LoseArrays[2][index] = p.Appearnace;
+
+
+
+                //------verts-------
+
+                //load 4th array
+                index = p.y / 2;
+                if (p.x == 0)
+                    LoseArrays[3][index] = p.Appearnace;
+
+                //load 5th array
+                if (p.x == 2)
+                    LoseArrays[4][index] = p.Appearnace;
+
+
+                //load 6th array
+                if (p.x == 4)
+                    LoseArrays[5][index] = p.Appearnace;
+
+
+
+                //------digonals-------
+
+                //load 7th array
+                index = p.x / 2;
+                if (p.x == p.y)
+                    LoseArrays[6][index] = p.Appearnace;
+
+                //load 8th array
+                index = p.x / 2;
+                if (p.x + p.y == 4)
+                    LoseArrays[7][index] = p.Appearnace;
+            }
+
+            return null;
         }
+
 
         static void Main(string[] args)
         {
             Board brd = new Board();
-            int x;
+            int x;//user input locaiotns
             int y;
-            char winner = 'N';
+            char winner = 'N';//N for none, other options are X and O
 
             do
             {
@@ -578,7 +495,15 @@ namespace InClass_GameTree
 
 
                 //find out where the best place is to place the peice
-                WinState ws = TryPiece(brd, 1);
+                //Hard mode
+                char mode = 'E';
+                WinState ws = new WinState();
+
+                if (mode == 'H')
+                    ws = TryPiece(brd, 1);//1 is player O, and -1 is player X
+                else if (mode == 'E')
+                    ws.p = PlaceEasyPiece( brd, 'X');//1 is player O, and -1 is player X
+
 
 
                 //Place the Enemies peice

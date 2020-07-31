@@ -532,7 +532,7 @@ namespace InClass_GameTree
 
             char[][] winArrays = new char[8][];
 
-            for (int i = 0; i<3; i++)
+            for (int i = 0; i<8; i++)
             {
                 winArrays[i] = new char[3];
             }
@@ -610,15 +610,37 @@ namespace InClass_GameTree
                         xs -= GPieces;
                     }
                 }
+
+                GPieces = 0;
             }
 
-            //find out the amount of winnable pieces there are for o
+            GPieces = 0;
 
+            //find out the amount of winnable pieces there are for o
+            //find out the amount of winnable pieces there are for x
+            for (int row = 0; row < 8; row++)
+            {
+                for (int box = 0; box < 3; box++)
+                {
+                    if (winArrays[row][box] == 'O')
+                    {
+                        os++;
+                        GPieces++;
+                    }
+                    else if (winArrays[row][box] == 'X')
+                    {
+                        os -= GPieces;
+                    }
+                }
+
+                GPieces = 0;
+            }
 
             //Subtract them from each other
+            GPieces = xs - os;
 
             //Return the final product
-            return 0;
+            return GPieces;
         }
 
         static void Main(string[] args)

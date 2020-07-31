@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.InClass__GameTree PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="InClass_GameTree/Program.cs">
     <Files>
-      <File FileName="InClass_GameTree/Program.cs" Line="573" Column="1" />
+      <File FileName="InClass_GameTree/Program.cs" Line="647" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,6 +19,9 @@
           <Value>wall</Value>
           <Value>mz.MzList</Value>
           <Value>winArrays</Value>
+          <Value>winArrays[3][index]</Value>
+          <Value>xs</Value>
+          <Value>os</Value>
         </State>
       </Pad>
     </Pads>
@@ -26,9 +29,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/maggiefleck/Desktop/NoPressure/InClass_GameTree/InClass_GameTree/Program.cs" relfile="InClass_GameTree/Program.cs" line="567" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

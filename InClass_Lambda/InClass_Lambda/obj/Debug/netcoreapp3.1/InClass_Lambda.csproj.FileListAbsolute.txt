@@ -1,0 +1,13 @@
+C:\Users\User\Documents\GitHub\NoPressure\InClass_Lambda\InClass_Lambda\bin\Debug\netcoreapp3.1\InClass_Lambda.exe
+C:\Users\User\Documents\GitHub\NoPressure\InClass_Lambda\InClass_Lambda\bin\Debug\netcoreapp3.1\InClass_Lambda.deps.json
+C:\Users\User\Documents\GitHub\NoPressure\InClass_Lambda\InClass_Lambda\bin\Debug\netcoreapp3.1\InClass_Lambda.runtimeconfig.json
+C:\Users\User\Documents\GitHub\NoPressure\InClass_Lambda\InClass_Lambda\bin\Debug\netcoreapp3.1\InClass_Lambda.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\NoPressure\InClass_Lambda\InClass_Lambda\bin\Debug\netcoreapp3.1\InClass_Lambda.dll
+C:\Users\User\Documents\GitHub\NoPressure\InClass_Lambda\InClass_Lambda\bin\Debug\netcoreapp3.1\InClass_Lambda.pdb
+C:\Users\User\Documents\GitHub\NoPressure\InClass_Lambda\InClass_Lambda\obj\Debug\netcoreapp3.1\InClass_Lambda.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClass_Lambda\InClass_Lambda\obj\Debug\netcoreapp3.1\InClass_Lambda.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClass_Lambda\InClass_Lambda\obj\Debug\netcoreapp3.1\InClass_Lambda.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\InClass_Lambda\InClass_Lambda\obj\Debug\netcoreapp3.1\InClass_Lambda.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\NoPressure\InClass_Lambda\InClass_Lambda\obj\Debug\netcoreapp3.1\InClass_Lambda.dll
+C:\Users\User\Documents\GitHub\NoPressure\InClass_Lambda\InClass_Lambda\obj\Debug\netcoreapp3.1\InClass_Lambda.pdb
+C:\Users\User\Documents\GitHub\NoPressure\InClass_Lambda\InClass_Lambda\obj\Debug\netcoreapp3.1\InClass_Lambda.genruntimeconfig.cache

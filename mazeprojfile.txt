@@ -47,3 +47,16 @@
 		2.a char for printing
 		3.method for if player has won
  
+2.Phase 2
+	1.Method for Proceduration (Proceduration) 
+		1.Will be inside maze
+		2.will take a seed
+		3.Overload so that the seed will be optional 
+	
+	2.Interactable objects:
+		1.Obstacles
+		2.A door? Optional
+		
+	3.Make it so that finishing the maze will print a new one
+
+	4.Make it so that there are multiple mazes off screen that will print if you go all the way in that direction

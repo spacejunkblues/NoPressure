@@ -524,8 +524,102 @@ namespace InClass_GameTree
             return null;
         }
 
+        static public int HValue(Board BrdState)
+        {
+            //Create variables
+            int xs = 0;
+            int os = 0;
+
+            char[][] winArrays = new char[8][];
+
+            for (int i = 0; i<3; i++)
+            {
+                winArrays[i] = new char[3];
+            }
+
+            //Find out how many x's and o's there are
+            //load the array with X's and O's
+            foreach (var p in BrdState.pieces)
+            {
+
+                //--horzons---------
+
+                //load 1st array
+                int index = p.x / 2;
+                if (p.y == 0)
+                    winArrays[0][index] = p.Appearnace;
+
+                //load 2nd array
+                if (p.y == 2)
+                    winArrays[1][index] = p.Appearnace;
 
 
+                //load 3rd array
+                if (p.y == 4)
+                    winArrays[2][index] = p.Appearnace;
+
+
+
+                //------verts-------
+
+                //load 4th array
+                index = p.y / 2;
+                if (p.x == 0)
+                    winArrays[3][index] = p.Appearnace;
+
+                //load 5th array
+                if (p.x == 2)
+                    winArrays[4][index] = p.Appearnace;
+
+
+                //load 6th array
+                if (p.x == 4)
+                    winArrays[5][index] = p.Appearnace;
+
+
+
+                //------digonals-------
+
+                //load 7th array
+                index = p.x / 2;
+                if (p.x == p.y)
+                    winArrays[6][index] = p.Appearnace;
+
+                //load 8th array
+                index = p.x / 2;
+                if (p.x + p.y == 4)
+                    winArrays[7][index] = p.Appearnace;
+            }
+
+            //Variable for tracking the amount of winnable pieces in this row
+            int GPieces = 0;
+
+            //find out the amount of winnable pieces there are for both sides
+            //find out the amount of winnable pieces there are for x
+            for (int row = 0; row<8; row++)
+            {
+                for (int box = 0; box<3; box++)
+                {
+                    if (winArrays[row][box] == 'X')
+                    {
+                        xs++;
+                        GPieces++;
+                    }
+                    else if (winArrays[row][box] == 'O')
+                    {
+                        xs -= GPieces;
+                    }
+                }
+            }
+
+            //find out the amount of winnable pieces there are for o
+
+
+            //Subtract them from each other
+
+            //Return the final product
+            return 0;
+        }
 
         static void Main(string[] args)
         {
@@ -560,14 +654,15 @@ namespace InClass_GameTree
 
                 //find out where the best place is to place the peice
                 //Hard mode
-                char mode = 'E';
+                char mode = 'M';
                 WinState ws = new WinState();
 
                 if (mode == 'H')
                     ws = TryPiece(brd, 1);//1 is player O, and -1 is player X
                 else if (mode == 'E')
-                    ws.p = PlaceEasyPiece( brd, 'O');//1 is player O, and -1 is player X
-
+                    ws.p = PlaceEasyPiece(brd, 'O');//1 is player O, and -1 is player X
+                else if (mode == 'M')
+                    HValue(brd);
 
 
                 //Place the Enemies peice

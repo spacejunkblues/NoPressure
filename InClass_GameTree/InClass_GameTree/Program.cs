@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data;
+using System.Globalization;
 using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Security;
@@ -259,6 +261,13 @@ namespace InClass_GameTree
         {
             return player*-1;
         }
+        static char GetOtherPlayer(char player)
+        {
+            if (player == 'X')
+                return 'O';
+            else
+                return 'X';
+        }
 
         static char PlayerChar(int player)
         {
@@ -459,8 +468,63 @@ namespace InClass_GameTree
                     LoseArrays[7][index] = p.Appearnace;
             }
 
+            //Check with LoseArrays to find hearistic value
+            for (int row = 0; row < 3; row++) 
+            {
+                for (int box = 0; box<3; box++) 
+                {
+                    for (int i = 0; i<LAIndex[row][box].Length; i++) 
+                    {
+                        //If found a blank inside losearrays
+                        if (LoseArrays[row][box] == 0)
+                        {
+                            //Check with losearrays with laindex's index's to find x's inside losearrays
+                            for (int j = 0; j<3; j++) 
+                            {
+                                if (LoseArrays[LAIndex[row][box][i]][j] == GetOtherPlayer(player)) 
+                                {
+                                    HValues[row][box]++;
+                                }
+                            }
+                        }
+                        else 
+                        {
+                            HValues[row][box] = 1000;
+                        }
+                    }
+                } 
+            }
+
+            int LWSTV = HValues[0][0];
+
+            //Search for lowest
+            for (int row = 0; row<3; row++) 
+            {
+                for (int box = 0; box<3; box++) 
+                {
+                    if (HValues[row][box] < LWSTV) 
+                    {
+                        LWSTV = HValues[row][box];
+                    }
+                }
+            }
+
+            //find and return the lowest with LWSTV
+            for (int row = 0; row < 3; row++)
+            {
+                for (int box = 0; box < 3; box++)
+                {
+                    if (HValues[row][box] == LWSTV)
+                    {
+                        return new Piece( box*2, row*2, player);
+                    }
+                }
+            }
+
             return null;
         }
+
+
 
 
         static void Main(string[] args)
@@ -502,7 +566,7 @@ namespace InClass_GameTree
                 if (mode == 'H')
                     ws = TryPiece(brd, 1);//1 is player O, and -1 is player X
                 else if (mode == 'E')
-                    ws.p = PlaceEasyPiece( brd, 'X');//1 is player O, and -1 is player X
+                    ws.p = PlaceEasyPiece( brd, 'O');//1 is player O, and -1 is player X
 
 
 

@@ -1,0 +1,4 @@
+Ceate Function:TryMediumPiece will look exactly like trypiece exept, its only going to go down one layer. Uses a hearistic value for the winstate.
+	so instead of 1 being O win, 0 being tie and -1 being x win. THe new Hvalues will simply be the higher value favors O's and the lower the value will favorX
+
+Create a spereate function (Do this FIRST). Call HFunction. it will take a board as a parameter and return an Hvalue (int).

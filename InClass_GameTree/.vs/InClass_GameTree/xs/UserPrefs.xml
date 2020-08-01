@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.InClass__GameTree PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="InClass_GameTree/Program.cs">
     <Files>
-      <File FileName="InClass_GameTree/Program.cs" Line="647" Column="10" />
+      <File FileName="InClass_GameTree/Program.cs" Line="688" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,6 +22,9 @@
           <Value>winArrays[3][index]</Value>
           <Value>xs</Value>
           <Value>os</Value>
+          <Value>brd</Value>
+          <Value>BrdState</Value>
+          <Value>i</Value>
         </State>
       </Pad>
     </Pads>

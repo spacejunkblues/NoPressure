@@ -679,16 +679,23 @@ namespace InClass_GameTree
                 char mode = 'M';
                 WinState ws = new WinState();
 
+                if (brd.pieces.Count > 2)
+                {
+                    int j = 0;
+                }
+
+                int i;
+
                 if (mode == 'H')
                     ws = TryPiece(brd, 1);//1 is player O, and -1 is player X
                 else if (mode == 'E')
                     ws.p = PlaceEasyPiece(brd, 'O');//1 is player O, and -1 is player X
                 else if (mode == 'M')
-                    HValue(brd);
+                   i = HValue(brd);
 
 
                 //Place the Enemies peice
-                brd.PlacePiece(ws.p, true);
+                //brd.PlacePiece(ws.p, true);
 
                 //see if Enenmy wins
                 if (brd.win('O'))

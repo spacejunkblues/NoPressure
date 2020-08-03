@@ -420,6 +420,7 @@ namespace InClass_GameTree
 
                     //deteremine the win state for the current blank
                     winStates[i] = TryMediumPiece(newBoard, GetOtherPlayer(player), HowManyMoreLayers - 1);
+                    HowManyMoreLayers -= 1;
                 }
 
                 //sets the winstate to the current blank spot
@@ -711,7 +712,6 @@ namespace InClass_GameTree
             GPieces = 0;
 
             //find out the amount of winnable pieces there are for o
-            //find out the amount of winnable pieces there are for x
             for (int row = 0; row < 8; row++)
             {
                 for (int box = 0; box < 3; box++)
@@ -770,7 +770,7 @@ namespace InClass_GameTree
 
                 //find out where the best place is to place the peice
                 //Hard mode
-                char mode = 'E';
+                char mode = 'M';
                 WinState ws = new WinState();
 
                 if (brd.pieces.Count > 2)
@@ -789,7 +789,7 @@ namespace InClass_GameTree
 
 
                 //Place the Enemies peice
-                brd.PlacePiece(ws.p, true);
+                //brd.PlacePiece(ws.p, true);
 
                 //see if Enenmy wins
                 if (brd.win('O'))

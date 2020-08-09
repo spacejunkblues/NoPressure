@@ -370,99 +370,42 @@ namespace InClass_GameTree
 
         }
 
-        public static WinState TryMediumPiece(Board curbrd, int player, int HowManyMoreLayers)
+        public static Piece TryMediumPiece(Board curbrd, char player)
         {
-            int[] HValues = new int[curbrd.blanks.Count];
+            //Create fake board
+            Board FBoard = new Board(curbrd);
 
-            int numOfChoices = curbrd.blanks.Count;
+            //Create value for holding highest hvalue
+            Piece HHvalue = new Piece( curbrd.blanks[0].x, curbrd.blanks[0].y, player);
 
-            //store the winstates of each peice
-            WinState[] winStates = new WinState[numOfChoices];
+            //Create int for holding highest value
+            int Hvalue = 0;
 
-            //i is the index of the blank
-            for (int i = 0; i < numOfChoices; i++)
+            //Asign fake board with HHvalue
+            FBoard.PlacePiece(HHvalue, false);
+
+            //call hvalue with FBoard
+            Hvalue = HValue(FBoard);
+
+            //loop through blanks using hvalue
+            foreach (var n in curbrd.blanks)
             {
-                //try all choices on a new board
-                Board newBoard = new Board(curbrd);
+                //Reset Fboard
+                FBoard = new Board(curbrd);
 
-                //create a new peice at the blank location for the current player
-                Piece newPiece = new Piece();
-                newPiece.x = curbrd.blanks[i].x;
-                newPiece.y = curbrd.blanks[i].y;
-                newPiece.Appearnace = PlayerChar(player);
+                //find the value in placing the current piece
+                FBoard.PlacePiece(new Piece(n.x, n.y, player), false);
 
-                //try the current blank
-                newBoard.PlacePiece(newPiece, false);
-
-                //see if this results in a victory or lose
-                if (newBoard.win('O'))
+                //Determine if it is higher than the last one
+                if (HValue(FBoard) > Hvalue)
                 {
-
-                    WinState winResult = new WinState(curbrd.blanks[i], 1); //gets the blanks location and char loaded into the winstate
-                    winResult.p.Appearnace = 'O';//changes the appearnce to show who won
-                    winResult.winner = 1;
-
-                    return winResult;
-
+                    //If so, set HHvalue to the current piece
+                    HHvalue = new Piece(n.x, n.y, player);
                 }
-                else if (newBoard.win('X'))
-                {
-                    WinState winResult = new WinState(curbrd.blanks[i], -1); //gets the blanks location and char loaded into the winstate
-                    winResult.p.Appearnace = 'X';//changes the appearnce to show who won
-                    winResult.winner = -1;
-
-                    return winResult;
-
-                }
-
-                if (HowManyMoreLayers > 0)
-                {
-
-                    //deteremine the win state for the current blank
-                    winStates[i] = TryMediumPiece(newBoard, GetOtherPlayer(player), HowManyMoreLayers - 1);
-                    HowManyMoreLayers -= 1;
-                }
-
-                //sets the winstate to the current blank spot
-                winStates[i].p.x = curbrd.blanks[i].x;
-                winStates[i].p.y = curbrd.blanks[i].y;
-                winStates[i].p.Appearnace = PlayerChar(player);
-
-                //do not change winstate.winner
-                //If placing an O on the current blank gives the next player a move that wins him the game. Assume this blank spot will win him the game.
-
             }
 
-
-            //find the last move that will win, lose, tie
-            int winIndex = -1;    //each index starts out of range because there may be a no win scenerio
-            int loseIndex = -1;
-            int tieIndex = -1;
-
-            //find the index's
-            for (int i = 0; i < numOfChoices; i++)
-            {
-                if (winStates[i].winner == player)
-                    winIndex = i;
-
-                if (winStates[i].winner != player)
-                    loseIndex = i;
-
-
-                if (winStates[i].winner == 0)
-                    tieIndex = i;
-            }
-
-
-            //decide which blank to choose
-            if (winIndex >= 0)
-                return winStates[winIndex]; //choice the winning choice first
-            else if (tieIndex >= 0)
-                return winStates[tieIndex]; //if there was no winning choice, choose the tie
-            else if (loseIndex > -1)
-                return winStates[loseIndex]; //if all else fails, take the loss
-            else
-                return new WinState();//board is full, this is returning a tie since winner defualts to zero
+            //Return highest hvalue
+            return HHvalue;
         }
 
 
@@ -766,11 +709,11 @@ namespace InClass_GameTree
                     break;
                 }
 
-
+                Thread.Sleep(100);
 
                 //find out where the best place is to place the peice
                 //Hard mode
-                char mode = 'M';
+                char mode = 'E';
                 WinState ws = new WinState();
 
                 if (brd.pieces.Count > 2)
@@ -785,11 +728,11 @@ namespace InClass_GameTree
                 else if (mode == 'E')
                     ws.p = PlaceEasyPiece(brd, 'O');//1 is player O, and -1 is player X
                 else if (mode == 'M')
-                   i = HValue(brd);
+                    ws.p = TryMediumPiece(brd, 'O');
 
 
                 //Place the Enemies peice
-                //brd.PlacePiece(ws.p, true);
+                brd.PlacePiece(ws.p, true);
 
                 //see if Enenmy wins
                 if (brd.win('O'))

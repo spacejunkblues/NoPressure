@@ -1,15 +1,18 @@
 ﻿<Properties StartupConfiguration="{B9CE2696-EEA7-4B8C-A0E3-CC70BBA3C892}|Default">
   <MonoDevelop.Ide.ItemProperties.lesson1_220practice PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="lesson1 practice/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Properties/AssemblyInfo.cs">
     <Files>
-      <File FileName="lesson1 practice/Program.cs" Line="18" Column="1" />
+      <File FileName="Program.cs" Line="18" Column="1" />
+      <File FileName="Properties/AssemblyInfo.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="lesson1 practice" expanded="True">
             <Node name="lesson1 practice" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="Properties" expanded="True">
+                <Node name="AssemblyInfo.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>

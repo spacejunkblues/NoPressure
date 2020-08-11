@@ -7,7 +7,7 @@ namespace lesson1_practice
     {
         static void Main(string[] args)
         {
-            for (int i = 0; true; i++)
+            for (int i = 0; i + 1 > 0; i++)
             {
                 Thread.Sleep(10);
                 Console.Write(i);

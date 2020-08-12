@@ -370,8 +370,10 @@ namespace InClass_GameTree
 
         }
 
-        public static Piece TryMediumPiece(Board curbrd, char player)
+        public static int TryMediumPiece(Board curbrd, char player, int HowManyMoreLayers, ref Piece PieceToPlace)
         {
+            int winscore = 0;
+
             //Create fake board
             Board FBoard = new Board(curbrd);
 
@@ -381,8 +383,20 @@ namespace InClass_GameTree
             //Create int for holding highest value
             int Hvalue = 0;
 
+            //Create bool for flagging if placing a piece will lose
+            bool CanPlacePiece = true;
+
+            //Create bool for flagging loss
+            bool WillLose = true;
+
             //Asign fake board with HHvalue
             FBoard.PlacePiece(HHvalue, false);
+
+           /* if (FBoard.win(player)) 
+            {
+                PieceToPlace = HHvalue;
+                return true;
+            }*/
 
             //call hvalue with FBoard
             Hvalue = HValue(FBoard);
@@ -396,16 +410,71 @@ namespace InClass_GameTree
                 //find the value in placing the current piece
                 FBoard.PlacePiece(new Piece(n.x, n.y, player), false);
 
-                //Determine if it is higher than the last one
-                if (HValue(FBoard) > Hvalue)
+                //if that piece will win, return that piece
+                if (FBoard.win(player))
+                {
+                    PieceToPlace = new Piece(n.x, n.y, player);
+                    return 1;
+                }
+
+                //Check if this piece will lose
+                if (HowManyMoreLayers > 0 && FBoard.blanks.Count > 0) 
+                {
+                    //Assign useless variable
+                    Piece UVar = new Piece();
+
+                    winscore = TryMediumPiece(FBoard, GetOtherPlayer(player), HowManyMoreLayers - 1, ref UVar);
+
+                    //TryMediumPiece for other player
+                    if(winscore == 1) 
+                    {
+                        CanPlacePiece = false;
+                    }
+                    else if (winscore == -1) 
+                    {
+                        WillLose = false;
+                    }
+                }
+
+                if(FBoard.blanks.Count==4)
+                {
+                    int i = 1;
+                }
+
+                if (player == 'X')
+                {
+
+                    //Determine if it is higher than the last one
+                    if (HValue(FBoard) - winscore > Hvalue && CanPlacePiece)
+                    {
+                        //If so, set HHvalue to the current piece
+                        HHvalue = new Piece(n.x, n.y, player);
+
+                        //set hvalue
+                        Hvalue = HValue(FBoard) - winscore;
+                    }
+                }
+                else if(HValue(FBoard) + winscore < Hvalue && CanPlacePiece)
                 {
                     //If so, set HHvalue to the current piece
                     HHvalue = new Piece(n.x, n.y, player);
+
+                    //set hvalue
+                    Hvalue = HValue(FBoard) + winscore;
                 }
+
+
+            }
+
+            if (WillLose) 
+            {
+                PieceToPlace = HHvalue;
+                return -1;
             }
 
             //Return highest hvalue
-            return HHvalue;
+            PieceToPlace = new Piece(HHvalue.x, HHvalue.y, HHvalue.Appearnace);
+            return 0;
         }
 
 
@@ -632,6 +701,9 @@ namespace InClass_GameTree
             //Variable for tracking the amount of winnable pieces in this row
             int GPieces = 0;
 
+            //Create variable for flagging
+            bool IfSubTract = false;
+
             //find out the amount of winnable pieces there are for both sides
             //find out the amount of winnable pieces there are for x
             for (int row = 0; row<8; row++)
@@ -645,12 +717,21 @@ namespace InClass_GameTree
                     }
                     else if (winArrays[row][box] == 'O')
                     {
-                        xs -= GPieces;
+                        IfSubTract = true;
                     }
                 }
 
+                if (IfSubTract) 
+                {
+                    xs -= GPieces;
+                }
+
+                IfSubTract = false;
+
                 GPieces = 0;
             }
+
+            IfSubTract = false;
 
             GPieces = 0;
 
@@ -666,9 +747,16 @@ namespace InClass_GameTree
                     }
                     else if (winArrays[row][box] == 'X')
                     {
-                        os -= GPieces;
+                        IfSubTract = true;
                     }
                 }
+
+                if (IfSubTract)
+                {
+                    os -= GPieces;
+                }
+
+                IfSubTract = false;
 
                 GPieces = 0;
             }
@@ -686,10 +774,12 @@ namespace InClass_GameTree
             int x;//user input locaiotns
             int y;
             char winner = 'N';//N for none, other options are X and O
+            int howmanylayers = 1;
+            int whichturn = 0;
 
             do
             {
-
+                
 
                 //get input from user
                 Console.SetCursorPosition(0, 6);
@@ -701,6 +791,7 @@ namespace InClass_GameTree
 
                 //Player places the piece
                 brd.PlacePiece(x, y, 'X', true);
+                whichturn++;
 
                 //say if Player won
                 if (brd.win('X'))
@@ -713,22 +804,26 @@ namespace InClass_GameTree
 
                 //find out where the best place is to place the peice
                 //Hard mode
-                char mode = 'E';
+                char mode = 'M';
                 WinState ws = new WinState();
 
-                if (brd.pieces.Count > 2)
+                if (whichturn == 5)
                 {
                     int j = 0;
                 }
 
                 int i;
 
-                if (mode == 'H')
-                    ws = TryPiece(brd, 1);//1 is player O, and -1 is player X
-                else if (mode == 'E')
-                    ws.p = PlaceEasyPiece(brd, 'O');//1 is player O, and -1 is player X
-                else if (mode == 'M')
-                    ws.p = TryMediumPiece(brd, 'O');
+                if (brd.blanks.Count > 0)
+                {
+
+                    if (mode == 'H')
+                        ws = TryPiece(brd, 1);//1 is player O, and -1 is player X
+                    else if (mode == 'E')
+                        ws.p = PlaceEasyPiece(brd, 'O');//1 is player O, and -1 is player X
+                    else if (mode == 'M')
+                        TryMediumPiece(brd, 'O', howmanylayers, ref ws.p);
+                }
 
 
                 //Place the Enemies peice
@@ -740,6 +835,17 @@ namespace InClass_GameTree
                     winner = 'O';
                     break;
                 }
+
+                if (howmanylayers > 2)
+                {
+                    howmanylayers -= 2;
+                }
+                else if (howmanylayers > 1) 
+                {
+                    howmanylayers -= 1;
+                }
+
+                whichturn++;
 
             }while ( winner !='X'  &&  winner != 'O');
 

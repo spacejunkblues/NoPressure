@@ -1,0 +1,6 @@
+/Users/maggiefleck/Desktop/NoPressure/WaveEffect/WaveEffect/bin/Debug/WaveEffect.exe
+/Users/maggiefleck/Desktop/NoPressure/WaveEffect/WaveEffect/bin/Debug/WaveEffect.pdb
+/Users/maggiefleck/Desktop/NoPressure/WaveEffect/WaveEffect/obj/Debug/WaveEffect.csprojAssemblyReference.cache
+/Users/maggiefleck/Desktop/NoPressure/WaveEffect/WaveEffect/obj/Debug/WaveEffect.csproj.CoreCompileInputs.cache
+/Users/maggiefleck/Desktop/NoPressure/WaveEffect/WaveEffect/obj/Debug/WaveEffect.exe
+/Users/maggiefleck/Desktop/NoPressure/WaveEffect/WaveEffect/obj/Debug/WaveEffect.pdb

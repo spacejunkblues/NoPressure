@@ -1,14 +1,14 @@
-﻿<Properties StartupConfiguration="{6329301C-EF58-4D80-BA87-793F6EE22F89}|Default">
-  <MonoDevelop.Ide.ItemProperties.InClass__GameTree PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="InClass_GameTree/Program.cs">
+﻿<Properties StartupConfiguration="{E20B499A-91CB-464A-AA5C-CE04BA6C3543}|Default">
+  <MonoDevelop.Ide.ItemProperties.WaveEffect PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WaveEffect/Program.cs">
     <Files>
-      <File FileName="InClass_GameTree/Program.cs" Line="439" Column="43" />
+      <File FileName="WaveEffect/Program.cs" Line="16" Column="35" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="InClass_GameTree" expanded="True">
-            <Node name="InClass_GameTree" expanded="True">
+          <Node name="WaveEffect" expanded="True">
+            <Node name="WaveEffect" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
@@ -23,7 +23,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

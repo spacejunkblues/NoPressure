@@ -372,7 +372,12 @@ namespace InClass_GameTree
 
         public static int TryMediumPiece(Board curbrd, char player, int HowManyMoreLayers, ref Piece PieceToPlace)
         {
-            int winscore = 0;
+            //Assign Useful variable
+            Piece EP = new Piece();
+
+            bool IfFirstLoop = true;
+
+            int EHV = 0;
 
             //Create fake board
             Board FBoard = new Board(curbrd);
@@ -383,23 +388,7 @@ namespace InClass_GameTree
             //Create int for holding highest value
             int Hvalue = 0;
 
-            //Create bool for flagging if placing a piece will lose
-            bool CanPlacePiece = true;
 
-            //Create bool for flagging loss
-            bool WillLose = true;
-
-            //Asign fake board with HHvalue
-            FBoard.PlacePiece(HHvalue, false);
-
-           /* if (FBoard.win(player)) 
-            {
-                PieceToPlace = HHvalue;
-                return true;
-            }*/
-
-            //call hvalue with FBoard
-            Hvalue = HValue(FBoard);
 
             //loop through blanks using hvalue
             foreach (var n in curbrd.blanks)
@@ -408,73 +397,75 @@ namespace InClass_GameTree
                 FBoard = new Board(curbrd);
 
                 //find the value in placing the current piece
-                FBoard.PlacePiece(new Piece(n.x, n.y, player), false);
+                FBoard.PlacePiece(new Piece(n.x, n.y, player), true);
 
                 //if that piece will win, return that piece
                 if (FBoard.win(player))
                 {
                     PieceToPlace = new Piece(n.x, n.y, player);
-                    return 1;
+
+                    if (player == 'O')
+                    {
+                        return -20;
+                    }
+
+                    if (player == 'X')
+                    {
+                        return 20;
+                    }
                 }
 
                 //Check if this piece will lose
                 if (HowManyMoreLayers > 0 && FBoard.blanks.Count > 0) 
                 {
-                    //Assign useless variable
-                    Piece UVar = new Piece();
+                    //Assign Useful variable
+                    EP = new Piece();
 
-                    winscore = TryMediumPiece(FBoard, GetOtherPlayer(player), HowManyMoreLayers - 1, ref UVar);
-
-                    //TryMediumPiece for other player
-                    if(winscore == 1) 
+                    if (IfFirstLoop)
                     {
-                        CanPlacePiece = false;
+                        Hvalue = TryMediumPiece(FBoard, GetOtherPlayer(player), HowManyMoreLayers - 1, ref EP);
+                        EHV = Hvalue;
+                        IfFirstLoop = false;
                     }
-                    else if (winscore == -1) 
+                    else 
                     {
-                        WillLose = false;
+                        EHV = TryMediumPiece(FBoard, GetOtherPlayer(player), HowManyMoreLayers - 1, ref EP);
                     }
-                }
 
-                if(FBoard.blanks.Count==4)
-                {
-                    int i = 1;
                 }
 
                 if (player == 'X')
                 {
 
                     //Determine if it is higher than the last one
-                    if (HValue(FBoard) - winscore > Hvalue && CanPlacePiece)
+                    if (EHV > Hvalue)
                     {
-                        //If so, set HHvalue to the current piece
                         HHvalue = new Piece(n.x, n.y, player);
 
                         //set hvalue
-                        Hvalue = HValue(FBoard) - winscore;
+                        Hvalue = EHV;
                     }
                 }
-                else if(HValue(FBoard) + winscore < Hvalue && CanPlacePiece)
+                else if(EHV < Hvalue)
                 {
-                    //If so, set HHvalue to the current piece
                     HHvalue = new Piece(n.x, n.y, player);
 
                     //set hvalue
-                    Hvalue = HValue(FBoard) + winscore;
+                    Hvalue = EHV;
                 }
 
 
             }
 
-            if (WillLose) 
-            {
-                PieceToPlace = HHvalue;
-                return -1;
-            }
+            FBoard = new Board(curbrd);
+            
 
             //Return highest hvalue
             PieceToPlace = new Piece(HHvalue.x, HHvalue.y, HHvalue.Appearnace);
-            return 0;
+
+            FBoard.PlacePiece(PieceToPlace, false);
+
+            return HValue(FBoard);
         }
 
 
@@ -698,6 +689,9 @@ namespace InClass_GameTree
                     winArrays[7][index] = p.Appearnace;
             }
 
+
+
+
             //Variable for tracking the amount of winnable pieces in this row
             int GPieces = 0;
 
@@ -774,8 +768,8 @@ namespace InClass_GameTree
             int x;//user input locaiotns
             int y;
             char winner = 'N';//N for none, other options are X and O
-            int howmanylayers = 1;
-            int whichturn = 0;
+            int howmanylayers = 4;
+            int whichturn = 0;            
 
             do
             {
@@ -799,8 +793,8 @@ namespace InClass_GameTree
                     winner = 'X';
                     break;
                 }
-
-                Thread.Sleep(100);
+                
+                
 
                 //find out where the best place is to place the peice
                 //Hard mode
@@ -823,6 +817,7 @@ namespace InClass_GameTree
                         ws.p = PlaceEasyPiece(brd, 'O');//1 is player O, and -1 is player X
                     else if (mode == 'M')
                         TryMediumPiece(brd, 'O', howmanylayers, ref ws.p);
+
                 }
 
 

@@ -372,8 +372,8 @@ namespace InClass_GameTree
 
         public static int TryMediumPiece(Board curbrd, char player, int HowManyMoreLayers, ref Piece PieceToPlace)
         {
-            curbrd.Print();
-            curbrd.Print2();
+            //curbrd.Print();
+            //curbrd.Print2();
 
             //Assign Useful variable
             Piece EP = new Piece();
@@ -396,7 +396,7 @@ namespace InClass_GameTree
             //loop through blanks using hvalue
             foreach (var n in curbrd.blanks)
             {
-                Thread.Sleep(100);
+                //Thread.Sleep(100);
 
                 //Reset Fboard
                 FBoard = new Board(curbrd);
@@ -429,14 +429,14 @@ namespace InClass_GameTree
                     if (IfFirstLoop)
                     {
                         Hvalue = TryMediumPiece(FBoard, GetOtherPlayer(player), HowManyMoreLayers - 1, ref EP);
-                        Thread.Sleep(100);
+                        //Thread.Sleep(100);
                         EHV = Hvalue;
                         IfFirstLoop = false;
                     }
                     else 
                     {
                         EHV = TryMediumPiece(FBoard, GetOtherPlayer(player), HowManyMoreLayers - 1, ref EP);
-                        Thread.Sleep(100);
+                        //Thread.Sleep(100);
                     }
 
                 }
@@ -461,8 +461,8 @@ namespace InClass_GameTree
                     Hvalue = EHV;
                 }
 
-                FBoard.Print();
-                FBoard.Print2();
+                //FBoard.Print();
+                //FBoard.Print2();
 
             }
 
@@ -473,7 +473,7 @@ namespace InClass_GameTree
             PieceToPlace = new Piece(HHvalue.x, HHvalue.y, HHvalue.Appearnace);
 
             FBoard.PlacePiece(PieceToPlace, false);
-            Thread.Sleep(100);
+            //Thread.Sleep(100);
 
             return HValue(FBoard);
         }
@@ -778,7 +778,7 @@ namespace InClass_GameTree
             int x;//user input locaiotns
             int y;
             char winner = 'N';//N for none, other options are X and O
-            int howmanylayers = 8;
+            int howmanylayers = 1;
             int whichturn = 0;
 
             do
@@ -808,7 +808,7 @@ namespace InClass_GameTree
 
                 //find out where the best place is to place the peice
                 //Hard mode
-                char mode = 'M';
+                char mode = 'E';
                 WinState ws = new WinState();
 
                 if (whichturn == 5)

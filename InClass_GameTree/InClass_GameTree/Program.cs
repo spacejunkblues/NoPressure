@@ -778,7 +778,7 @@ namespace InClass_GameTree
             int x;//user input locaiotns
             int y;
             char winner = 'N';//N for none, other options are X and O
-            int howmanylayers = 1;
+            int howmanylayers = 3;
             int whichturn = 0;
 
             do
@@ -808,7 +808,7 @@ namespace InClass_GameTree
 
                 //find out where the best place is to place the peice
                 //Hard mode
-                char mode = 'E';
+                char mode = 'M';
                 WinState ws = new WinState();
 
                 if (whichturn == 5)

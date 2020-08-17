@@ -139,15 +139,15 @@ namespace InClassLesson21_IO
 
                 Random m = new Random();
 
-                /*Create maze
+                //Create maze
                 for (int index = 0; index < 200; index++)
                 {
                     Console.BackgroundColor = ConsoleColor.Black;
                     Console.ForegroundColor = ConsoleColor.DarkGreen;
 
-                    Console.SetCursorPosition(i1 + m.Next(0, 80), i2 + m.Next(0, 26));
+                    Console.SetCursorPosition(m.Next(0, Console.WindowWidth), (m.Next(0, Console.WindowHeight)));
                     Console.Write(m.Next(0, 20));
-                }*/
+                }
 
             }
 

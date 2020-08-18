@@ -16,7 +16,7 @@ namespace InClass_HTTP
             client.BaseAddress = new Uri("https://cat-fact.herokuapp.com/");
 
             //call the servers function, this is the API call
-            Task<HttpResponseMessage> APIRawReturn = client.GetAsync("facts/random?amount=2");
+            Task<HttpResponseMessage> APIRawReturn = client.GetAsync("facts/random?amount=5");
 
 
             //check to make sure it worked
@@ -43,7 +43,7 @@ namespace InClass_HTTP
 
             JsonValue json = JsonValue.Parse(data);
 
-            for (int i = 0; i<2; i++)
+            for (int i = 0; i<json.Count; i++)
             {
                 Console.WriteLine(json[i]["text"].ToString());
                 Console.WriteLine();

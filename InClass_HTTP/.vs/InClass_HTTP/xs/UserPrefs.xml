@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{07DFA290-145D-45A5-A2AF-2556B81980A5}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="InClass_HTTP/Program.cs">
     <Files>
-      <File FileName="InClass_HTTP/Program.cs" Line="19" Column="92" />
+      <File FileName="InClass_HTTP/Program.cs" Line="19" Column="71" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,6 +17,11 @@
         <State>
           <Value>Next</Value>
           <Value>NewStack</Value>
+          <Value>APIRawReturn</Value>
+          <Value>json[0]</Value>
+          <Value>new Uri("https://cat-fact.herokuapp.com/")</Value>
+          <Value>https://cat-fact.herokuapp.com/</Value>
+          <Value>client.BaseAddress</Value>
         </State>
       </Pad>
     </Pads>

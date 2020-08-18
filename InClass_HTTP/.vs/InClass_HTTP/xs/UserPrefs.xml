@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{07DFA290-145D-45A5-A2AF-2556B81980A5}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="InClass_HTTP/Program.cs">
+    <Files>
+      <File FileName="InClass_HTTP/Program.cs" Line="28" Column="32" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="InClass_HTTP" expanded="True">
+            <Node name="InClass_HTTP" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>Next</Value>
+          <Value>NewStack</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.InClass__HTTP PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

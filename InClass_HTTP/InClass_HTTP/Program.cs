@@ -41,8 +41,14 @@ namespace InClass_HTTP
             //convert the API response into a string
            string data = APIResponse.Content.ReadAsStringAsync().Result;
 
-            JsonValue json = JsonObject.Parse(data);
-            Console.WriteLine(json[0]["text"].ToString());
+            JsonValue json = JsonValue.Parse(data);
+
+            for (int i = 0; i<2; i++)
+            {
+                Console.WriteLine(json[i]["text"].ToString());
+                Console.WriteLine();
+            }
+
         }
     }
 }

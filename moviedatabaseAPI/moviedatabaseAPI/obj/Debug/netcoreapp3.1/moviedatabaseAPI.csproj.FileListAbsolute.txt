@@ -1,0 +1,15 @@
+C:\Users\User\Documents\GitHub\NoPressure\moviedatabaseAPI\moviedatabaseAPI\bin\Debug\netcoreapp3.1\moviedatabaseAPI.exe
+C:\Users\User\Documents\GitHub\NoPressure\moviedatabaseAPI\moviedatabaseAPI\obj\Debug\netcoreapp3.1\moviedatabaseAPI.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\moviedatabaseAPI\moviedatabaseAPI\obj\Debug\netcoreapp3.1\moviedatabaseAPI.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\moviedatabaseAPI\moviedatabaseAPI\obj\Debug\netcoreapp3.1\moviedatabaseAPI.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\NoPressure\moviedatabaseAPI\moviedatabaseAPI\bin\Debug\netcoreapp3.1\moviedatabaseAPI.deps.json
+C:\Users\User\Documents\GitHub\NoPressure\moviedatabaseAPI\moviedatabaseAPI\bin\Debug\netcoreapp3.1\moviedatabaseAPI.runtimeconfig.json
+C:\Users\User\Documents\GitHub\NoPressure\moviedatabaseAPI\moviedatabaseAPI\bin\Debug\netcoreapp3.1\moviedatabaseAPI.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\NoPressure\moviedatabaseAPI\moviedatabaseAPI\bin\Debug\netcoreapp3.1\moviedatabaseAPI.dll
+C:\Users\User\Documents\GitHub\NoPressure\moviedatabaseAPI\moviedatabaseAPI\bin\Debug\netcoreapp3.1\moviedatabaseAPI.pdb
+C:\Users\User\Documents\GitHub\NoPressure\moviedatabaseAPI\moviedatabaseAPI\bin\Debug\netcoreapp3.1\System.Json.dll
+C:\Users\User\Documents\GitHub\NoPressure\moviedatabaseAPI\moviedatabaseAPI\obj\Debug\netcoreapp3.1\moviedatabaseAPI.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\moviedatabaseAPI\moviedatabaseAPI\obj\Debug\netcoreapp3.1\moviedatabaseAPI.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\NoPressure\moviedatabaseAPI\moviedatabaseAPI\obj\Debug\netcoreapp3.1\moviedatabaseAPI.dll
+C:\Users\User\Documents\GitHub\NoPressure\moviedatabaseAPI\moviedatabaseAPI\obj\Debug\netcoreapp3.1\moviedatabaseAPI.pdb
+C:\Users\User\Documents\GitHub\NoPressure\moviedatabaseAPI\moviedatabaseAPI\obj\Debug\netcoreapp3.1\moviedatabaseAPI.genruntimeconfig.cache

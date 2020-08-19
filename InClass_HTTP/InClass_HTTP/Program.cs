@@ -16,7 +16,7 @@ namespace InClass_HTTP
             client.BaseAddress = new Uri("https://cat-fact.herokuapp.com/");
 
             //call the servers function, this is the API call
-            Task<HttpResponseMessage> APIRawReturn = client.GetAsync("facts/random?amount=5");
+            Task<HttpResponseMessage> APIRawReturn = client.GetAsync("facts/random?amount=2");
 
 
             //check to make sure it worked

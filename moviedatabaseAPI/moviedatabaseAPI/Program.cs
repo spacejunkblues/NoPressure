@@ -9,6 +9,11 @@ namespace moviedatabaseAPI
 {
     class Program
     {
+        public string parse()
+        {
+            return null;
+        }
+
         static void Main(string[] args)
         {
             //Create variables
@@ -47,7 +52,7 @@ namespace moviedatabaseAPI
             client.BaseAddress = new Uri("http://www.omdbapi.com/");
 
             //call the servers function, this is the API call
-            Task<HttpResponseMessage> APITask = client.GetAsync("?" + "t=the office&" + "season=3" + "&apikey=da203959");
+            Task<HttpResponseMessage> APITask = client.GetAsync("?" + title + season + episode + "&apikey=da203959");
 
             int x = 0;
 
@@ -81,7 +86,7 @@ namespace moviedatabaseAPI
             JsonValue json = JsonValue.Parse(data);
 
 
-
+            
             if (true)
             {
                 

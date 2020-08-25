@@ -87,17 +87,8 @@ namespace moviedatabaseAPI
 
 
             
-            if (true)
-            {
-                
 
-                for (int i = 0; i < json.Count; i++)
-                {
-                    Console.WriteLine(i);
-                }
-            }
-            var temp = json["Episodes"];
-            var temp2 = temp.JsonType;
+            Console.Write(json.ToString());
         }
     }
 }

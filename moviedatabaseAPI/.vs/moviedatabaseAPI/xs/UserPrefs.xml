@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{43BF2AF8-09EB-4951-9FE5-FA6D53B5A922}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="moviedatabaseAPI/Program.cs">
     <Files>
-      <File FileName="moviedatabaseAPI/Program.cs" Line="12" Column="30" />
+      <File FileName="moviedatabaseAPI/Program.cs" Line="91" Column="44" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,6 +16,8 @@
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
           <Value>json</Value>
+          <Value>json[0]</Value>
+          <Value>json["Actors"]</Value>
         </State>
       </Pad>
     </Pads>

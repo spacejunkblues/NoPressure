@@ -24,3 +24,4 @@
 "Production":"Walt Disney Pictures",
 "Website":"N/A",
 "Response":"True"}
+'<html><head><title>EmailSender</title></head><body><h1>This is an email sender</h1><p>write your username and password in the text boxes below:</p><p></p><p>username:</p><input type="text"><p></p><p>password:</p><input type="password"><p></p><p></p><p>title:</p><input type="text"><p></p><p></p><p>content of email:</p><input type="text"><p></p><input type="submit"><p></p><p>email of recipient:</p><input type="text"><p></p><p></p><p>email service(gmail, hotmai, etc):</p><input type="text"><p></p></body></html>'

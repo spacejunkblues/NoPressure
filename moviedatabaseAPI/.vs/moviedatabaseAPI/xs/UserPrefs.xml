@@ -1,26 +1,8 @@
 ﻿<Properties StartupConfiguration="{43BF2AF8-09EB-4951-9FE5-FA6D53B5A922}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="moviedatabaseAPI/Program.cs">
     <Files>
-      <File FileName="moviedatabaseAPI/Program.cs" Line="87" Column="72" />
+      <File FileName="moviedatabaseAPI/Program.cs" Line="109" Column="62" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="moviedatabaseAPI" expanded="True">
-            <Node name="moviedatabaseAPI" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>json</Value>
-          <Value>json[0]</Value>
-          <Value>json["Actors"]</Value>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.moviedatabaseAPI PreferredExecutionTarget="MonoDevelop.Default" />

@@ -1,11 +1,30 @@
 ﻿<Properties StartupConfiguration="{6A5732B8-DB42-4FBD-8F7D-18ED3440D2C8}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Chat_caller/Program.cs">
     <Files>
-      <File FileName="Chat_caller/Program.cs" Line="47" Column="26" />
+      <File FileName="../../chat_room/server.js" Line="23" Column="26" />
+      <File FileName="Chat_caller/Program.cs" Line="65" Column="57" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Chat_caller" expanded="True">
+            <Node name="Chat_caller" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>json</Value>
+          <Value>json[0]</Value>
+          <Value>json["Actors"]</Value>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Chat__caller FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Chat__caller PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

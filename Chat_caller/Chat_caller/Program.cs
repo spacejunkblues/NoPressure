@@ -18,7 +18,7 @@ namespace Chat_caller
              HttpClient client = new HttpClient();
 
             //set the address
-            client.BaseAddress = new Uri("http://www.omdbapi.com/");
+            client.BaseAddress = new Uri("http://localhost:1337");
 
             //call the servers function, this is the API call
             Task<HttpResponseMessage> APITask = client.GetAsync("/GetMessage");
@@ -48,7 +48,25 @@ namespace Chat_caller
 
             string data = APIResponse.Content.ReadAsStringAsync().Result;
 
-            Console.WriteLine(data);
+            Console.Clear();
+
+            while (true)
+            {
+                Task<HttpResponseMessage> APITask2 = client.GetAsync("/GetMessage");
+
+                HttpResponseMessage APIResponse2 = APITask2.Result;
+
+                string data2 = APIResponse2.Content.ReadAsStringAsync().Result;
+
+                Console.WriteLine(data);
+
+                if (Console.KeyAvailable)
+                {
+                    string message = Console.ReadLine();
+                }
+            }
+
+            
         }
     }
 }

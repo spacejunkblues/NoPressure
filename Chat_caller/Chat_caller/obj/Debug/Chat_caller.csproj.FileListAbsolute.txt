@@ -1,0 +1,16 @@
+/Users/maggiefleck/Desktop/github_repos/NoPressure/Chat_caller/Chat_caller/bin/Debug/Chat_caller.exe
+/Users/maggiefleck/Desktop/github_repos/NoPressure/Chat_caller/Chat_caller/bin/Debug/Chat_caller.pdb
+/Users/maggiefleck/Desktop/github_repos/NoPressure/Chat_caller/Chat_caller/bin/Debug/System.IO.dll
+/Users/maggiefleck/Desktop/github_repos/NoPressure/Chat_caller/Chat_caller/bin/Debug/System.Json.dll
+/Users/maggiefleck/Desktop/github_repos/NoPressure/Chat_caller/Chat_caller/bin/Debug/System.Net.Http.dll
+/Users/maggiefleck/Desktop/github_repos/NoPressure/Chat_caller/Chat_caller/bin/Debug/System.Runtime.dll
+/Users/maggiefleck/Desktop/github_repos/NoPressure/Chat_caller/Chat_caller/bin/Debug/System.Security.Cryptography.Algorithms.dll
+/Users/maggiefleck/Desktop/github_repos/NoPressure/Chat_caller/Chat_caller/bin/Debug/System.Security.Cryptography.Encoding.dll
+/Users/maggiefleck/Desktop/github_repos/NoPressure/Chat_caller/Chat_caller/bin/Debug/System.Security.Cryptography.Primitives.dll
+/Users/maggiefleck/Desktop/github_repos/NoPressure/Chat_caller/Chat_caller/bin/Debug/System.Security.Cryptography.X509Certificates.dll
+/Users/maggiefleck/Desktop/github_repos/NoPressure/Chat_caller/Chat_caller/bin/Debug/System.Json.xml
+/Users/maggiefleck/Desktop/github_repos/NoPressure/Chat_caller/Chat_caller/obj/Debug/Chat_caller.csprojAssemblyReference.cache
+/Users/maggiefleck/Desktop/github_repos/NoPressure/Chat_caller/Chat_caller/obj/Debug/Chat_caller.csproj.CoreCompileInputs.cache
+/Users/maggiefleck/Desktop/github_repos/NoPressure/Chat_caller/Chat_caller/obj/Debug/Chat_caller.csproj.CopyComplete
+/Users/maggiefleck/Desktop/github_repos/NoPressure/Chat_caller/Chat_caller/obj/Debug/Chat_caller.exe
+/Users/maggiefleck/Desktop/github_repos/NoPressure/Chat_caller/Chat_caller/obj/Debug/Chat_caller.pdb

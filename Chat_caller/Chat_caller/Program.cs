@@ -9,8 +9,32 @@ using System.Threading.Tasks;
 
 namespace Chat_caller
 {
+
     class MainClass
     {
+        static public void SendMessage(string MessageToSend, string user)
+        {
+            //create client
+            HttpClient client = new HttpClient();
+
+            //set the address
+            client.BaseAddress = new Uri("http://localhost:1337");
+
+
+            Task<HttpResponseMessage> APITask2 = client.GetAsync("/SendMessage?text=" + MessageToSend);
+
+            HttpResponseMessage APIResponse2 = APITask2.Result;
+
+            string data2 = APIResponse2.Content.ReadAsStringAsync().Result;
+
+            while (APITask2.IsCompleted)
+            {
+
+            }
+
+            Console.Write("(" + user + ")" + MessageToSend);
+        }
+
         public static void Main(string[] args)
         {
             
@@ -20,35 +44,14 @@ namespace Chat_caller
             //set the address
             client.BaseAddress = new Uri("http://localhost:1337");
 
-            //call the servers function, this is the API call
-            Task<HttpResponseMessage> APITask = client.GetAsync("/GetMessage");
-
-
-            int x = Console.CursorLeft;
-
-            while (!APITask.IsCompleted)
-            {
-                Console.SetCursorPosition(x, Console.WindowHeight / 2);
-
-                Console.Write("   ");
-
-                Console.SetCursorPosition(x, Console.WindowHeight / 2);
-
-                Console.Write(".");
-                Thread.Sleep(100);
-
-                Console.Write(".");
-                Thread.Sleep(100);
-
-                Console.Write(".");
-                Thread.Sleep(100);
-            }
-
-            HttpResponseMessage APIResponse = APITask.Result;
-
-            string data = APIResponse.Content.ReadAsStringAsync().Result;
+            
 
             Console.Clear();
+
+            string user = "";
+
+            Console.WriteLine("what is your username?");
+            user = Console.ReadLine();
 
             while (true)
             {
@@ -56,13 +59,21 @@ namespace Chat_caller
 
                 HttpResponseMessage APIResponse2 = APITask2.Result;
 
+
                 string data2 = APIResponse2.Content.ReadAsStringAsync().Result;
 
-                Console.WriteLine(data);
+                while (APITask2.IsCompleted)
+                {
+                    
+                }
+
+                Console.WriteLine(data2);
 
                 if (Console.KeyAvailable)
                 {
                     string message = Console.ReadLine();
+
+                    SendMessage(message, user);
                 }
             }
 

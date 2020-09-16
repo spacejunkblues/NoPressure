@@ -37,7 +37,8 @@ namespace Chat_caller
 
         public static void Main(string[] args)
         {
-            
+            string Message = "";
+
              //create client
              HttpClient client = new HttpClient();
 
@@ -57,6 +58,11 @@ namespace Chat_caller
             {
                 Task<HttpResponseMessage> APITask2 = client.GetAsync("/GetMessage");
 
+                while (!APITask2.IsCompleted)
+                {
+
+                }
+
                 HttpResponseMessage APIResponse2 = APITask2.Result;
 
 
@@ -71,9 +77,14 @@ namespace Chat_caller
 
                 if (Console.KeyAvailable)
                 {
-                    string message = Console.ReadLine();
+                    char ch = Convert.ToChar(Console.ReadKey(true));
 
-                    SendMessage(message, user);
+                    Message = Message + ch;
+
+                    if (ch == (char)10)
+                    {
+                        SendMessage(Message, user);
+                    }
                 }
             }
 

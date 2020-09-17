@@ -21,16 +21,15 @@ namespace Chat_caller
             client.BaseAddress = new Uri("http://localhost:1337");
 
 
-            Task<HttpResponseMessage> APITask2 = client.GetAsync("/SendMessage?text=" + MessageToSend);
+            Task<HttpResponseMessage> APITask2 = client.GetAsync("/SendMessage?text=" + MessageToSend + "&user=" + user);
+
+            APITask2.Wait();
 
             HttpResponseMessage APIResponse2 = APITask2.Result;
 
             string data2 = APIResponse2.Content.ReadAsStringAsync().Result;
 
-            while (APITask2.IsCompleted)
-            {
-
-            }
+            
 
             Console.Write("(" + user + ")" + MessageToSend);
         }
@@ -56,34 +55,35 @@ namespace Chat_caller
 
             while (true)
             {
-                Task<HttpResponseMessage> APITask2 = client.GetAsync("/GetMessage");
+                Task<HttpResponseMessage> APITask2 = client.GetAsync("/GetMessage?user=" + user);
 
-                while (!APITask2.IsCompleted)
+                APITask2.Wait();
+
+                if (APITask2.IsCompleted)
                 {
 
-                }
+                    HttpResponseMessage APIResponse2 = APITask2.Result;
 
-                HttpResponseMessage APIResponse2 = APITask2.Result;
+                    string data2 = APIResponse2.Content.ReadAsStringAsync().Result;
 
+                    Console.Write(data2);
 
-                string data2 = APIResponse2.Content.ReadAsStringAsync().Result;
+                    data2 = "";
 
-                while (APITask2.IsCompleted)
-                {
-                    
-                }
-
-                Console.WriteLine(data2);
-
-                if (Console.KeyAvailable)
-                {
-                    char ch = Convert.ToChar(Console.ReadKey(true));
-
-                    Message = Message + ch;
-
-                    if (ch == (char)10)
+                    if (Console.KeyAvailable)
                     {
-                        SendMessage(Message, user);
+                        Console.SetCursorPosition(0, Console.WindowHeight);
+
+                        char key = Convert.ToChar(Console.Read());
+
+                        Message = Message + key;
+
+                        if (key == (char)10)
+                        {
+                            SendMessage(Message, user);
+
+                            Message = "";
+                        }
                     }
                 }
             }

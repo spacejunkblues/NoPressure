@@ -1,6 +1,7 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chat_caller", "Chat_caller\Chat_caller.csproj", "{6A5732B8-DB42-4FBD-8F7D-18ED3440D2C8}"
 EndProject
 Global
@@ -9,9 +10,15 @@ Global
 		Release|anycpu = Release|anycpu
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6A5732B8-DB42-4FBD-8F7D-18ED3440D2C8}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{6A5732B8-DB42-4FBD-8F7D-18ED3440D2C8}.Debug|anycpu.Build.0 = Debug|anycpu
-		{6A5732B8-DB42-4FBD-8F7D-18ED3440D2C8}.Release|anycpu.ActiveCfg = Release|anycpu
-		{6A5732B8-DB42-4FBD-8F7D-18ED3440D2C8}.Release|anycpu.Build.0 = Release|anycpu
+		{6A5732B8-DB42-4FBD-8F7D-18ED3440D2C8}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{6A5732B8-DB42-4FBD-8F7D-18ED3440D2C8}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{6A5732B8-DB42-4FBD-8F7D-18ED3440D2C8}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{6A5732B8-DB42-4FBD-8F7D-18ED3440D2C8}.Release|anycpu.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65541B2C-7DF4-484E-BDEF-FEE7AE0F207E}
 	EndGlobalSection
 EndGlobal

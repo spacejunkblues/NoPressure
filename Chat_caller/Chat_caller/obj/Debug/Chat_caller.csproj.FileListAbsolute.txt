@@ -14,3 +14,12 @@
 /Users/maggiefleck/Desktop/github_repos/NoPressure/Chat_caller/Chat_caller/obj/Debug/Chat_caller.csproj.CopyComplete
 /Users/maggiefleck/Desktop/github_repos/NoPressure/Chat_caller/Chat_caller/obj/Debug/Chat_caller.exe
 /Users/maggiefleck/Desktop/github_repos/NoPressure/Chat_caller/Chat_caller/obj/Debug/Chat_caller.pdb
+C:\Users\User\Documents\GitHub\NoPressure\Chat_caller\Chat_caller\bin\Debug\Chat_caller.exe
+C:\Users\User\Documents\GitHub\NoPressure\Chat_caller\Chat_caller\bin\Debug\Chat_caller.pdb
+C:\Users\User\Documents\GitHub\NoPressure\Chat_caller\Chat_caller\bin\Debug\System.Json.dll
+C:\Users\User\Documents\GitHub\NoPressure\Chat_caller\Chat_caller\bin\Debug\System.Json.xml
+C:\Users\User\Documents\GitHub\NoPressure\Chat_caller\Chat_caller\obj\Debug\Chat_caller.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\NoPressure\Chat_caller\Chat_caller\obj\Debug\Chat_caller.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\NoPressure\Chat_caller\Chat_caller\obj\Debug\Chat_caller.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\NoPressure\Chat_caller\Chat_caller\obj\Debug\Chat_caller.exe
+C:\Users\User\Documents\GitHub\NoPressure\Chat_caller\Chat_caller\obj\Debug\Chat_caller.pdb

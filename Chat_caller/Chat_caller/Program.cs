@@ -7,6 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
 
+
 namespace Chat_caller
 {
 
@@ -37,6 +38,7 @@ namespace Chat_caller
         public static void Main(string[] args)
         {
             string Message = "";
+            bool Carriageflag = false;
 
              //create client
              HttpClient client = new HttpClient();
@@ -57,6 +59,8 @@ namespace Chat_caller
             {
                 Task<HttpResponseMessage> APITask2 = client.GetAsync("/GetMessage?user=" + user);
 
+                Console.SetCursorPosition(0, Console.WindowHeight + 1);
+
                 APITask2.Wait();
 
                 if (APITask2.IsCompleted)
@@ -72,14 +76,20 @@ namespace Chat_caller
 
                     if (Console.KeyAvailable)
                     {
-                        Console.SetCursorPosition(0, Console.WindowHeight);
+                        if (Carriageflag) 
+                        {
+                            Console.SetCursorPosition(0, Console.WindowHeight + 1);
+                            Carriageflag = false;
+                        }
 
-                        char key = Convert.ToChar(Console.Read());
+                        var key = Console.ReadKey();
 
                         Message = Message + key;
 
-                        if (key == (char)10)
+                        if (key.KeyChar == (char)10)
                         {
+                            Carriageflag = true;
+
                             SendMessage(Message, user);
 
                             Message = "";

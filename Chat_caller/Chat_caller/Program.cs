@@ -22,15 +22,13 @@ namespace Chat_caller
             client.BaseAddress = new Uri("http://localhost:1337");
 
 
-            Task<HttpResponseMessage> APITask2 = client.GetAsync("/SendMessage?text=" + MessageToSend + "&user=" + user);
+            Task<HttpResponseMessage> APITask2 = client.GetAsync("/SendMessage?message=" + "(" + user + ")" + MessageToSend + "dfsahofidosfdshuhidouihodsuihdosdisaudisuadfsio" + "&user=" + user);
 
             APITask2.Wait();
 
             HttpResponseMessage APIResponse2 = APITask2.Result;
 
             string data2 = APIResponse2.Content.ReadAsStringAsync().Result;
-
-            
 
             Console.Write("(" + user + ")" + MessageToSend);
         }
@@ -54,14 +52,16 @@ namespace Chat_caller
 
             Console.WriteLine("what is your username?");
             user = Console.ReadLine();
-
+            Console.SetCursorPosition(0, Console.WindowHeight + 1);
+            int i = 1;
             while (true)
             {
                 Task<HttpResponseMessage> APITask2 = client.GetAsync("/GetMessage?user=" + user);
 
-                Console.SetCursorPosition(0, Console.WindowHeight + 1);
-
-                APITask2.Wait();
+                while (!APITask2.IsCompleted) 
+                {
+                
+                }
 
                 if (APITask2.IsCompleted)
                 {
@@ -70,7 +70,21 @@ namespace Chat_caller
 
                     string data2 = APIResponse2.Content.ReadAsStringAsync().Result;
 
-                    Console.Write(data2);
+                    if (data2 != "")
+                    {
+
+                        //Console.SetCursorPosition(0, Console.CursorTop + (i + 1));
+                        Console.WriteLine(data2);
+
+                        //Console.SetCursorPosition(0, Console.CursorTop + i);
+
+                        //Console.WriteLine((char)13);
+
+                        //Console.WriteLine();
+                        //Console.WriteLine();
+                        //Console.SetCursorPosition(0, Console.WindowHeight + i);
+                        i++;
+                    }
 
                     data2 = "";
 
@@ -78,21 +92,28 @@ namespace Chat_caller
                     {
                         if (Carriageflag) 
                         {
-                            Console.SetCursorPosition(0, Console.WindowHeight + 1);
-                            Carriageflag = false;
+                            //Console.SetCursorPosition(0, Console.WindowHeight + 1);
+                            //Carriageflag = false;
                         }
 
                         var key = Console.ReadKey();
 
-                        Message = Message + key;
+                        Message = Message + key.KeyChar;
 
-                        if (key.KeyChar == (char)10)
+                        if (key.KeyChar == (char)13)
                         {
-                            Carriageflag = true;
-
+                            //Carriageflag = true
+                            //Console.SetCursorPosition(0, Console.CursorTop + i);
                             SendMessage(Message, user);
 
                             Message = "";
+                            //Console.WriteLine();
+                            //Console.WriteLine();
+                            //Console.SetCursorPosition(0, Console.CursorTop + i);
+
+                            Console.WriteLine();
+                            //Console.WriteLine();
+                            i++;
                         }
                     }
                 }

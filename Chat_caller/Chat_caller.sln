@@ -10,8 +10,8 @@ Global
 		Release|anycpu = Release|anycpu
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6A5732B8-DB42-4FBD-8F7D-18ED3440D2C8}.Debug|anycpu.ActiveCfg = Debug|Any CPU
-		{6A5732B8-DB42-4FBD-8F7D-18ED3440D2C8}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{6A5732B8-DB42-4FBD-8F7D-18ED3440D2C8}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{6A5732B8-DB42-4FBD-8F7D-18ED3440D2C8}.Debug|anycpu.Build.0 = Debug|anycpu
 		{6A5732B8-DB42-4FBD-8F7D-18ED3440D2C8}.Release|anycpu.ActiveCfg = Release|Any CPU
 		{6A5732B8-DB42-4FBD-8F7D-18ED3440D2C8}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
@@ -20,5 +20,8 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {65541B2C-7DF4-484E-BDEF-FEE7AE0F207E}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		outputpath = Chat_caller/bin/Debug
 	EndGlobalSection
 EndGlobal

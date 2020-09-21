@@ -1,16 +1,14 @@
 ﻿<Properties StartupConfiguration="{6A5732B8-DB42-4FBD-8F7D-18ED3440D2C8}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Chat_caller/Program.cs">
     <Files>
-      <File FileName="../../chat_room/server.js" Line="18" Column="46" />
-      <File FileName="Chat_caller/Program.cs" Line="46" Column="67" />
+      <File FileName="../../chat_room/server.js" Line="18" Column="29" />
+      <File FileName="Chat_caller/Program.cs" Line="106" Column="54" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Chat_caller" expanded="True">
-            <Node name="Chat_caller" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
+            <Node name="Chat_caller" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
@@ -26,6 +24,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Chat__caller PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <Debugger.DebugSourceFolders />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

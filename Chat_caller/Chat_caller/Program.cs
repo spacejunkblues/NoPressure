@@ -101,12 +101,15 @@ namespace Chat_caller
             Console.Clear();
 
             user = "";
+            //Console.WriteLine(5);
 
-            Console.WriteLine("what is your username?");
+            Console.WriteLine("what is your username6?");
             user = Console.ReadLine();
-            Console.SetCursorPosition(0, Console.WindowHeight + 1);
+            Console.SetCursorPosition(0, Console.WindowHeight - 1);
+            Console.WriteLine();
+            Console.WriteLine();
 
-            int i = 1;
+            int i = 0;
             Wait();
             while (true)
             {
@@ -124,25 +127,19 @@ namespace Chat_caller
                         //Carriageflag = false;
                     }
 
+                    i = Console.CursorTop;
                     var key = Console.ReadKey();
 
                     Message = Message + key.KeyChar;
 
-                    if (key.KeyChar == (char)13)
+                    if (key.KeyChar == (char)13 || key.KeyChar == (char)10)
                     {
                         //Carriageflag = true
-                        //Console.SetCursorPosition(0, Console.CursorTop + i);
+                        Console.SetCursorPosition(0, i - 1);
                         Message = Message.Replace('\r', '\n');
                         SendMessage(Message);
 
                         Message = "";
-                        //Console.WriteLine();
-                        //Console.WriteLine();
-                        //Console.SetCursorPosition(0, Console.CursorTop + i);
-
-                        //Console.WriteLine();
-                        //Console.WriteLine();
-                        i++;
                     }
                 }
 

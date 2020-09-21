@@ -6,6 +6,10 @@ namespace InClassLesson3
     {
         static void Main(string[] args)
         {
+            Console.Write('!');
+            Console.Write("\r");
+            Console.Write('!');
+
             //Declare varaible to capture users input
             int userInput;
             int userInput2;

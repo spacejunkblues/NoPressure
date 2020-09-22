@@ -2,13 +2,15 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Chat_caller/Program.cs">
     <Files>
       <File FileName="../../chat_room/server.js" Line="18" Column="29" />
-      <File FileName="Chat_caller/Program.cs" Line="138" Column="59" />
+      <File FileName="Chat_caller/Program.cs" Line="66" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Chat_caller" expanded="True">
-            <Node name="Chat_caller" expanded="True" selected="True" />
+            <Node name="Chat_caller" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

@@ -29,10 +29,18 @@ namespace Chat_caller
             var test = await Task.Run(mysearch);
             //Console.Write("!");
             IsDone = true;
-            GetMessage();
+            GetMessage("");
+        }
+        public static async void Wait(string CurrentMessage)
+        {
+            //IsDone = false;
+            var test = await Task.Run(mysearch);
+            //Console.Write("!");
+            IsDone = true;
+            GetMessage(CurrentMessage);
         }
 
-        public static void GetMessage() 
+        public static void GetMessage(string Message)
         {
             //create client
             HttpClient client = new HttpClient();
@@ -46,12 +54,18 @@ namespace Chat_caller
             HttpResponseMessage APIResponse2 = APITask2.Result;
 
             string data2 = APIResponse2.Content.ReadAsStringAsync().Result;
-            
+
             if (data2 != "")
             {
 
-                //Console.SetCursorPosition(0, Console.CursorTop + (i + 1));
+                Console.SetCursorPosition(0, Console.CursorTop);
                 Console.Write(data2);
+
+                if (Message != "")
+                {
+                    //Console.Write((char)127);
+                    Console.Write(Message);
+                }
 
                 //Console.SetCursorPosition(0, Console.CursorTop + i);
 
@@ -64,6 +78,8 @@ namespace Chat_caller
             }
 
             data2 = "";
+
+            //Console.WriteLine(Message);
         }
 
         static public void SendMessage(string MessageToSend)
@@ -103,7 +119,7 @@ namespace Chat_caller
             user = "";
             //Console.WriteLine(5);
 
-            Console.WriteLine("what is your username6?");
+            Console.WriteLine("what is your username?");
             user = Console.ReadLine();
             Console.SetCursorPosition(0, Console.WindowHeight - 1);
             Console.WriteLine();
@@ -115,7 +131,8 @@ namespace Chat_caller
             {
                 if (IsDone)
                 {
-                    Wait();
+                    Wait(Message);
+
                     IsDone = false;
                 }
 

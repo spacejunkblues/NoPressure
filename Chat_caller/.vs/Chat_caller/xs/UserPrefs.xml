@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Chat_caller/Program.cs">
     <Files>
       <File FileName="../../chat_room/server.js" Line="18" Column="29" />
-      <File FileName="Chat_caller/Program.cs" Line="106" Column="54" />
+      <File FileName="Chat_caller/Program.cs" Line="138" Column="59" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,6 +17,7 @@
           <Value>json</Value>
           <Value>json[0]</Value>
           <Value>json["Actors"]</Value>
+          <Value>'\n'</Value>
         </State>
       </Pad>
     </Pads>

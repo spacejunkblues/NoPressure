@@ -17,7 +17,7 @@ namespace Chat_caller
         static string user = "";
         public static bool mysearch()
         {
-            Thread.Sleep(1250);
+            Thread.Sleep(1400);
             //Console.Write("Counted to 5");
 
             return true;
@@ -60,6 +60,11 @@ namespace Chat_caller
 
                 Console.SetCursorPosition(0, Console.CursorTop);
                 Console.Write(data2);
+
+                for (int i = 0; i<Console.WindowWidth + 1; i++)
+                {
+                    Console.Write(" ");
+                }
 
                 if (Message != "")
                 {
@@ -153,7 +158,7 @@ namespace Chat_caller
                     {
                         //Carriageflag = true
                         Console.SetCursorPosition(0, i - 1);
-                        Message = Message.Replace('\r', '\n');
+                        Message = Message.Replace('\r', (char)10);
                         SendMessage(Message);
 
                         Message = "";
